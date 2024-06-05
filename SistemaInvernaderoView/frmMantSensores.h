@@ -109,9 +109,9 @@ namespace SistemaInvernaderoView {
 				L"Sensor de Temperatura", L"Sensor de Humedad",
 					L"Sensor de Luminosidad"
 			});
-			this->comboBox1->Location = System::Drawing::Point(191, 34);
+			this->comboBox1->Location = System::Drawing::Point(208, 34);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(198, 21);
+			this->comboBox1->Size = System::Drawing::Size(181, 21);
 			this->comboBox1->TabIndex = 1;
 			// 
 			// label1
