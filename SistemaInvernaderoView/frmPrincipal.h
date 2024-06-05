@@ -1,4 +1,5 @@
 #pragma once
+#include "frmMantSensores.h"
 
 namespace SistemaInvernaderoView {
 
@@ -79,6 +80,7 @@ namespace SistemaInvernaderoView {
 			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
 			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(221, 22);
 			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
+			this->mantenimientoDeSensoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeSensoresToolStripMenuItem_Click);
 			// 
 			// frmPrincipal
 			// 
@@ -97,5 +99,11 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
+	private: System::Void mantenimientoDeSensoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantSensores^ ventanaMantSensores = gcnew frmMantSensores();
+		ventanaMantSensores->MdiParent = this;
+		ventanaMantSensores->Show();
+
+	}
 	};
 }
