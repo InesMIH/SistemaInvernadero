@@ -34,6 +34,7 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 
@@ -46,6 +47,8 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Label^ label3;
 	protected:
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 	private:
 		/// <summary>
@@ -60,6 +63,7 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
@@ -182,4 +186,14 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	this->Close();
 }
 };
+=======
+			this->components = gcnew System::ComponentModel::Container();
+			this->Size = System::Drawing::Size(300,300);
+			this->Text = L"frmSensorHumedad";
+			this->Padding = System::Windows::Forms::Padding(0);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+		}
+#pragma endregion
+	};
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }

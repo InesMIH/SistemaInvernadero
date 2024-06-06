@@ -8,8 +8,11 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+<<<<<<< HEAD
 	using namespace SistemaInvernaderoModel;
 	using namespace SistemaInvernaderoController;
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 	/// <summary>
 	/// Resumen de frmSensorTemperatura
@@ -36,12 +39,15 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 	private:
 		/// <summary>
@@ -56,6 +62,7 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -111,10 +118,15 @@ namespace SistemaInvernaderoView {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &frmSensorTemperatura::button2_Click);
 			// 
+=======
+			this->SuspendLayout();
+			// 
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// frmSensorTemperatura
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+<<<<<<< HEAD
 			this->ClientSize = System::Drawing::Size(333, 179);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -123,10 +135,16 @@ namespace SistemaInvernaderoView {
 			this->Text = L"Sensor Temperatura";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
+=======
+			this->ClientSize = System::Drawing::Size(333, 337);
+			this->Name = L"frmSensorTemperatura";
+			this->Text = L"frmSensorTemperatura";
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+<<<<<<< HEAD
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		double resolucionC = Convert::ToDouble(this->textBox1->Text);
 		MessageBox::Show("Los detalles del sensor Temperatura han sido agregados con éxito. ");
@@ -136,4 +154,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	this->Close();
 }
 };
+=======
+	};
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }

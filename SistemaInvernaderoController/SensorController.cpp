@@ -1,5 +1,6 @@
 #include "SensorController.h"
 
+<<<<<<< HEAD
 
 using namespace SistemaInvernaderoController;
 using namespace System::IO;
@@ -104,4 +105,11 @@ void SensorController::actualizarSensor(int codigo, String^ tipo, int enFunciona
 	}
 	escribirArchivo(listaSensor);
 
+=======
+using namespace SistemaInvernaderoController;
+
+SensorController::SensorController(){
+
+	
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }

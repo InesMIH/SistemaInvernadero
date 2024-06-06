@@ -18,11 +18,22 @@
     <ClInclude Include="SensorController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="ReguladorController.h">
+=======
+    <ClInclude Include="UsuarioController.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="CultivoController.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbienteIdoneoController.h">
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="ReguladorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -31,5 +42,19 @@
     <ClCompile Include="SensorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+=======
+    <ClCompile Include="CultivoController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="UsuarioController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbienteIdoneoController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
   </ItemGroup>
 </Project>

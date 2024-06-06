@@ -1,6 +1,7 @@
 #pragma once
 
 namespace SistemaInvernaderoController {
+<<<<<<< HEAD
 
 	using namespace System::Collections::Generic;
 	using namespace SistemaInvernaderoModel;
@@ -16,5 +17,11 @@ namespace SistemaInvernaderoController {
 			void escribirArchivo(List<sensor^>^ listaSensor);
 			void eliminarSensor(int codigo);
 			void actualizarSensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
+=======
+	public ref class SensorController {
+	public:
+		SensorController();
+
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 	};
 }

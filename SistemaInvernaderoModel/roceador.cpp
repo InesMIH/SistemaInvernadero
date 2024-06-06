@@ -6,9 +6,14 @@ roceador::roceador() {
 
 }
 
+<<<<<<< HEAD
 roceador::roceador(int porcPWM, int caudal, String^ tipo, int codigo, int enOperacion, double potencia){
 	this->porcPWM = porcPWM;
 	this->cuadal = caudal;
+=======
+roceador::roceador(int porcPWM, int codigo, String^ funcionamiento, double potencia) {
+	this->porcPWM = porcPWM;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }
 
 int roceador::getporcPWM() {
@@ -16,6 +21,7 @@ int roceador::getporcPWM() {
 }
 void roceador::setporcPWM(int porcPWM) {
 	this->porcPWM = porcPWM;
+<<<<<<< HEAD
 }
 
 int roceador::getCaudal() {
@@ -23,4 +29,6 @@ int roceador::getCaudal() {
 }
 void roceador::setCaudal(int caudal) {
 	this->cuadal = caudal;
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }

@@ -1,6 +1,9 @@
 #pragma once
+<<<<<<< HEAD
 #include "frmNuevoSensor.h"
 #include "frmEditarSensor.h"
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 namespace SistemaInvernaderoView {
 
@@ -10,9 +13,12 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+<<<<<<< HEAD
 	using namespace SistemaInvernaderoController;
 	using namespace System::Collections::Generic;
 	using namespace SistemaInvernaderoModel;
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 	/// <summary>
 	/// Resumen de frmMantSensores
@@ -89,6 +95,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Controls->Add(this->label1);
+<<<<<<< HEAD
 			this->groupBox1->Location = System::Drawing::Point(12, 25);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(549, 75);
@@ -101,6 +108,24 @@ namespace SistemaInvernaderoView {
 			this->button1->Location = System::Drawing::Point(413, 34);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
+=======
+			this->groupBox1->Location = System::Drawing::Point(24, 48);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox1->Size = System::Drawing::Size(1098, 144);
+			this->groupBox1->TabIndex = 0;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Criterios de Búsqueda";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmMantSensores::groupBox1_Enter);
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(826, 65);
+			this->button1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(150, 44);
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"Buscar";
 			this->button1->UseVisualStyleBackColor = true;
@@ -113,18 +138,33 @@ namespace SistemaInvernaderoView {
 				L"Sensor de Temperatura", L"Sensor de Humedad",
 					L"Sensor de Luminosidad"
 			});
+<<<<<<< HEAD
 			this->comboBox1->Location = System::Drawing::Point(208, 34);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(181, 21);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &frmMantSensores::comboBox1_SelectedIndexChanged);
+=======
+			this->comboBox1->Location = System::Drawing::Point(416, 65);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(358, 33);
+			this->comboBox1->TabIndex = 1;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
+<<<<<<< HEAD
 			this->label1->Location = System::Drawing::Point(128, 37);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(31, 13);
+=======
+			this->label1->Location = System::Drawing::Point(256, 71);
+			this->label1->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(60, 25);
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Tipo:";
 			// 
@@ -135,34 +175,67 @@ namespace SistemaInvernaderoView {
 				this->Column1,
 					this->Column2, this->Column3, this->Column4, this->Column5
 			});
+<<<<<<< HEAD
 			this->dataGridView1->Location = System::Drawing::Point(13, 107);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(548, 101);
+=======
+			this->dataGridView1->Location = System::Drawing::Point(26, 206);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->RowHeadersWidth = 82;
+			this->dataGridView1->Size = System::Drawing::Size(1096, 194);
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// Column1
 			// 
 			this->Column1->HeaderText = L"Código";
+<<<<<<< HEAD
 			this->Column1->Name = L"Column1";
+=======
+			this->Column1->MinimumWidth = 10;
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 200;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"Tipo";
+<<<<<<< HEAD
 			this->Column2->Name = L"Column2";
+=======
+			this->Column2->MinimumWidth = 10;
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 200;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// 
 			// Column3
 			// 
 			this->Column3->HeaderText = L"Intervalo de Muestreo";
+<<<<<<< HEAD
 			this->Column3->Name = L"Column3";
+=======
+			this->Column3->MinimumWidth = 10;
+			this->Column3->Name = L"Column3";
+			this->Column3->Width = 200;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// 
 			// Column4
 			// 
 			this->Column4->HeaderText = L"Medición";
+<<<<<<< HEAD
 			this->Column4->Name = L"Column4";
+=======
+			this->Column4->MinimumWidth = 10;
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 200;
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			// 
 			// Column5
 			// 
 			this->Column5->HeaderText = L"Unidad";
+<<<<<<< HEAD
 			this->Column5->Name = L"Column5";
 			// 
 			// button2
@@ -200,13 +273,61 @@ namespace SistemaInvernaderoView {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(573, 296);
+=======
+			this->Column5->MinimumWidth = 10;
+			this->Column5->Name = L"Column5";
+			this->Column5->Width = 200;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(258, 456);
+			this->button2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(150, 44);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"Nuevo";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(548, 456);
+			this->button3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(150, 44);
+			this->button3->TabIndex = 3;
+			this->button3->Text = L"Editar";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(820, 456);
+			this->button4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(150, 44);
+			this->button4->TabIndex = 4;
+			this->button4->Text = L"Eliminar";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// frmMantSensores
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(1146, 569);
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->groupBox1);
+<<<<<<< HEAD
 			this->Name = L"frmMantSensores";
 			this->Text = L"Mantenimiento de Sensores";
+=======
+			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Name = L"frmMantSensores";
+			this->Text = L"Mantenimiento de Sensores";
+			this->Load += gcnew System::EventHandler(this, &frmMantSensores::frmMantSensores_Load);
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -214,6 +335,7 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
+<<<<<<< HEAD
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ tipoSensor = this->comboBox1->Text;
 		SensorController^ objSensorController = gcnew SensorController;
@@ -259,6 +381,13 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	this->dataGridView1->Rows->Clear();
 }
 private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+=======
+	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void frmMantSensores_Load(System::Object^ sender, System::EventArgs^ e) {
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }
 };
 }

@@ -34,6 +34,7 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
@@ -42,6 +43,8 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+=======
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 
 	private:
 		/// <summary>
@@ -56,6 +59,7 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -160,4 +164,14 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void frmSensorLuminosidad_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
+=======
+			this->components = gcnew System::ComponentModel::Container();
+			this->Size = System::Drawing::Size(300,300);
+			this->Text = L"frmSensorLuminosidad";
+			this->Padding = System::Windows::Forms::Padding(0);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+		}
+#pragma endregion
+	};
+>>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
 }
