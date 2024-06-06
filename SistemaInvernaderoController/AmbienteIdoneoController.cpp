@@ -1,5 +1,6 @@
 #include "AmbienteIdoneoController.h"
 
+<<<<<<< HEAD
 using namespace SistemaInvernaderoController;
 using namespace System::IO; /*Nos permite trabajar con archivos de texto*/
 
@@ -122,3 +123,22 @@ int AmbienteIdoneoController::existeAmbiente(double humedadNueva, double luminos
 	}
 	return existe;
 }
+=======
+namespace SistemaInvernaderoController {
+	using namespace System::Collections::Generic;
+	using namespace System;
+	using namespace SistemaInvernaderoModel;
+	ZXZXZ
+	public ref class Ambiente Id {
+	public:
+		CultivoController();
+		List<cultivo^>^ buscarCultivoxTipo(String^ tipoCultivo);
+		List<cultivo^>^ buscarCultivoALL();
+		cultivo^ buscarCultivoxCodigo(int codigoBuscado);
+		void agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo);
+		void escribirArchivo(List<cultivo^>^ listaCultivos);
+		void eliminarCultivo(int codigo);
+	};
+
+}gd
+>>>>>>> 5ba584a (a)
