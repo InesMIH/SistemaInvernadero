@@ -1,0 +1,2 @@
+#include "frmSensorLuminosidad.h"
+

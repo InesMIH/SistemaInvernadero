@@ -1,0 +1,2 @@
+#include "frmSensorTemperatura.h"
+
