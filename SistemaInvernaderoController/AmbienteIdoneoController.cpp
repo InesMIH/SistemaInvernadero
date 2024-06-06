@@ -4,8 +4,8 @@ namespace SistemaInvernaderoController {
 	using namespace System::Collections::Generic;
 	using namespace System;
 	using namespace SistemaInvernaderoModel;
-
-	public ref class CultivoController {
+	ZXZXZ
+	public ref class Ambiente Id {
 	public:
 		CultivoController();
 		List<cultivo^>^ buscarCultivoxTipo(String^ tipoCultivo);
@@ -16,4 +16,4 @@ namespace SistemaInvernaderoController {
 		void eliminarCultivo(int codigo);
 	};
 
-}
+}gd
