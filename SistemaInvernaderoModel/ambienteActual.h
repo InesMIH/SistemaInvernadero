@@ -16,7 +16,7 @@ namespace SistemaInvernaderoModel{
 		String^ fecha;
 	public:
 		ambienteActual();
-		ambienteActual(String^ humedad, String^ luminosidad, String^ temperatura, String^ hora, String^ fecha);
+		ambienteActual(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ hora, String^ fecha);
 
 		String^ gethora();
 		void sethora(String^ hora);
