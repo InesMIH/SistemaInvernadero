@@ -256,11 +256,12 @@ namespace SistemaInvernaderoView {
 		this->dataGridView1->Rows->Clear();
 		for (int i = 0; i < listaCultivos->Count; i++) {
 			cultivo^ objcultivo = listaCultivos[i];
-			array<String^>^ filaGrilla = gcnew array<String^>(4);
+			array<String^>^ filaGrilla = gcnew array<String^>(5);
 			filaGrilla[0] = Convert::ToString(objcultivo->getcodigo());
 			filaGrilla[1] = objcultivo->getnombre();
 			filaGrilla[2] = Convert::ToString(objcultivo->getzonaDeSembrado());
 			filaGrilla[3] = objcultivo->gettiempoCultivo();
+			filaGrilla[4] = objcultivo->getusuario()->getNombre();
 			this->dataGridView1->Rows->Add(filaGrilla);
 		}
 	}

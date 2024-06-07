@@ -1,0 +1,3 @@
+1;Rosa;Asia;40-60;10/04/24;1;No Comestible;Ines
+2;Sandia;Peru;40-60;12/04/24;2;Comestible;Richard
+3;Naranja;Brasil;50-70;12/04/24;3;Comestible;Lucho

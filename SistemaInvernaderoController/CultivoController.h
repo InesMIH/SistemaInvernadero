@@ -11,7 +11,7 @@ namespace SistemaInvernaderoController {
 			List<cultivo^>^ buscarCultivoxTipo(String^ tipoCultivo);
 			List<cultivo^>^ buscarCultivoALL();
 			cultivo^ buscarCultivoxCodigo(int codigoBuscado);
-			void agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo);
+			void agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo);
 			void escribirArchivo(List<cultivo^>^ listaCultivos);
 			void eliminarCultivo(int codigo);
 	};

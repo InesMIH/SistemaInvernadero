@@ -6,7 +6,7 @@ ambienteIdoneo::ambienteIdoneo() {
 
 }
 
-ambienteIdoneo::ambienteIdoneo(String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion) : ambiente(humedad, luminosidad, temperatura) {
+ambienteIdoneo::ambienteIdoneo(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion) : ambiente(codigo, humedad, luminosidad, temperatura) {
 	this->informacion = informacion;
 }
 

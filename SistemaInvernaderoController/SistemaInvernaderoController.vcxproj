@@ -111,11 +111,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
-      <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="AmbienteIdoneoController.h" />
     <ClInclude Include="CultivoController.h" />
     <ClInclude Include="SensorController.h" />
@@ -126,6 +121,11 @@
     <ClCompile Include="CultivoController.cpp" />
     <ClCompile Include="SensorController.cpp" />
     <ClCompile Include="UsuarioController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
+      <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

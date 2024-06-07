@@ -11,7 +11,7 @@ namespace SistemaInvernaderoModel{
 		String^ informacion;
 	public:
 		ambienteIdoneo();
-		ambienteIdoneo(String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion);
+		ambienteIdoneo(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion);
 
 		String^ getinformacion();
 		void setinformacion(String^ informacion);
