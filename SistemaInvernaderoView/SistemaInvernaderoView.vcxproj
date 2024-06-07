@@ -121,12 +121,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="frmMantReguladores.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
     <ClCompile Include="frmSensorTemperatura.cpp" />
+    <ClCompile Include="frmVentilador.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +139,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmMantReguladores.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmMantSensores.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -155,8 +160,14 @@
     <ClInclude Include="frmSensorTemperatura.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmVentilador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmMantReguladores.resx">
+      <DependentUpon>frmMantReguladores.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantSensores.resx">
       <DependentUpon>frmMantSensores.h</DependentUpon>
     </EmbeddedResource>

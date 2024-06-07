@@ -1,4 +1,6 @@
 #pragma once
+#include "frmMantReguladores.h"
+
 
 namespace SistemaInvernaderoView {
 
@@ -37,6 +39,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^ menúToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeSensoresToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeReguladoresToolStripMenuItem;
 	protected:
 
 	private:
@@ -55,6 +58,7 @@ namespace SistemaInvernaderoView {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->menúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeSensoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mantenimientoDeReguladoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -63,13 +67,16 @@ namespace SistemaInvernaderoView {
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menúToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(466, 24);
+			this->menuStrip1->Size = System::Drawing::Size(589, 24);
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// menúToolStripMenuItem
 			// 
-			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mantenimientoDeSensoresToolStripMenuItem });
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mantenimientoDeSensoresToolStripMenuItem,
+					this->mantenimientoDeReguladoresToolStripMenuItem
+			});
 			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
 			this->menúToolStripMenuItem->Size = System::Drawing::Size(50, 20);
 			this->menúToolStripMenuItem->Text = L"Menú";
@@ -77,19 +84,27 @@ namespace SistemaInvernaderoView {
 			// mantenimientoDeSensoresToolStripMenuItem
 			// 
 			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
-			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(221, 22);
+			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(240, 22);
 			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
+			// 
+			// mantenimientoDeReguladoresToolStripMenuItem
+			// 
+			this->mantenimientoDeReguladoresToolStripMenuItem->Name = L"mantenimientoDeReguladoresToolStripMenuItem";
+			this->mantenimientoDeReguladoresToolStripMenuItem->Size = System::Drawing::Size(240, 22);
+			this->mantenimientoDeReguladoresToolStripMenuItem->Text = L"Mantenimiento de Reguladores";
+			this->mantenimientoDeReguladoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeReguladoresToolStripMenuItem_Click);
 			// 
 			// frmPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(466, 342);
+			this->ClientSize = System::Drawing::Size(589, 450);
 			this->Controls->Add(this->menuStrip1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"frmPrincipal";
 			this->Text = L"Sistema Invernadero";
+			this->Load += gcnew System::EventHandler(this, &frmPrincipal::frmPrincipal_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -97,5 +112,17 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
+	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void mantenimientoDeReguladoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantReuladores^ ventanaMantReguladores = gcnew frmMantReuladores();
+		ventanaMantReguladores->MdiParent = this;
+		ventanaMantReguladores->Show();
+
+		
+		
+
+
+	}
 	};
 }
