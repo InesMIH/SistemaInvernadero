@@ -118,6 +118,9 @@
   <ItemGroup>
     <ClInclude Include="SensorController.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SensorController.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "frmNuevoSensor.h"
 namespace SistemaInvernaderoView {
 
 	using namespace System;
@@ -8,6 +8,9 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace SistemaInvernaderoController;
+	using namespace System::Collections::Generic;
+	using namespace SistemaInvernaderoModel;
 
 	/// <summary>
 	/// Resumen de frmMantSensores
@@ -90,7 +93,6 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterios de Búsqueda";
-			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmMantSensores::groupBox1_Enter);
 			// 
 			// button1
 			// 
@@ -168,6 +170,7 @@ namespace SistemaInvernaderoView {
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantSensores::button2_Click);
 			// 
 			// button3
 			// 
@@ -206,9 +209,31 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
-	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
-	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ tipoSensor = this->comboBox1->Text;
+		SensorController^ objSensorController = gcnew SensorController;
+		List<sensor^>^ listaSensores = objSensorController->buscarSensorxTipo(tipoSensor);
+		mostrarGrilla(listaSensores);
 	}
+		   private: void mostrarGrilla(List<sensor^>^ listaSensores) {
+			   this->dataGridView1->Rows->Clear();
+			   for (int i = 0; i < listaSensores->Count; i++) {
+				   sensor^ objSensor = listaSensores[i];
+				   array<String^>^ filaGrilla = gcnew array<String^>(6);
+				   filaGrilla[0] = Convert::ToString(objSensor->getcodigo());
+				   filaGrilla[1] = objSensor->gettipo();
+				   filaGrilla[2] = Convert::ToString(objSensor->getenFuncionamiento());
+				   filaGrilla[3] = Convert::ToString(objSensor->getintervaloDeMuestreo());
+				   filaGrilla[4] = Convert::ToString(objSensor->getmedicion());
+				   filaGrilla[5] = objSensor->getunidad();
+				   this->dataGridView1->Rows->Add(filaGrilla);
+			   }
+		   }
+
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmNuevoSensor^ ventanaNuevoSensor = gcnew frmNuevoSensor();
+	ventanaNuevoSensor->ShowDialog();
+
+}
 };
 }
