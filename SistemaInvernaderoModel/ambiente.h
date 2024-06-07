@@ -7,6 +7,7 @@ namespace SistemaInvernaderoModel{
 	{
 	private:
 		int codigo;
+<<<<<<< HEAD
 		double humedad;
 		double luminosidad;
 		double temperatura;
@@ -22,5 +23,22 @@ namespace SistemaInvernaderoModel{
 		void setluminosidad(double luminosidad);
 		double gettemperatura();
 		void settemperatura(double temperatura);
+=======
+		String^ humedad;
+		String^ luminosidad;
+		String^ temperatura;
+	public:
+		ambiente();
+		ambiente(int codigo, String^ humedad, String^ luminosidad, String^ temperatura);
+
+		int getcodigo();
+		void setcodigo(int codigo);
+		String^ gethumedad();
+		void sethumedad(String^ humedad);
+		String^ getluminosidad();
+		void setluminosidad(String^ luminosidad);
+		String^ gettemperatura();
+		void settemperatura(String^ temperatura);
+>>>>>>> 9367295 (f)
 	};
 }

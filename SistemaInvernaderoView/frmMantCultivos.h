@@ -256,8 +256,14 @@ namespace SistemaInvernaderoView {
 			array<String^>^ filaGrilla = gcnew array<String^>(5);
 			filaGrilla[0] = Convert::ToString(objcultivo->getcodigo());
 			filaGrilla[1] = objcultivo->getnombre();
+<<<<<<< HEAD
 			filaGrilla[2] = objcultivo->gettiempoCultivo();
 			filaGrilla[3] = objcultivo->getusuario()->getNombre();
+=======
+			filaGrilla[2] = Convert::ToString(objcultivo->getzonaDeSembrado());
+			filaGrilla[3] = objcultivo->gettiempoCultivo();
+			filaGrilla[4] = objcultivo->getusuario()->getNombre();
+>>>>>>> 9367295 (f)
 			this->dataGridView1->Rows->Add(filaGrilla);
 		}
 	}

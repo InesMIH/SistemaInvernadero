@@ -1,3 +1,8 @@
 1;Lucho;cultivador;ARMYLOVER
+<<<<<<< HEAD
 2;Richard;mantenimiento;Richote20
 3;Ines;cultivador;JungkookA
+=======
+2;Richard;mantenimiento;Richo20
+3;Ines;cultivador;JungkookA
+>>>>>>> 9367295 (f)
