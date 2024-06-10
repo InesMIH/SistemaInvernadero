@@ -153,7 +153,7 @@ AmbienteIdoneoController::AmbienteIdoneoController() {
 
 List<ambienteIdoneo^>^ AmbienteIdoneoController::buscarAmbienteIdoneoALL() {
 	List<ambienteIdoneo^>^ listaAmbienteIdoneo = gcnew List<ambienteIdoneo^>();
-	array<String^>^ lineas = File::ReadAllLines("Peluches.txt");
+	array<String^>^ lineas = File::ReadAllLines("AmbienteIdoneo.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaAmbienteIdoneo in lineas) {
 		/*Voy a separar los datos de una linea en sub strings*/
@@ -182,7 +182,7 @@ void AmbienteIdoneoController::escribirArchivo(List<ambienteIdoneo^>^ listaAmbie
 		ambienteIdoneo^ objAmbienteIdoneo = listaAmbienteIdoneo[i];
 		lineasArchivo[i] = Convert::ToString(objAmbienteIdoneo->getcodigo()) + ";" + objAmbienteIdoneo->gethumedad() + ";" + objAmbienteIdoneo->getluminosidad() + ";" + objAmbienteIdoneo->gettemperatura() + ";" + objAmbienteIdoneo->getinformacion();
 	}
-	File::WriteAllLines("Peluches.txt", lineasArchivo);
+	File::WriteAllLines("AmbienteIdoneo.txt", lineasArchivo);
 }
 
 void AmbienteIdoneoController::eliminarAmbienteIdoneo(int codigo) {
@@ -198,7 +198,7 @@ void AmbienteIdoneoController::eliminarAmbienteIdoneo(int codigo) {
 
 ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigoBuscado) {
 	ambienteIdoneo^ objAmbienteIdoneo;
-	array<String^>^ lineas = File::ReadAllLines("Peluches.txt");
+	array<String^>^ lineas = File::ReadAllLines("AmbienteIdoneo.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaAmbienteIdoneo in lineas) {
 		/*Voy a separar los datos de una linea en sub strings*/

@@ -1,12 +1,15 @@
 #pragma once
 #include "frmMantCultivos.h"
 #include "frmMantSensores.h"
+<<<<<<< HEAD
 #include "frmMantUsuarios.h"
 #include "frmMantReguladores.h"
 #include "frmSensorTemperatura.h"
 #include "frmSensorHumedad.h"
 #include "frmSensorLuminosidad.h"
 #include "frmReporteDeFallas.h"
+=======
+>>>>>>> b5a1190 (b)
 
 namespace SistemaInvernaderoView {
 
@@ -47,12 +50,15 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeSensoresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeCultivosToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeUsuariosToolStripMenuItem;
+<<<<<<< HEAD
 	private: System::Windows::Forms::ToolStripMenuItem^ salirToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeReguladoresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ reporteDeFallaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorTemperaturaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorHumedadToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorLuminosidadToolStripMenuItem;
+=======
+>>>>>>> b5a1190 (b)
 	protected:
 
 	private:
@@ -72,6 +78,7 @@ namespace SistemaInvernaderoView {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->menúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeSensoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+<<<<<<< HEAD
 			this->configuraciónDeSensorTemperaturaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->configuraciónDeSensorHumedadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -85,11 +92,18 @@ namespace SistemaInvernaderoView {
 			// 
 			// menuStrip1
 			// 
+=======
+			this->mantenimientoDeCultivosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mantenimientoDeUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1->SuspendLayout();
+			this->SuspendLayout();
+>>>>>>> b5a1190 (b)
 			this->menuStrip1->GripMargin = System::Windows::Forms::Padding(2, 2, 0, 2);
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menúToolStripMenuItem });
 			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
+<<<<<<< HEAD
 			// 
 			// menúToolStripMenuItem
 			// 
@@ -165,9 +179,37 @@ namespace SistemaInvernaderoView {
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ControlBox = false;
+=======
+			this->menuStrip1->Size = System::Drawing::Size(932, 46);
+			this->menuStrip1->TabIndex = 1;
+			this->menuStrip1->Text = L"menuStrip1";
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->mantenimientoDeSensoresToolStripMenuItem,
+					this->mantenimientoDeCultivosToolStripMenuItem, this->mantenimientoDeUsuariosToolStripMenuItem
+			});
+			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
+			this->menúToolStripMenuItem->Size = System::Drawing::Size(97, 38);
+			this->menúToolStripMenuItem->Text = L"Menú";
+			this->menúToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::menúToolStripMenuItem_Click);
+			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
+			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(448, 44);
+			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
+			this->mantenimientoDeSensoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeSensoresToolStripMenuItem_Click);
+			this->mantenimientoDeCultivosToolStripMenuItem->Name = L"mantenimientoDeCultivosToolStripMenuItem";
+			this->mantenimientoDeCultivosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
+			this->mantenimientoDeCultivosToolStripMenuItem->Text = L"Mantenimiento de Cultivos";
+			this->mantenimientoDeCultivosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeCultivosToolStripMenuItem_Click);
+			this->mantenimientoDeUsuariosToolStripMenuItem->Name = L"mantenimientoDeUsuariosToolStripMenuItem";
+			this->mantenimientoDeUsuariosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
+			this->mantenimientoDeUsuariosToolStripMenuItem->Text = L"Mantenimiento de Usuarios";
+			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(932, 658);
+>>>>>>> b5a1190 (b)
 			this->Controls->Add(this->menuStrip1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->Name = L"frmPrincipal";
 			this->Load += gcnew System::EventHandler(this, &frmPrincipal::frmPrincipal_Load_1);
 			this->menuStrip1->ResumeLayout(false);
@@ -180,15 +222,20 @@ namespace SistemaInvernaderoView {
 	private: System::Void menúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void mantenimientoDeSensoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+<<<<<<< HEAD
 		frmMantSensores^ ventanaMantSensores = gcnew frmMantSensores();
 		ventanaMantSensores->MdiParent = this;
 		ventanaMantSensores->Show();
+=======
+
+>>>>>>> b5a1190 (b)
 	}
 	private: System::Void mantenimientoDeCultivosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		frmMantCultivos^ ventanaMantCultivos = gcnew frmMantCultivos();
 		ventanaMantCultivos->MdiParent = this;
 		ventanaMantCultivos->Show();
 	}
+<<<<<<< HEAD
 	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
@@ -211,6 +258,11 @@ private: System::Void mantenimientoDeReguladoresToolStripMenuItem_Click(System::
 	frmMantReguladores^ ventanaMantReguladores = gcnew frmMantReguladores();
 	ventanaMantReguladores->MdiParent = this;
 	ventanaMantReguladores->Show();
+=======
+private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+};
+>>>>>>> b5a1190 (b)
 }
 private: System::Void configuraciónDeSensorHumedadToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	frmSensorHumedad^ ventanaSensorHumedad = gcnew frmSensorHumedad();

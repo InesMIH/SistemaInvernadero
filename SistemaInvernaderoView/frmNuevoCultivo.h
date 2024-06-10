@@ -58,6 +58,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox7;
 	private: System::Windows::Forms::Label^ label9;
 
+<<<<<<< HEAD
 
 	private: System::Windows::Forms::GroupBox^ groupBox2;
 	private: System::Windows::Forms::Label^ label12;
@@ -74,6 +75,8 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
 
+=======
+>>>>>>> b5a1190 (b)
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -493,11 +496,16 @@ namespace SistemaInvernaderoView {
 		int codigoUsuario = Convert::ToInt32(this->textBox6->Text);
 		int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox7->Text);
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
-		AmbienteIdoneoController^ objAmbiente = gcnew AmbienteIdoneoController();
-		usuario^ objusuario = gcnew
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		UsuarioController^ objusuarioController = gcnew UsuarioController();
+		usuario^ objUsuario = objusuarioController->buscarUsuarioxCodigo(codigoUsuario);
 		CultivoController^ objcultivoController = gcnew CultivoController();
+<<<<<<< HEAD
 		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objusuario, objAmbienteIdoneo);
 >>>>>>> 9367295 (f)
+=======
+		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> b5a1190 (b)
 
 	}
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {

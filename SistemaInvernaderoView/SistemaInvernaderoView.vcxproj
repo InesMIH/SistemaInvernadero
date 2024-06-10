@@ -113,10 +113,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="frmEditarCultivo.cpp" />
     <ClCompile Include="frmEditarRegulador.cpp" />
     <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmEditarUsuario.cpp" />
+=======
+>>>>>>> b5a1190 (b)
     <ClCompile Include="frmMantCultivos.cpp" />
     <ClCompile Include="frmMantReguladores.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />

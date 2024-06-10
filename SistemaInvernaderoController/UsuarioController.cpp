@@ -54,7 +54,11 @@ usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (id == codigoBuscar) {
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+=======
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> b5a1190 (b)
 			break;
 		}
 	}
@@ -73,7 +77,11 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (nombre->CompareTo(NombreBuscar)==0) {
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+=======
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> b5a1190 (b)
 			break;
 		}
 	}
@@ -82,6 +90,10 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 
 int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar) {
 	int confirmado = 0;
+<<<<<<< HEAD
+=======
+	usuario^ objUsuario;
+>>>>>>> b5a1190 (b)
 	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaUsuario in lineas) {
@@ -99,6 +111,7 @@ int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ Nombr
 		}
 	}
 	return confirmado;
+<<<<<<< HEAD
 }
 
 List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
@@ -147,3 +160,6 @@ void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo,
 	escribirArchivo(listaUsuario);
 
 }
+=======
+}
+>>>>>>> b5a1190 (b)

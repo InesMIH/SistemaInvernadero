@@ -45,6 +45,7 @@
     <ClCompile Include="login.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="frmEditarCultivo.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -69,6 +70,8 @@
     <ClCompile Include="frmEditarRegulador.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+=======
+>>>>>>> b5a1190 (b)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -98,6 +101,7 @@
     <ClInclude Include="login.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="frmEditarCultivo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -122,5 +126,7 @@
     <ClInclude Include="frmEditarRegulador.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+=======
+>>>>>>> b5a1190 (b)
   </ItemGroup>
 </Project>
