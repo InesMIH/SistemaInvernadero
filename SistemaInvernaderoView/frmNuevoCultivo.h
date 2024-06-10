@@ -9,6 +9,7 @@ namespace SistemaInvernaderoView {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace SistemaInvernaderoController;
+	using namespace SistemaInvernaderoModel;
 	/// <summary>
 	/// Resumen de frmNuevoCultivo
 	/// </summary>
@@ -22,7 +23,6 @@ namespace SistemaInvernaderoView {
 			//TODO: agregar código de constructor aquí
 			//
 		}
-
 	protected:
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
@@ -57,7 +57,6 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox6;
 	private: System::Windows::Forms::TextBox^ textBox7;
 	private: System::Windows::Forms::Label^ label9;
-
 
 	private:
 		/// <summary>
@@ -329,10 +328,11 @@ namespace SistemaInvernaderoView {
 		int codigoUsuario = Convert::ToInt32(this->textBox6->Text);
 		int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox7->Text);
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
-		AmbienteIdoneoController^ objAmbiente = gcnew AmbienteIdoneoController();
-		usuario^ objusuario = gcnew
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		UsuarioController^ objusuarioController = gcnew UsuarioController();
+		usuario^ objUsuario = objusuarioController->buscarUsuarioxCodigo(codigoUsuario);
 		CultivoController^ objcultivoController = gcnew CultivoController();
-		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objusuario, objAmbienteIdoneo);
+		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
 
 	}
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {

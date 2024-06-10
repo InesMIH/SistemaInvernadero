@@ -12,5 +12,8 @@ namespace SistemaInvernaderoController {
 		void escribirArchivo(List<usuario^>^ listaUsuario);
 		void UsuarioController::agregarNuevoUsuario(int id, String^ Nombre, String^ Cargo, String^ Contrasena);
 		usuario^ buscarUsuarioxCodigo(int codigoBuscar);
+		usuario^ buscarUsuarioxNombre(String^ NombreBuscar);
+		int BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar);
+
 	};
 }
