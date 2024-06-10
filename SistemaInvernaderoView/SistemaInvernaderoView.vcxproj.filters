@@ -73,6 +73,9 @@
     <ClCompile Include="frmNuevoCultivo.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -99,6 +102,12 @@
     <ClInclude Include="frmNuevoCultivo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+    <ClInclude Include="login.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+>>>>>>> b5a1190 (b)
   </ItemGroup>
 </Project>

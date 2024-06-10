@@ -113,6 +113,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\SistemaInvernaderoController\SistemaInvernaderoController.vcxproj">
       <Project>{1c26ef9c-6880-49fd-a4aa-247cb682f2a6}</Project>
     </ProjectReference>
@@ -136,6 +137,8 @@
     <ClCompile Include="frmSensorTemperatura.cpp" />
     <ClCompile Include="frmVentilador.cpp" />
 =======
+=======
+>>>>>>> b5a1190 (b)
     <ClCompile Include="frmMantCultivos.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmNuevoCultivo.cpp" />
@@ -144,7 +147,11 @@
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
     <ClCompile Include="frmSensorTemperatura.cpp" />
+<<<<<<< HEAD
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+    <ClCompile Include="login.cpp" />
+>>>>>>> b5a1190 (b)
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +213,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="frmVentilador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -223,6 +231,11 @@
     <EmbeddedResource Include="frmEditarSensor.resx">
       <DependentUpon>frmEditarSensor.h</DependentUpon>
 =======
+=======
+    <ClInclude Include="login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+>>>>>>> b5a1190 (b)
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMantCultivos.resx">
@@ -265,11 +278,25 @@
       <DependentUpon>frmSensorTemperatura.h</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="frmVentilador.resx">
       <DependentUpon>frmVentilador.h</DependentUpon>
     </EmbeddedResource>
 =======
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaInvernaderoController\SistemaInvernaderoController.vcxproj">
+      <Project>{1c26ef9c-6880-49fd-a4aa-247cb682f2a6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
+      <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
+    </ProjectReference>
+>>>>>>> b5a1190 (b)
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

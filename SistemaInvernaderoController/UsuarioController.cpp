@@ -50,13 +50,54 @@ usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 		/*Voy a separar los datos de una linea en sub strings*/
 		array<String^>^ datos = lineaUsuario->Split(separadores->ToCharArray());
 		int id = Convert::ToInt32(datos[0]);
-		String^ nonmbre = datos[1];
+		String^ nombre = datos[1];
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (id == codigoBuscar) {
-			usuario^ objUsuario = gcnew usuario(id, nonmbre, Cargo, Contrasena);
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			break;
 		}
 	}
 	return objUsuario;
+}
+
+usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
+	usuario^ objUsuario;
+	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
+	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
+	for each (String ^ lineaUsuario in lineas) {
+		/*Voy a separar los datos de una linea en sub strings*/
+		array<String^>^ datos = lineaUsuario->Split(separadores->ToCharArray());
+		int id = Convert::ToInt32(datos[0]);
+		String^ nombre = datos[1];
+		String^ Cargo = datos[2];
+		String^ Contrasena = datos[3];
+		if (nombre->CompareTo(NombreBuscar)==0) {
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+			break;
+		}
+	}
+	return objUsuario;
+}
+
+int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar) {
+	int confirmado = 0;
+	usuario^ objUsuario;
+	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
+	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
+	for each (String ^ lineaUsuario in lineas) {
+		/*Voy a separar los datos de una linea en sub strings*/
+		array<String^>^ datos = lineaUsuario->Split(separadores->ToCharArray());
+		int id = Convert::ToInt32(datos[0]);
+		String^ nombre = datos[1];
+		String^ Cargo = datos[2];
+		String^ Contrasena = datos[3];
+		if (nombre->CompareTo(NombreBuscar) == 0) {
+			if (Contrasena->CompareTo(ContrasenaBuscar) == 0) {
+				confirmado = 1;
+				break;
+			}
+		}
+	}
+	return confirmado;
 }

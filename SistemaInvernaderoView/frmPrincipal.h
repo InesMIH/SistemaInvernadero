@@ -1,4 +1,6 @@
 #pragma once
+#include "frmMantCultivos.h"
+#include "frmMantSensores.h"
 
 namespace SistemaInvernaderoView {
 
@@ -37,6 +39,8 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^ menúToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeSensoresToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeCultivosToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeUsuariosToolStripMenuItem;
 	protected:
 
 	private:
@@ -55,39 +59,44 @@ namespace SistemaInvernaderoView {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->menúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeSensoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mantenimientoDeCultivosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mantenimientoDeUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
-			// 
-			// menuStrip1
-			// 
+			this->menuStrip1->GripMargin = System::Windows::Forms::Padding(2, 2, 0, 2);
+			this->menuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menúToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(466, 24);
+			this->menuStrip1->Size = System::Drawing::Size(932, 46);
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
-			// 
-			// menúToolStripMenuItem
-			// 
-			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mantenimientoDeSensoresToolStripMenuItem });
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->mantenimientoDeSensoresToolStripMenuItem,
+					this->mantenimientoDeCultivosToolStripMenuItem, this->mantenimientoDeUsuariosToolStripMenuItem
+			});
 			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
-			this->menúToolStripMenuItem->Size = System::Drawing::Size(50, 20);
+			this->menúToolStripMenuItem->Size = System::Drawing::Size(97, 38);
 			this->menúToolStripMenuItem->Text = L"Menú";
-			// 
-			// mantenimientoDeSensoresToolStripMenuItem
-			// 
+			this->menúToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::menúToolStripMenuItem_Click);
 			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
-			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(221, 22);
+			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(448, 44);
 			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
-			// 
-			// frmPrincipal
-			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->mantenimientoDeSensoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeSensoresToolStripMenuItem_Click);
+			this->mantenimientoDeCultivosToolStripMenuItem->Name = L"mantenimientoDeCultivosToolStripMenuItem";
+			this->mantenimientoDeCultivosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
+			this->mantenimientoDeCultivosToolStripMenuItem->Text = L"Mantenimiento de Cultivos";
+			this->mantenimientoDeCultivosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeCultivosToolStripMenuItem_Click);
+			this->mantenimientoDeUsuariosToolStripMenuItem->Name = L"mantenimientoDeUsuariosToolStripMenuItem";
+			this->mantenimientoDeUsuariosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
+			this->mantenimientoDeUsuariosToolStripMenuItem->Text = L"Mantenimiento de Usuarios";
+			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(466, 342);
+			this->ClientSize = System::Drawing::Size(932, 658);
 			this->Controls->Add(this->menuStrip1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->Name = L"frmPrincipal";
 			this->Text = L"Sistema Invernadero";
 			this->menuStrip1->ResumeLayout(false);
@@ -97,5 +106,17 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void menúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void mantenimientoDeSensoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	}
+	private: System::Void mantenimientoDeCultivosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantCultivos^ ventanaMantCultivos = gcnew frmMantCultivos();
+		ventanaMantCultivos->MdiParent = this;
+		ventanaMantCultivos->Show();
+	}
+private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+};
 }

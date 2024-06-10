@@ -23,9 +23,9 @@ List<cultivo^>^ CultivoController::buscarCultivoxTipo(String^ tipocultivo) {
 		String^ fecha = datos[4];
 		int zona = Convert::ToInt32(datos[5]);
 		String^ tipo = datos[6];
-		int codigoUsuario = Convert::ToInt32(datos[7]);
+		String^ NombreUsuario = datos[7];
 		UsuarioController^ objUsuarioController = gcnew UsuarioController();
-		usuario^ objUsuario = objUsuarioController->buscarUsuarioxCodigo(codigoUsuario);
+		usuario^ objUsuario = objUsuarioController->buscarUsuarioxNombre(NombreUsuario);
 		int codigoAmbienteIdoneo = Convert::ToInt32(datos[8]);
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
 		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
