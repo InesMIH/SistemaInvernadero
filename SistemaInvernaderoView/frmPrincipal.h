@@ -51,6 +51,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeCultivosToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeUsuariosToolStripMenuItem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private: System::Windows::Forms::ToolStripMenuItem^ salirToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeReguladoresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ reporteDeFallaToolStripMenuItem;
@@ -59,6 +60,9 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorLuminosidadToolStripMenuItem;
 =======
 >>>>>>> b5a1190 (b)
+=======
+	private: System::Windows::Forms::ToolStripMenuItem^ salirToolStripMenuItem;
+>>>>>>> 6cb23e4 (c)
 	protected:
 
 	private:
@@ -95,14 +99,22 @@ namespace SistemaInvernaderoView {
 =======
 			this->mantenimientoDeCultivosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->salirToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
+<<<<<<< HEAD
 >>>>>>> b5a1190 (b)
+=======
+			// 
+			// menuStrip1
+			// 
+>>>>>>> 6cb23e4 (c)
 			this->menuStrip1->GripMargin = System::Windows::Forms::Padding(2, 2, 0, 2);
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menúToolStripMenuItem });
 			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
+<<<<<<< HEAD
 <<<<<<< HEAD
 			// 
 			// menúToolStripMenuItem
@@ -184,32 +196,55 @@ namespace SistemaInvernaderoView {
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+=======
+			// 
+			// menúToolStripMenuItem
+			// 
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+>>>>>>> 6cb23e4 (c)
 				this->mantenimientoDeSensoresToolStripMenuItem,
-					this->mantenimientoDeCultivosToolStripMenuItem, this->mantenimientoDeUsuariosToolStripMenuItem
+					this->mantenimientoDeCultivosToolStripMenuItem, this->mantenimientoDeUsuariosToolStripMenuItem, this->salirToolStripMenuItem
 			});
 			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
-			this->menúToolStripMenuItem->Size = System::Drawing::Size(97, 38);
-			this->menúToolStripMenuItem->Text = L"Menú";
+			resources->ApplyResources(this->menúToolStripMenuItem, L"menúToolStripMenuItem");
 			this->menúToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::menúToolStripMenuItem_Click);
+			// 
+			// mantenimientoDeSensoresToolStripMenuItem
+			// 
 			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
-			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(448, 44);
-			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
+			resources->ApplyResources(this->mantenimientoDeSensoresToolStripMenuItem, L"mantenimientoDeSensoresToolStripMenuItem");
 			this->mantenimientoDeSensoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeSensoresToolStripMenuItem_Click);
+			// 
+			// mantenimientoDeCultivosToolStripMenuItem
+			// 
 			this->mantenimientoDeCultivosToolStripMenuItem->Name = L"mantenimientoDeCultivosToolStripMenuItem";
-			this->mantenimientoDeCultivosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
-			this->mantenimientoDeCultivosToolStripMenuItem->Text = L"Mantenimiento de Cultivos";
+			resources->ApplyResources(this->mantenimientoDeCultivosToolStripMenuItem, L"mantenimientoDeCultivosToolStripMenuItem");
 			this->mantenimientoDeCultivosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeCultivosToolStripMenuItem_Click);
+			// 
+			// mantenimientoDeUsuariosToolStripMenuItem
+			// 
 			this->mantenimientoDeUsuariosToolStripMenuItem->Name = L"mantenimientoDeUsuariosToolStripMenuItem";
-			this->mantenimientoDeUsuariosToolStripMenuItem->Size = System::Drawing::Size(448, 44);
-			this->mantenimientoDeUsuariosToolStripMenuItem->Text = L"Mantenimiento de Usuarios";
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			resources->ApplyResources(this->mantenimientoDeUsuariosToolStripMenuItem, L"mantenimientoDeUsuariosToolStripMenuItem");
+			// 
+			// salirToolStripMenuItem
+			// 
+			this->salirToolStripMenuItem->Name = L"salirToolStripMenuItem";
+			resources->ApplyResources(this->salirToolStripMenuItem, L"salirToolStripMenuItem");
+			this->salirToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::salirToolStripMenuItem_Click);
+			// 
+			// frmPrincipal
+			// 
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+<<<<<<< HEAD
 			this->ClientSize = System::Drawing::Size(932, 658);
 >>>>>>> b5a1190 (b)
+=======
+			this->ControlBox = false;
+>>>>>>> 6cb23e4 (c)
 			this->Controls->Add(this->menuStrip1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->Name = L"frmPrincipal";
 			this->Load += gcnew System::EventHandler(this, &frmPrincipal::frmPrincipal_Load_1);
 			this->menuStrip1->ResumeLayout(false);
@@ -260,6 +295,13 @@ private: System::Void mantenimientoDeReguladoresToolStripMenuItem_Click(System::
 	ventanaMantReguladores->Show();
 =======
 private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
+}
+private: System::Void frmPrincipal_Load_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void salirToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
 }
 };
 >>>>>>> b5a1190 (b)

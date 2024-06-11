@@ -84,6 +84,10 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+<<<<<<< HEAD
+=======
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+>>>>>>> 6cb23e4 (c)
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -147,7 +151,11 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->RowTemplate->Height = 33;
+<<<<<<< HEAD
 			this->dataGridView1->Size = System::Drawing::Size(1268, 420);
+=======
+			this->dataGridView1->Size = System::Drawing::Size(1268, 448);
+>>>>>>> 6cb23e4 (c)
 			this->dataGridView1->TabIndex = 1;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
 			// 

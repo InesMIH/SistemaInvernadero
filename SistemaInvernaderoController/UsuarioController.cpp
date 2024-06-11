@@ -55,10 +55,14 @@ usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 		String^ Contrasena = datos[3];
 		if (id == codigoBuscar) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 =======
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 >>>>>>> b5a1190 (b)
+=======
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> 6cb23e4 (c)
 			break;
 		}
 	}
@@ -78,10 +82,14 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 		String^ Contrasena = datos[3];
 		if (nombre->CompareTo(NombreBuscar)==0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 =======
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 >>>>>>> b5a1190 (b)
+=======
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> 6cb23e4 (c)
 			break;
 		}
 	}
@@ -91,9 +99,12 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar) {
 	int confirmado = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	usuario^ objUsuario;
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> 6cb23e4 (c)
 	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaUsuario in lineas) {
