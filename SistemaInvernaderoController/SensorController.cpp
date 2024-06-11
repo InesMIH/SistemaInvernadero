@@ -58,5 +58,50 @@ void SensorController::escribirArchivo(List<sensor^>^ listaSensor) {
 	}
 	File::WriteAllLines("Sensor.txt", lineasArchivo);
 
+}
+void SensorController::eliminarSensor(int codigo) {
+	List<sensor^>^ listaSensor = buscarSensorAll();
+	for (int i = 0; i < listaSensor->Count; i++) {
+		if (listaSensor[i]->getcodigo() == codigo) {
+			listaSensor->RemoveAt(i);
+			break;
+		}
+	}
+	escribirArchivo(listaSensor);
+}
+sensor^ SensorController::buscarSensorxCodigo(int codigoBuscado) {
+	sensor^ objSensor;
+	array<String^>^ lineas = File::ReadAllLines("Sensor.txt");
+	String^ separadores = ";";
+	for each (String ^ lineaSensor in lineas) {
+		array<String^>^ datos = lineaSensor->Split(separadores->ToCharArray());
+		int codigo = Convert::ToInt32(datos[0]);
+		String^ tipo = datos[1];
+		String^ enFuncionamiento = datos[2];
+		double intervaloDeMuestreo = Convert::ToDouble(datos[3]);
+		double medicion = Convert::ToDouble(datos[4]);
+		String^ unidad = datos[5];
+		if (codigo == codigoBuscado) {
+			objSensor = gcnew sensor(codigo, tipo, enFuncionamiento, intervaloDeMuestreo, medicion, unidad);
+			break;
+		}
+
+	}
+	return objSensor;
+}
+
+void SensorController::actualizarSensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
+	List<sensor^>^ listaSensor = buscarSensorAll();
+	for (int i = 0; i < listaSensor->Count; i++) {
+		if (listaSensor[i]->getcodigo() == codigo) {
+			listaSensor[i]->settipo(tipo);
+			listaSensor[i]->setenFuncionamiento(enFuncionamiento);
+			listaSensor[i]->setintervaloDeMuestreo(intervaloDeMuestreo);
+			listaSensor[i]->setmedicion(medicion);
+			listaSensor[i]->setunidad(unidad);
+			break;
+		}
+	}
+	escribirArchivo(listaSensor);
 
 }

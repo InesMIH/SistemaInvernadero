@@ -121,9 +121,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="frmDetalleDeFalla.cpp" />
+    <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="frmReporteDeFallas.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
     <ClCompile Include="frmSensorTemperatura.cpp" />
@@ -137,6 +140,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmDetalleDeFalla.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarSensor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmMantSensores.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -144,6 +153,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteDeFallas.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmSensorHumedad.h">
@@ -157,6 +169,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmDetalleDeFalla.resx">
+      <DependentUpon>frmDetalleDeFalla.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarSensor.resx">
+      <DependentUpon>frmEditarSensor.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantSensores.resx">
       <DependentUpon>frmMantSensores.h</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteDeFallas.resx">
+      <DependentUpon>frmReporteDeFallas.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSensorTemperatura.resx">
       <DependentUpon>frmSensorTemperatura.h</DependentUpon>

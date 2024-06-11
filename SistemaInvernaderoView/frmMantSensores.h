@@ -1,5 +1,7 @@
 #pragma once
 #include "frmNuevoSensor.h"
+#include "frmEditarSensor.h"
+
 namespace SistemaInvernaderoView {
 
 	using namespace System;
@@ -164,7 +166,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(129, 237);
+			this->button2->Location = System::Drawing::Point(106, 237);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 2;
@@ -174,21 +176,23 @@ namespace SistemaInvernaderoView {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(274, 237);
+			this->button3->Location = System::Drawing::Point(249, 237);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"Editar";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantSensores::button3_Click);
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(410, 237);
+			this->button4->Location = System::Drawing::Point(389, 237);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 4;
 			this->button4->Text = L"Eliminar";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmMantSensores::button4_Click);
 			// 
 			// frmMantSensores
 			// 
@@ -234,6 +238,23 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	frmNuevoSensor^ ventanaNuevoSensor = gcnew frmNuevoSensor();
 	ventanaNuevoSensor->ShowDialog();
 
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index;
+	int codigoEliminar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
+	SensorController^ objSensorController = gcnew SensorController();
+	objSensorController->eliminarSensor(codigoEliminar);
+	MessageBox::Show("El sensor seleccionado ha sido eliminado correctamente");
+	this->dataGridView1->Rows->Clear();
+
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index;
+	int codigoEditar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
+	SensorController^ objSensorController = gcnew SensorController();
+	sensor^ objSensor = objSensorController->buscarSensorxCodigo(codigoEditar);
+	frmEditarSensor^ ventanaEditarSensor = gcnew frmEditarSensor(objSensor);
+	ventanaEditarSensor->ShowDialog();
 }
 };
 }
