@@ -77,14 +77,14 @@ namespace SistemaInvernaderoView {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -96,7 +96,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(81, 42);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(931, 146);
+			this->groupBox1->Size = System::Drawing::Size(1278, 146);
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterio de Búsqueda";
@@ -104,7 +104,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(650, 62);
+			this->button1->Location = System::Drawing::Point(874, 72);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(89, 39);
 			this->button1->TabIndex = 2;
@@ -116,16 +116,16 @@ namespace SistemaInvernaderoView {
 			// 
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Comestible", L"No Comestible" });
-			this->comboBox1->Location = System::Drawing::Point(421, 69);
+			this->comboBox1->Location = System::Drawing::Point(537, 78);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 33);
+			this->comboBox1->Size = System::Drawing::Size(223, 33);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &frmMantCultivos::comboBox1_SelectedIndexChanged);
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(312, 76);
+			this->label1->Location = System::Drawing::Point(410, 86);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(60, 25);
 			this->label1->TabIndex = 0;
@@ -143,39 +143,9 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->RowTemplate->Height = 33;
-			this->dataGridView1->Size = System::Drawing::Size(999, 448);
+			this->dataGridView1->Size = System::Drawing::Size(1268, 448);
 			this->dataGridView1->TabIndex = 1;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
-			// 
-			// button2
-			// 
-			this->button2->Location = System::Drawing::Point(466, 716);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(118, 49);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"Editar";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &frmMantCultivos::button2_Click);
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(731, 716);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(110, 49);
-			this->button3->TabIndex = 3;
-			this->button3->Text = L"Eliminar";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &frmMantCultivos::button3_Click);
-			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(192, 716);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(112, 49);
-			this->button4->TabIndex = 4;
-			this->button4->Text = L"Nuevo";
-			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &frmMantCultivos::button4_Click);
 			// 
 			// Column1
 			// 
@@ -211,6 +181,36 @@ namespace SistemaInvernaderoView {
 			this->Usuario->MinimumWidth = 10;
 			this->Usuario->Name = L"Usuario";
 			this->Usuario->Width = 200;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(691, 716);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(118, 49);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"Editar";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantCultivos::button2_Click);
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(934, 716);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(110, 49);
+			this->button3->TabIndex = 3;
+			this->button3->Text = L"Eliminar";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantCultivos::button3_Click);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(405, 716);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(112, 49);
+			this->button4->TabIndex = 4;
+			this->button4->Text = L"Nuevo";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmMantCultivos::button4_Click);
 			// 
 			// frmMantCultivos
 			// 

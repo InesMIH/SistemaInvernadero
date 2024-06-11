@@ -121,35 +121,11 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
-  </data>
-  <data name="mantenimientoDeSensoresToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mantenimiento de Sensores</value>
-  </data>
-  <data name="mantenimientoDeCultivosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
-  </data>
-  <data name="mantenimientoDeCultivosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mantenimiento de Cultivos</value>
-  </data>
-  <data name="mantenimientoDeUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
-  </data>
-  <data name="mantenimientoDeUsuariosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mantenimiento de Usuarios</value>
-  </data>
-  <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 38</value>
-  </data>
-  <data name="menúToolStripMenuItem.Text" xml:space="preserve">
-    <value>Menú</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 46</value>
+    <value>932, 40</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -170,11 +146,44 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 36</value>
+  </data>
+  <data name="menúToolStripMenuItem.Text" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 44</value>
+  </data>
+  <data name="mantenimientoDeSensoresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mantenimiento de Sensores</value>
+  </data>
+  <data name="mantenimientoDeCultivosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 44</value>
+  </data>
+  <data name="mantenimientoDeCultivosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mantenimiento de Cultivos</value>
+  </data>
+  <data name="mantenimientoDeUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 44</value>
+  </data>
+  <data name="mantenimientoDeUsuariosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mantenimiento de Usuarios</value>
+  </data>
+  <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 44</value>
+  </data>
+  <data name="salirToolStripMenuItem.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>12, 25</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>932, 658</value>
@@ -208,6 +217,12 @@
     <value>mantenimientoDeUsuariosToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;mantenimientoDeUsuariosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salirToolStripMenuItem.Name" xml:space="preserve">
+    <value>salirToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;salirToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

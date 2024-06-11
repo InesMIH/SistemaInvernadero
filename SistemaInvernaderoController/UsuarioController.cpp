@@ -32,7 +32,7 @@ void UsuarioController::escribirArchivo(List<usuario^>^ listaUsuario) {
 		usuario^ objUsuario = listaUsuario[i];
 		lineasArchivo[i] = Convert::ToString(objUsuario->getid()) + ";" + objUsuario->getNombre() + ";" + objUsuario->getCargo() + ";" + objUsuario->getContrasena();
 	}
-	File::WriteAllLines("OrdenCompra.txt", lineasArchivo);
+	File::WriteAllLines("Usuario.txt", lineasArchivo);
 }
 
 void UsuarioController::agregarNuevoUsuario(int id, String^ Nombre, String^ Cargo, String^ Contrasena) {
@@ -44,7 +44,7 @@ void UsuarioController::agregarNuevoUsuario(int id, String^ Nombre, String^ Carg
 
 usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 	usuario^ objUsuario;
-	array<String^>^ lineas = File::ReadAllLines("Proveedores.txt");
+	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaUsuario in lineas) {
 		/*Voy a separar los datos de una linea en sub strings*/
@@ -54,7 +54,7 @@ usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (id == codigoBuscar) {
-			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			break;
 		}
 	}
@@ -73,7 +73,7 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (nombre->CompareTo(NombreBuscar)==0) {
-			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			break;
 		}
 	}
@@ -82,7 +82,6 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 
 int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar) {
 	int confirmado = 0;
-	usuario^ objUsuario;
 	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaUsuario in lineas) {
