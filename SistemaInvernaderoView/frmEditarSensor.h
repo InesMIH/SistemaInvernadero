@@ -146,6 +146,7 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
 			this->comboBox1->TabIndex = 12;
+			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &frmEditarSensor::comboBox1_SelectedIndexChanged);
 			// 
 			// label6
 			// 
@@ -238,7 +239,7 @@ namespace SistemaInvernaderoView {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"frmEditarSensor";
-			this->Text = L"frmEditarSensor";
+			this->Text = L"Editar Sensor";
 			this->Load += gcnew System::EventHandler(this, &frmEditarSensor::frmEditarSensor_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
@@ -262,7 +263,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 			int codigo = Convert::ToInt32(this->textBox4->Text);
 			String^ tipo = this->comboBox1->Text;
-			String^ enFuncionamiento = this->textBox5->Text;
+			int enFuncionamiento = Convert::ToInt32(this->textBox5->Text);
 			double intervaloDeMuestreo = Convert::ToDouble(this->textBox1->Text);
 			double medicion = Convert::ToDouble(this->textBox2->Text);
 			String^ unidad = this->textBox3->Text;
@@ -272,5 +273,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			MessageBox::Show("El sensor ha sido actualizado con éxito. ");
 			this->Close();
 		}
+private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

@@ -7,20 +7,20 @@ namespace SistemaInvernaderoModel {
 	private:
 		int codigo;
 		String^ tipo;
-		String^ enFuncionamiento;
+		int enFuncionamiento;
 		double intervaloDeMuestreo;
 		double medicion;
 		String^ unidad;
 	public:
 		sensor();
-		sensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
+		sensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
 
 		int getcodigo();
 		void setcodigo(int codigo);
 		String^ gettipo();
 		void settipo(String^ tipo);
-		String^ getenFuncionamiento();
-		void setenFuncionamiento(String^ enFuncionamiento);
+		int getenFuncionamiento();
+		void setenFuncionamiento(int enFuncionamiento);
 		double getintervaloDeMuestreo();
 		void setintervaloDeMuestreo(double intervaloDeMuestreo);
 		double getmedicion();

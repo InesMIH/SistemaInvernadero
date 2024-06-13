@@ -12,9 +12,9 @@ namespace SistemaInvernaderoController {
 			List < sensor^>^ buscarSensorxTipo(String^ tipoSensor);
 			List < sensor^>^ buscarSensorAll();
 			sensor^ buscarSensorxCodigo(int codigo);
-			void agregarNuevoSensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
+			void agregarNuevoSensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
 			void escribirArchivo(List<sensor^>^ listaSensor);
 			void eliminarSensor(int codigo);
-			void actualizarSensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
+			void actualizarSensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad);
 	};
 }

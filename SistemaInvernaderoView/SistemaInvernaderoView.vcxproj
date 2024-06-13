@@ -187,6 +187,12 @@
     <EmbeddedResource Include="frmReporteDeFallas.resx">
       <DependentUpon>frmReporteDeFallas.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSensorHumedad.resx">
+      <DependentUpon>frmSensorHumedad.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSensorLuminosidad.resx">
+      <DependentUpon>frmSensorLuminosidad.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSensorTemperatura.resx">
       <DependentUpon>frmSensorTemperatura.h</DependentUpon>
     </EmbeddedResource>

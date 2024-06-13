@@ -15,7 +15,7 @@ List<sensor^>^ SensorController::buscarSensorxTipo(String^ tipoSensor) {
 		array<String^>^ datos = lineaSensor->Split(separadores->ToCharArray());
 		int codigo = Convert::ToInt32(datos[0]);
 		String^ tipo = datos[1];
-		String^ enFuncionamiento = datos[2];
+		int enFuncionamiento = Convert::ToInt32(datos[2]);
 		double intervaloDeMuestreo = Convert::ToDouble(datos[3]);
 		double medicion = Convert::ToDouble(datos[4]);
 		String^ unidad = datos[5];
@@ -34,7 +34,7 @@ List < sensor^>^ SensorController::buscarSensorAll() {
 		array<String^>^ datos = lineaSensor->Split(separadores->ToCharArray());
 		int codigo = Convert::ToInt32(datos[0]);
 		String^ tipo = datos[1];
-		String^ enFuncionamiento = datos[2];
+		int enFuncionamiento = Convert::ToInt32(datos[2]);
 		double intervaloDeMuestreo = Convert::ToDouble(datos[3]);
 		double medicion = Convert::ToDouble(datos[4]);
 		String^ unidad = datos[5];
@@ -44,7 +44,7 @@ List < sensor^>^ SensorController::buscarSensorAll() {
 	}
 	return listaSensor;
 }
-void SensorController::agregarNuevoSensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
+void SensorController::agregarNuevoSensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
 	List < sensor^>^ listaSensor = buscarSensorAll();
 	sensor^ objSensorNuevo = gcnew sensor(codigo, tipo, enFuncionamiento, intervaloDeMuestreo, medicion, unidad);
 	listaSensor->Add(objSensorNuevo);
@@ -77,7 +77,7 @@ sensor^ SensorController::buscarSensorxCodigo(int codigoBuscado) {
 		array<String^>^ datos = lineaSensor->Split(separadores->ToCharArray());
 		int codigo = Convert::ToInt32(datos[0]);
 		String^ tipo = datos[1];
-		String^ enFuncionamiento = datos[2];
+		int enFuncionamiento = Convert::ToInt32(datos[2]);
 		double intervaloDeMuestreo = Convert::ToDouble(datos[3]);
 		double medicion = Convert::ToDouble(datos[4]);
 		String^ unidad = datos[5];
@@ -90,7 +90,7 @@ sensor^ SensorController::buscarSensorxCodigo(int codigoBuscado) {
 	return objSensor;
 }
 
-void SensorController::actualizarSensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
+void SensorController::actualizarSensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
 	List<sensor^>^ listaSensor = buscarSensorAll();
 	for (int i = 0; i < listaSensor->Count; i++) {
 		if (listaSensor[i]->getcodigo() == codigo) {
