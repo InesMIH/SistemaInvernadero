@@ -113,10 +113,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="frmEditarCultivo.cpp" />
+    <ClCompile Include="frmEditarUsuario.cpp" />
     <ClCompile Include="frmMantCultivos.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
+    <ClCompile Include="frmMantUsuarios.cpp" />
     <ClCompile Include="frmNuevoCultivo.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
+    <ClCompile Include="frmNuevoUsuario.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
@@ -132,16 +136,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmEditarCultivo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmMantCultivos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantSensores.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmMantUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmNuevoCultivo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoSensor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -161,17 +177,29 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmEditarCultivo.resx">
+      <DependentUpon>frmEditarCultivo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarUsuario.resx">
+      <DependentUpon>frmEditarUsuario.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantCultivos.resx">
       <DependentUpon>frmMantCultivos.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantSensores.resx">
       <DependentUpon>frmMantSensores.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantUsuarios.resx">
+      <DependentUpon>frmMantUsuarios.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoCultivo.resx">
       <DependentUpon>frmNuevoCultivo.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoSensor.resx">
       <DependentUpon>frmNuevoSensor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoUsuario.resx">
+      <DependentUpon>frmNuevoUsuario.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>

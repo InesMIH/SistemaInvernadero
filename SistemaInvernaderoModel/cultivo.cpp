@@ -6,15 +6,15 @@ cultivo::cultivo() {
 
 }
 
-cultivo::cultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo) {
+cultivo::cultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo) {
 	this->codigo = codigo;
 	this->nombre = nombre;
 	this->origen = origen;
 	this->tiempoCultivo = tiempoCultivo;
 	this->fechaSembrado = fechaSembrado;
-	this->zonaDeSembrado = zonaDeSembrado;
 	this->tipo = tipo;
 	this->objusuario = objusuario;
+	this->objAmbienteIdoneo = objAmbienteIdoneo;
 }
 
 int cultivo::getcodigo() {
@@ -50,13 +50,6 @@ String^ cultivo::getfechaSembrado() {
 }
 void cultivo::setfechaSembrado(String^ fechaSembrado) {
 	this->fechaSembrado = fechaSembrado;
-}
-
-int cultivo::getzonaDeSembrado() {
-	return this->zonaDeSembrado;
-}
-void cultivo::setzonaDeSembrado(int zonaDeSembrado) {
-	this->zonaDeSembrado = zonaDeSembrado;
 }
 
 String^ cultivo::gettipo() {

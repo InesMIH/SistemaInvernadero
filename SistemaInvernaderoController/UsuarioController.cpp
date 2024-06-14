@@ -15,10 +15,10 @@ List<usuario^>^ UsuarioController::buscarUsuarioAll() {
 		/*Voy a separar los datos de una linea en sub strings*/
 		array<String^>^ datos = lineaUsuario->Split(separadores->ToCharArray());
 		int id = Convert::ToInt32(datos[0]);
-		String^ nonmbre = datos[1];
+		String^ nombre = datos[1];
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
-		usuario^ objUsuario = gcnew usuario(id, nonmbre, Cargo, Contrasena);
+		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 		listaUsuario->Add(objUsuario);
 	}
 	return listaUsuario;
@@ -99,4 +99,36 @@ int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ Nombr
 		}
 	}
 	return confirmado;
+}
+
+List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
+	List<usuario^>^ listaUsuario = gcnew List<usuario^>();
+	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
+	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
+	for each (String ^ lineaUsuario in lineas) {
+		/*Voy a separar los datos de una linea en sub strings*/
+		array<String^>^ datos = lineaUsuario->Split(separadores->ToCharArray());
+		int id = Convert::ToInt32(datos[0]);
+		String^ nombre = datos[1];
+		String^ Cargo = datos[2];
+		String^ Contrasena = datos[3];
+		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+		listaUsuario->Add(objUsuario);
+		if (Cargo->CompareTo(cargobuscar) == 0) {
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+			listaUsuario->Add(objUsuario);
+		}
+	}
+	return listaUsuario;
+}
+
+void UsuarioController::eliminarUsuario(int idEliminar) {
+	List<usuario^>^ listaUsuario = buscarUsuarioAll();
+	for (int i = 0; i < listaUsuario->Count; i++) {
+		if (listaUsuario[i]->getid() == idEliminar) {
+			listaUsuario->RemoveAt(i);
+			break;
+		}
+	}
+	escribirArchivo(listaUsuario);
 }

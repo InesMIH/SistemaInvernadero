@@ -1,6 +1,7 @@
 #pragma once
 #include "frmMantCultivos.h"
 #include "frmMantSensores.h"
+#include "frmMantUsuarios.h"
 
 namespace SistemaInvernaderoView {
 
@@ -101,6 +102,7 @@ namespace SistemaInvernaderoView {
 			// 
 			this->mantenimientoDeUsuariosToolStripMenuItem->Name = L"mantenimientoDeUsuariosToolStripMenuItem";
 			resources->ApplyResources(this->mantenimientoDeUsuariosToolStripMenuItem, L"mantenimientoDeUsuariosToolStripMenuItem");
+			this->mantenimientoDeUsuariosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeUsuariosToolStripMenuItem_Click);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -135,14 +137,19 @@ namespace SistemaInvernaderoView {
 		ventanaMantCultivos->MdiParent = this;
 		ventanaMantCultivos->Show();
 	}
-private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
-}
-private: System::Void frmPrincipal_Load_1(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void salirToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	Application::Exit();
-}
-};
-}
+	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
+	}
+	private: System::Void frmPrincipal_Load_1(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void salirToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		Application::Exit();
+	}
+	private: System::Void mantenimientoDeUsuariosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantUsuarios^ ventanaMantUsuarios = gcnew frmMantUsuarios();
+		ventanaMantUsuarios->MdiParent = this;
+		ventanaMantUsuarios->Show();
+	}
+	};
+	}
