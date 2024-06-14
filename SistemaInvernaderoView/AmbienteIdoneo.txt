@@ -1,0 +1,3 @@
+1;50;1000;25;Tierra con humedad media, temperatura calida y muy iluminada
+2;25;50;15;Tierra con humedad baja, temperatura baja y poca iluminada
+3;75;1300;25;Tierra con humedad alta, temperatura calida y bastante iluminada

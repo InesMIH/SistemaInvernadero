@@ -1,5 +1,6 @@
 #pragma once
 #include "frmNuevoCultivo.h"
+#include "frmEditarCultivo.h"
 
 namespace SistemaInvernaderoView {
 
@@ -52,9 +53,13 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Usuario;
+
+
+
+
+
 
 
 	protected:
@@ -77,14 +82,13 @@ namespace SistemaInvernaderoView {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -135,9 +139,9 @@ namespace SistemaInvernaderoView {
 			// dataGridView1
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(5) {
+			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
 				this->Column1,
-					this->Column2, this->Column3, this->Column4, this->Usuario
+					this->Column2, this->Column4, this->Usuario
 			});
 			this->dataGridView1->Location = System::Drawing::Point(91, 237);
 			this->dataGridView1->Name = L"dataGridView1";
@@ -146,41 +150,6 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->Size = System::Drawing::Size(1268, 448);
 			this->dataGridView1->TabIndex = 1;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
-			// 
-			// Column1
-			// 
-			this->Column1->HeaderText = L"codigo";
-			this->Column1->MinimumWidth = 10;
-			this->Column1->Name = L"Column1";
-			this->Column1->Width = 200;
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"nombre";
-			this->Column2->MinimumWidth = 10;
-			this->Column2->Name = L"Column2";
-			this->Column2->Width = 200;
-			// 
-			// Column3
-			// 
-			this->Column3->HeaderText = L"zonaDeSembrado";
-			this->Column3->MinimumWidth = 10;
-			this->Column3->Name = L"Column3";
-			this->Column3->Width = 200;
-			// 
-			// Column4
-			// 
-			this->Column4->HeaderText = L"tiempoCultivo";
-			this->Column4->MinimumWidth = 10;
-			this->Column4->Name = L"Column4";
-			this->Column4->Width = 200;
-			// 
-			// Usuario
-			// 
-			this->Usuario->HeaderText = L"Usuario";
-			this->Usuario->MinimumWidth = 10;
-			this->Usuario->Name = L"Usuario";
-			this->Usuario->Width = 200;
 			// 
 			// button2
 			// 
@@ -211,6 +180,34 @@ namespace SistemaInvernaderoView {
 			this->button4->Text = L"Nuevo";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &frmMantCultivos::button4_Click);
+			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"codigo";
+			this->Column1->MinimumWidth = 10;
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 200;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"nombre";
+			this->Column2->MinimumWidth = 10;
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 200;
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"tiempoCultivo";
+			this->Column4->MinimumWidth = 10;
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 200;
+			// 
+			// Usuario
+			// 
+			this->Usuario->HeaderText = L"Usuario";
+			this->Usuario->MinimumWidth = 10;
+			this->Usuario->Name = L"Usuario";
+			this->Usuario->Width = 200;
 			// 
 			// frmMantCultivos
 			// 
@@ -259,9 +256,8 @@ namespace SistemaInvernaderoView {
 			array<String^>^ filaGrilla = gcnew array<String^>(5);
 			filaGrilla[0] = Convert::ToString(objcultivo->getcodigo());
 			filaGrilla[1] = objcultivo->getnombre();
-			filaGrilla[2] = Convert::ToString(objcultivo->getzonaDeSembrado());
-			filaGrilla[3] = objcultivo->gettiempoCultivo();
-			filaGrilla[4] = objcultivo->getusuario()->getNombre();
+			filaGrilla[2] = objcultivo->gettiempoCultivo();
+			filaGrilla[3] = objcultivo->getusuario()->getNombre();
 			this->dataGridView1->Rows->Add(filaGrilla);
 		}
 	}
@@ -273,11 +269,12 @@ namespace SistemaInvernaderoView {
 
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		int filaseleccionada = this->dataGridView1->SelectedRows[0]->Index;
-		int codigoEliminar = Convert::ToInt32(this->dataGridView1->Rows[filaseleccionada]->Cells[0]->Value->ToString());
+		int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index; /*Le pongo [0] porque deseo el índice de la única fila que he seleccionado*/
+		int codigoEditar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
 		CultivoController^ objCultivoController = gcnew CultivoController();
-		objCultivoController->eliminarCultivo(codigoEliminar);
-		MessageBox::Show("El cultivo seleccionado ha sido eliminado correctamente");
+		cultivo^ objCultivo = objCultivoController->buscarCultivoxCodigo(codigoEditar);
+		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo();
+		ventanaEditarCultivo->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {

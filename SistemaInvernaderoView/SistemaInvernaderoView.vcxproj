@@ -114,6 +114,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ProjectReference Include="..\SistemaInvernaderoController\SistemaInvernaderoController.vcxproj">
       <Project>{1c26ef9c-6880-49fd-a4aa-247cb682f2a6}</Project>
     </ProjectReference>
@@ -139,10 +140,16 @@
 =======
 =======
 >>>>>>> b5a1190 (b)
+=======
+    <ClCompile Include="frmEditarCultivo.cpp" />
+    <ClCompile Include="frmEditarUsuario.cpp" />
+>>>>>>> bc4f0a0 (d)
     <ClCompile Include="frmMantCultivos.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
+    <ClCompile Include="frmMantUsuarios.cpp" />
     <ClCompile Include="frmNuevoCultivo.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
+    <ClCompile Include="frmNuevoUsuario.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
@@ -163,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="frmEditarRegulador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -174,6 +182,14 @@
     </ClInclude>
     <ClInclude Include="frmEditarSensor.h">
 =======
+=======
+    <ClInclude Include="frmEditarCultivo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+>>>>>>> bc4f0a0 (d)
     <ClInclude Include="frmMantCultivos.h">
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
       <FileType>CppForm</FileType>
@@ -181,6 +197,7 @@
     <ClInclude Include="frmMantSensores.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <ClInclude Include="frmNuevoSensor.h">
       <FileType>CppForm</FileType>
@@ -193,10 +210,18 @@
     </ClInclude>
     <ClInclude Include="frmRociador.h">
 =======
+=======
+    <ClInclude Include="frmMantUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+>>>>>>> bc4f0a0 (d)
     <ClInclude Include="frmNuevoCultivo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoSensor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -219,6 +244,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmEditarRegulador.resx">
       <DependentUpon>frmEditarRegulador.h</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +264,14 @@
 >>>>>>> b5a1190 (b)
   </ItemGroup>
   <ItemGroup>
+=======
+    <EmbeddedResource Include="frmEditarCultivo.resx">
+      <DependentUpon>frmEditarCultivo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarUsuario.resx">
+      <DependentUpon>frmEditarUsuario.h</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> bc4f0a0 (d)
     <EmbeddedResource Include="frmMantCultivos.resx">
       <DependentUpon>frmMantCultivos.h</DependentUpon>
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
@@ -245,6 +279,7 @@
     <EmbeddedResource Include="frmMantSensores.resx">
       <DependentUpon>frmMantSensores.h</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <EmbeddedResource Include="frmNuevoSensor.resx">
       <DependentUpon>frmNuevoSensor.h</DependentUpon>
@@ -264,11 +299,19 @@
     <EmbeddedResource Include="frmSensorLuminosidad.resx">
       <DependentUpon>frmSensorLuminosidad.h</DependentUpon>
 =======
+=======
+    <EmbeddedResource Include="frmMantUsuarios.resx">
+      <DependentUpon>frmMantUsuarios.h</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> bc4f0a0 (d)
     <EmbeddedResource Include="frmNuevoCultivo.resx">
       <DependentUpon>frmNuevoCultivo.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoSensor.resx">
       <DependentUpon>frmNuevoSensor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoUsuario.resx">
+      <DependentUpon>frmNuevoUsuario.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>

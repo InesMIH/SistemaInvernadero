@@ -13,13 +13,12 @@ namespace SistemaInvernaderoModel{
 		String^ origen;
 		String^ tiempoCultivo;
 		String^ fechaSembrado;
-		int zonaDeSembrado;
 		String^ tipo;
 		usuario^ objusuario;
 		ambienteIdoneo^ objAmbienteIdoneo;
 	public:
 		cultivo();
-		cultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo);
+		cultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo);
 
 		int getcodigo();
 		void setcodigo(int codigo);
@@ -35,9 +34,6 @@ namespace SistemaInvernaderoModel{
 
 		String^ getfechaSembrado();
 		void setfechaSembrado(String^ fechaSembrado);
-
-		int getzonaDeSembrado();
-		void setzonaDeSembrado(int zonaDeSembrado);
 
 		String^ gettipo();
 		void settipo(String^ tipo);
