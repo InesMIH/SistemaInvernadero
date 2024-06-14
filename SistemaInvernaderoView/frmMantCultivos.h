@@ -82,6 +82,7 @@ namespace SistemaInvernaderoView {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+<<<<<<< HEAD
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 <<<<<<< HEAD
@@ -90,9 +91,15 @@ namespace SistemaInvernaderoView {
 >>>>>>> 6cb23e4 (c)
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+=======
+>>>>>>> bc4f0a0 (d)
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -159,6 +166,7 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->TabIndex = 1;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
 			// 
+<<<<<<< HEAD
 			// Column1
 			// 
 			this->Column1->HeaderText = L"codigo";
@@ -187,6 +195,8 @@ namespace SistemaInvernaderoView {
 			this->Usuario->Name = L"Usuario";
 			this->Usuario->Width = 200;
 			// 
+=======
+>>>>>>> bc4f0a0 (d)
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(691, 716);
@@ -216,6 +226,34 @@ namespace SistemaInvernaderoView {
 			this->button4->Text = L"Nuevo";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &frmMantCultivos::button4_Click);
+			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"codigo";
+			this->Column1->MinimumWidth = 10;
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 200;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"nombre";
+			this->Column2->MinimumWidth = 10;
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 200;
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"tiempoCultivo";
+			this->Column4->MinimumWidth = 10;
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 200;
+			// 
+			// Usuario
+			// 
+			this->Usuario->HeaderText = L"Usuario";
+			this->Usuario->MinimumWidth = 10;
+			this->Usuario->Name = L"Usuario";
+			this->Usuario->Width = 200;
 			// 
 			// frmMantCultivos
 			// 
@@ -265,6 +303,7 @@ namespace SistemaInvernaderoView {
 			filaGrilla[0] = Convert::ToString(objcultivo->getcodigo());
 			filaGrilla[1] = objcultivo->getnombre();
 <<<<<<< HEAD
+<<<<<<< HEAD
 			filaGrilla[2] = objcultivo->gettiempoCultivo();
 			filaGrilla[3] = objcultivo->getusuario()->getNombre();
 =======
@@ -272,6 +311,10 @@ namespace SistemaInvernaderoView {
 			filaGrilla[3] = objcultivo->gettiempoCultivo();
 			filaGrilla[4] = objcultivo->getusuario()->getNombre();
 >>>>>>> 9367295 (f)
+=======
+			filaGrilla[2] = objcultivo->gettiempoCultivo();
+			filaGrilla[3] = objcultivo->getusuario()->getNombre();
+>>>>>>> bc4f0a0 (d)
 			this->dataGridView1->Rows->Add(filaGrilla);
 		}
 	}
@@ -287,7 +330,11 @@ namespace SistemaInvernaderoView {
 		int codigoEditar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
 		CultivoController^ objCultivoController = gcnew CultivoController();
 		cultivo^ objCultivo = objCultivoController->buscarCultivoxCodigo(codigoEditar);
+<<<<<<< HEAD
 		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo(objCultivo);
+=======
+		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo();
+>>>>>>> bc4f0a0 (d)
 		ventanaEditarCultivo->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}

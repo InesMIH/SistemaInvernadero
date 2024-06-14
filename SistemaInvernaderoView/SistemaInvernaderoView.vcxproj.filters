@@ -46,6 +46,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
     <ClCompile Include="frmEditarCultivo.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -58,6 +61,7 @@
     <ClCompile Include="frmNuevoUsuario.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="frmMantReguladores.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -72,6 +76,8 @@
     </ClCompile>
 =======
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> bc4f0a0 (d)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -102,6 +108,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
     <ClInclude Include="frmEditarCultivo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -114,6 +123,7 @@
     <ClInclude Include="frmNuevoUsuario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="frmMantReguladores.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -128,5 +138,7 @@
     </ClInclude>
 =======
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> bc4f0a0 (d)
   </ItemGroup>
 </Project>

@@ -123,6 +123,9 @@ int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ Nombr
 	}
 	return confirmado;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
 }
 
 List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
@@ -137,6 +140,10 @@ List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+<<<<<<< HEAD
+=======
+		listaUsuario->Add(objUsuario);
+>>>>>>> bc4f0a0 (d)
 		if (Cargo->CompareTo(cargobuscar) == 0) {
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			listaUsuario->Add(objUsuario);
@@ -155,6 +162,7 @@ void UsuarioController::eliminarUsuario(int idEliminar) {
 	}
 	escribirArchivo(listaUsuario);
 }
+<<<<<<< HEAD
 
 void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena) {
 	List<usuario^>^ listaUsuario = buscarUsuarioAll();
@@ -174,3 +182,5 @@ void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo,
 =======
 }
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> bc4f0a0 (d)

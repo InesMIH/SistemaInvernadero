@@ -123,6 +123,7 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 44</value>
 =======
@@ -197,6 +198,8 @@
   <data name="menúToolStripMenuItem.Text" xml:space="preserve">
     <value>Menú</value>
   </data>
+=======
+>>>>>>> bc4f0a0 (d)
   <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>448, 44</value>
 >>>>>>> 6cb23e4 (c)
@@ -267,10 +270,44 @@
     <value>Salir</value>
   </data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b5a1190 (b)
 =======
 >>>>>>> 6cb23e4 (c)
+=======
+  <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 38</value>
+  </data>
+  <data name="menúToolStripMenuItem.Text" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 42</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+>>>>>>> bc4f0a0 (d)
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

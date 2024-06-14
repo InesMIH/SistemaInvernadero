@@ -8,8 +8,12 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+<<<<<<< HEAD
 	using namespace SistemaInvernaderoModel;
 	using namespace SistemaInvernaderoController;
+=======
+
+>>>>>>> bc4f0a0 (d)
 	/// <summary>
 	/// Resumen de frmNuevoUsuario
 	/// </summary>
@@ -41,8 +45,12 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 
 	private: System::Windows::Forms::ComboBox^ comboBox1;
+<<<<<<< HEAD
 	private: System::Windows::Forms::TextBox^ textBox3;
 
+=======
+	private: System::Windows::Forms::TextBox^ textBox7;
+>>>>>>> bc4f0a0 (d)
 
 
 
@@ -74,7 +82,11 @@ namespace SistemaInvernaderoView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+<<<<<<< HEAD
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+=======
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+>>>>>>> bc4f0a0 (d)
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -86,28 +98,46 @@ namespace SistemaInvernaderoView {
 			// 
 			// button1
 			// 
+<<<<<<< HEAD
 			this->button1->Location = System::Drawing::Point(140, 470);
+=======
+			this->button1->Location = System::Drawing::Point(77, 489);
+>>>>>>> bc4f0a0 (d)
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(104, 59);
 			this->button1->TabIndex = 17;
 			this->button1->Text = L"Grabar";
 			this->button1->UseVisualStyleBackColor = true;
+<<<<<<< HEAD
 			this->button1->Click += gcnew System::EventHandler(this, &frmNuevoUsuario::button1_Click);
 			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(371, 470);
+=======
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(415, 489);
+>>>>>>> bc4f0a0 (d)
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(112, 59);
 			this->button2->TabIndex = 18;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
+<<<<<<< HEAD
 			this->button2->Click += gcnew System::EventHandler(this, &frmNuevoUsuario::button2_Click);
+=======
+>>>>>>> bc4f0a0 (d)
 			// 
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->comboBox1);
+<<<<<<< HEAD
 			this->groupBox1->Controls->Add(this->textBox3);
+=======
+			this->groupBox1->Controls->Add(this->textBox7);
+>>>>>>> bc4f0a0 (d)
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->textBox1);
@@ -119,7 +149,11 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Size = System::Drawing::Size(592, 404);
 			this->groupBox1->TabIndex = 16;
 			this->groupBox1->TabStop = false;
+<<<<<<< HEAD
 			this->groupBox1->Text = L"Datos del Usuario";
+=======
+			this->groupBox1->Text = L"Datos del Cultivo";
+>>>>>>> bc4f0a0 (d)
 			// 
 			// comboBox1
 			// 
@@ -130,12 +164,21 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Size = System::Drawing::Size(174, 33);
 			this->comboBox1->TabIndex = 11;
 			// 
+<<<<<<< HEAD
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(294, 309);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(174, 31);
 			this->textBox3->TabIndex = 10;
+=======
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(294, 309);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(174, 31);
+			this->textBox7->TabIndex = 10;
+>>>>>>> bc4f0a0 (d)
 			// 
 			// textBox2
 			// 
@@ -209,6 +252,7 @@ namespace SistemaInvernaderoView {
 	}
 private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+<<<<<<< HEAD
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	int id = Convert::ToInt32(this->textBox1->Text);
 	String^ Nombre = this->textBox2->Text;
@@ -222,5 +266,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
 }
+=======
+>>>>>>> bc4f0a0 (d)
 };
 }

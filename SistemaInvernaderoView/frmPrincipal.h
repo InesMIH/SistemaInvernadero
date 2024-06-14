@@ -2,6 +2,7 @@
 #include "frmMantCultivos.h"
 #include "frmMantSensores.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "frmMantUsuarios.h"
 #include "frmMantReguladores.h"
 #include "frmSensorTemperatura.h"
@@ -10,6 +11,9 @@
 #include "frmReporteDeFallas.h"
 =======
 >>>>>>> b5a1190 (b)
+=======
+#include "frmMantUsuarios.h"
+>>>>>>> bc4f0a0 (d)
 
 namespace SistemaInvernaderoView {
 
@@ -225,6 +229,7 @@ namespace SistemaInvernaderoView {
 			// 
 			this->mantenimientoDeUsuariosToolStripMenuItem->Name = L"mantenimientoDeUsuariosToolStripMenuItem";
 			resources->ApplyResources(this->mantenimientoDeUsuariosToolStripMenuItem, L"mantenimientoDeUsuariosToolStripMenuItem");
+			this->mantenimientoDeUsuariosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeUsuariosToolStripMenuItem_Click);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -271,6 +276,9 @@ namespace SistemaInvernaderoView {
 		ventanaMantCultivos->Show();
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
 	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
@@ -285,6 +293,7 @@ namespace SistemaInvernaderoView {
 		ventanaMantUsuarios->MdiParent = this;
 		ventanaMantUsuarios->Show();
 	}
+<<<<<<< HEAD
 	private: System::Void configuraciónDeSensorTemperaturaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		frmSensorTemperatura^ ventanaSensorTemperatura = gcnew frmSensorTemperatura();
 		ventanaSensorTemperatura->Show();
@@ -319,4 +328,7 @@ private: System::Void reporteDeFallaToolStripMenuItem_Click(System::Object^ send
 	ventanaReporteFallas->Show();
 }
 };
+=======
+	};
+>>>>>>> bc4f0a0 (d)
 	}

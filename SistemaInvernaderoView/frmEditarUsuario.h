@@ -8,8 +8,11 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+<<<<<<< HEAD
 	using namespace SistemaInvernaderoController;
 	using namespace SistemaInvernaderoModel;
+=======
+>>>>>>> bc4f0a0 (d)
 
 	/// <summary>
 	/// Resumen de frmEditarUsuario
@@ -25,6 +28,7 @@ namespace SistemaInvernaderoView {
 			//
 		}
 
+<<<<<<< HEAD
 		frmEditarUsuario(usuario^ objUsuario)
 		{
 			InitializeComponent();
@@ -34,6 +38,8 @@ namespace SistemaInvernaderoView {
 			//
 		}
 
+=======
+>>>>>>> bc4f0a0 (d)
 	protected:
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
@@ -45,21 +51,32 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 
+=======
+	private: System::Windows::Forms::Button^ button1;
+>>>>>>> bc4f0a0 (d)
 	protected:
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
+<<<<<<< HEAD
 	private: System::Windows::Forms::TextBox^ textBox3;
 
+=======
+	private: System::Windows::Forms::TextBox^ textBox7;
+>>>>>>> bc4f0a0 (d)
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+<<<<<<< HEAD
 	private: usuario^ objUsuario;
 	private: System::Windows::Forms::Button^ button1;
+=======
+>>>>>>> bc4f0a0 (d)
 
 	private:
 		/// <summary>
@@ -74,16 +91,25 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+=======
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+>>>>>>> bc4f0a0 (d)
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+<<<<<<< HEAD
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
@@ -91,6 +117,24 @@ namespace SistemaInvernaderoView {
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(380, 472);
+=======
+			this->groupBox1->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(69, 472);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(104, 59);
+			this->button1->TabIndex = 20;
+			this->button1->Text = L"Grabar";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmEditarUsuario::button1_Click);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(407, 472);
+>>>>>>> bc4f0a0 (d)
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(112, 59);
 			this->button2->TabIndex = 21;
@@ -101,7 +145,11 @@ namespace SistemaInvernaderoView {
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->comboBox1);
+<<<<<<< HEAD
 			this->groupBox1->Controls->Add(this->textBox3);
+=======
+			this->groupBox1->Controls->Add(this->textBox7);
+>>>>>>> bc4f0a0 (d)
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->textBox1);
@@ -113,7 +161,11 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Size = System::Drawing::Size(592, 404);
 			this->groupBox1->TabIndex = 19;
 			this->groupBox1->TabStop = false;
+<<<<<<< HEAD
 			this->groupBox1->Text = L"Datos del Usuario";
+=======
+			this->groupBox1->Text = L"Datos del Cultivo";
+>>>>>>> bc4f0a0 (d)
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmEditarUsuario::groupBox1_Enter);
 			// 
 			// comboBox1
@@ -125,12 +177,21 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Size = System::Drawing::Size(174, 33);
 			this->comboBox1->TabIndex = 11;
 			// 
+<<<<<<< HEAD
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(294, 309);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(174, 31);
 			this->textBox3->TabIndex = 10;
+=======
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(294, 309);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(174, 31);
+			this->textBox7->TabIndex = 10;
+>>>>>>> bc4f0a0 (d)
 			// 
 			// textBox2
 			// 
@@ -182,6 +243,7 @@ namespace SistemaInvernaderoView {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Codigo:";
 			// 
+<<<<<<< HEAD
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(141, 472);
@@ -192,6 +254,8 @@ namespace SistemaInvernaderoView {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &frmEditarUsuario::button1_Click);
 			// 
+=======
+>>>>>>> bc4f0a0 (d)
 			// frmEditarUsuario
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
@@ -212,6 +276,7 @@ namespace SistemaInvernaderoView {
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+<<<<<<< HEAD
 	this->Close();
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -230,6 +295,12 @@ private: System::Void frmEditarUsuario_Load(System::Object^ sender, System::Even
 	this->comboBox1->Text = this->objUsuario->getCargo();
 	this->textBox3->Text = this->objUsuario->getContrasena();
 	
+=======
+	}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void frmEditarUsuario_Load(System::Object^ sender, System::EventArgs^ e) {
+>>>>>>> bc4f0a0 (d)
 }
 };
 }
