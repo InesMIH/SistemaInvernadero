@@ -57,10 +57,10 @@ namespace SistemaInvernaderoView {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
@@ -79,14 +79,19 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Detalles de Sensor de Luminosidad";
 			// 
-			// label1
+			// textBox2
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(35, 39);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(97, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Máxima Oscuridad:";
+			this->textBox2->Location = System::Drawing::Point(177, 78);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(121, 20);
+			this->textBox2->TabIndex = 3;
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(177, 32);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(121, 20);
+			this->textBox1->TabIndex = 2;
 			// 
 			// label2
 			// 
@@ -97,19 +102,14 @@ namespace SistemaInvernaderoView {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Mínima Iluminación:";
 			// 
-			// textBox1
+			// label1
 			// 
-			this->textBox1->Location = System::Drawing::Point(177, 32);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(121, 20);
-			this->textBox1->TabIndex = 2;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(177, 78);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(121, 20);
-			this->textBox2->TabIndex = 3;
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(35, 39);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(97, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Máxima Oscuridad:";
 			// 
 			// button1
 			// 
@@ -119,6 +119,7 @@ namespace SistemaInvernaderoView {
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Guardar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmSensorLuminosidad::button1_Click);
 			// 
 			// button2
 			// 
@@ -145,5 +146,11 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		double maximoOscuro = Convert::ToDouble(this->textBox1->Text);
+		double minimoIluminado = Convert::ToDouble(this->textBox2->Text);
+		MessageBox::Show("Los detalles del sensor Luminosidad han sido agregados con éxito. ");
+		this->Close();
+	}
+};
 }

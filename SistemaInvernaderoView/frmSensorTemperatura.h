@@ -8,6 +8,8 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace SistemaInvernaderoModel;
+	using namespace SistemaInvernaderoController;
 
 	/// <summary>
 	/// Resumen de frmSensorTemperatura
@@ -97,6 +99,7 @@ namespace SistemaInvernaderoView {
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Guardar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmSensorTemperatura::button1_Click);
 			// 
 			// button2
 			// 
@@ -106,6 +109,7 @@ namespace SistemaInvernaderoView {
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmSensorTemperatura::button2_Click);
 			// 
 			// frmSensorTemperatura
 			// 
@@ -123,5 +127,13 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		double resolucionC = Convert::ToDouble(this->textBox1->Text);
+		MessageBox::Show("Los detalles del sensor Temperatura han sido agregados con éxito. ");
+		this->Close();
+	}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+};
 }

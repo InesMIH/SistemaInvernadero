@@ -117,6 +117,7 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(181, 21);
 			this->comboBox1->TabIndex = 1;
+			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &frmMantSensores::comboBox1_SelectedIndexChanged);
 			// 
 			// label1
 			// 
@@ -255,6 +256,9 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	sensor^ objSensor = objSensorController->buscarSensorxCodigo(codigoEditar);
 	frmEditarSensor^ ventanaEditarSensor = gcnew frmEditarSensor(objSensor);
 	ventanaEditarSensor->ShowDialog();
+	this->dataGridView1->Rows->Clear();
+}
+private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
