@@ -1,4 +1,5 @@
 #pragma once
+#include "frmEditarRegulador.h"
 
 namespace SistemaInvernaderoView {
 
@@ -41,7 +42,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Button^ button4;
+
 	private: System::Windows::Forms::Button^ button3;
 
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
@@ -77,7 +78,6 @@ namespace SistemaInvernaderoView {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -93,7 +93,6 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Controls->Add(this->button4);
 			this->groupBox1->Controls->Add(this->button3);
 			this->groupBox1->Controls->Add(this->dataGridView1);
 			this->groupBox1->Location = System::Drawing::Point(12, 25);
@@ -131,18 +130,9 @@ namespace SistemaInvernaderoView {
 			this->label1->TabIndex = 5;
 			this->label1->Text = L"Tipo:";
 			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(260, 276);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(75, 23);
-			this->button4->TabIndex = 11;
-			this->button4->Text = L"Eliminar";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(154, 276);
+			this->button3->Location = System::Drawing::Point(208, 289);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 10;
@@ -222,7 +212,13 @@ namespace SistemaInvernaderoView {
 		
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-
+		
+		int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index;
+		String^ tipoEditar = this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString();
+		ReguladorController^ objReguladorController = gcnew ReguladorController();
+		List<reguladores^>^ objRegulador = objReguladorController->buscarReguladorxTipo(tipoEditar);
+		frmEditarRegulador^ ventanaEditarRegulador = gcnew frmEditarRegulador(objRegulador[0]);
+		ventanaEditarRegulador->ShowDialog();
 	}
 };
 }

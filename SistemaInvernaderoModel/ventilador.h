@@ -8,14 +8,12 @@ namespace SistemaInvernaderoModel {
 
 	{
 	private:
-		int zona;
 		double porcPWM;
 	public:
 		ventilador();
-		ventilador(int zona, double porcPWM, int codigo, String^ funcionamiento, double potencia);
+		ventilador(double porcPWM, String^ tipo, int codigo, int enOperacion, double potencia);
 
-		int getzona();
-		void setzona(int zona);
+	
 		double getporcPWM();
 		void setporcPWM(double porcPWM);
 	};

@@ -19,7 +19,6 @@ List<reguladores^>^ ReguladorController::buscarReguladorxTipo(String^ tipoRegula
 		double potencia = Convert::ToDouble(datos[3]);
 		if (tipo->CompareTo(tipoRegulador) == 0) {
 			reguladores^ objRegulador = gcnew reguladores(tipo, codigo, enOperacion, potencia);
-			
 			listaReguladores->Add(objRegulador);
 		}
 	}

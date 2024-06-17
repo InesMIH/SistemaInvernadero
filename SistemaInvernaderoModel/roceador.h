@@ -8,11 +8,14 @@ namespace SistemaInvernaderoModel {
 	{
 	private:
 		int porcPWM;
+		int cuadal;
 	public:
 		roceador();
-		roceador(int porcPWM, int codigo, String^ funcionamiento, double potencia);
+		roceador(int porcPWM, int caudal, String^ tipo, int codigo, int enOperacion, double potencia);
 
 		int getporcPWM();
 		void setporcPWM(int porcPWM);
+		int getCaudal();
+		void setCaudal(int caudal);
 	};
 }

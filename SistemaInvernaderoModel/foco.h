@@ -7,12 +7,12 @@ namespace SistemaInvernaderoModel{
 	public ref class foco :reguladores
 	{
 	private:
-		int zona;
+		int iluminacion;
 	public:
 		foco();
-		foco(int zona, int codigo, int enOperacion, double potencia);
+		foco(int iluminacion, String^ tipo, int codigo, int enOperacion, double potencia);
 
-		int getzona();
-		void setzona(int zona);
+		int getIluminacion();
+		void setIluminacion(int iluminacion);
 	};
 }

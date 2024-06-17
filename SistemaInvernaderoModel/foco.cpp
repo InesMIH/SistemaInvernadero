@@ -6,14 +6,14 @@ foco::foco() {
 
 }
 
-foco::foco(int zona, int codigo, int enOperacion, double potencia) {
-	this->zona = zona;
+foco::foco(int iluminacion, String^ tipo, int codigo, int enOperacion, double potencia) {
+	this->iluminacion = iluminacion;
 }
 
-int foco::getzona() {
-	return this->zona;
+int foco::getIluminacion() {
+	return this->iluminacion;
 }
 
-void foco::setzona(int zona) {
-	this->zona = zona;
+void foco::setIluminacion(int iluminacion) {
+	this->iluminacion = iluminacion;
 }
