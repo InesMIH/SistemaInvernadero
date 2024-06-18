@@ -10,7 +10,9 @@ namespace SistemasInvernaderoController {
 		public:
 			ReguladorController();
 			List<reguladores^>^ buscarReguladorxTipo(String^ tipoRegulador);
-
+			List<reguladores^>^ buscarReguladoresAll();
+			void escribirArchivo(List<reguladores^>^ listaReguladores);
+			void actualizarRegulador(String^ tipo, int codigo, int enOperacion, double potencia);
 
 	};
 }

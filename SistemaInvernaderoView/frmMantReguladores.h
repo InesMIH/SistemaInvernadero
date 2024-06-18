@@ -181,6 +181,7 @@ namespace SistemaInvernaderoView {
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"frmMantReuladores";
 			this->Text = L"Estado de Reguladores";
+			this->Load += gcnew System::EventHandler(this, &frmMantReuladores::frmMantReuladores_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -219,6 +220,9 @@ namespace SistemaInvernaderoView {
 		List<reguladores^>^ objRegulador = objReguladorController->buscarReguladorxTipo(tipoEditar);
 		frmEditarRegulador^ ventanaEditarRegulador = gcnew frmEditarRegulador(objRegulador[0]);
 		ventanaEditarRegulador->ShowDialog();
+		this->dataGridView1->Rows->Clear();
 	}
+private: System::Void frmMantReuladores_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

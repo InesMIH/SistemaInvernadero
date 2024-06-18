@@ -39,9 +39,6 @@
     <ClCompile Include="frmMantReguladores.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
-    <ClCompile Include="frmVentilador.cpp">
-      <Filter>Archivos de encabezado</Filter>
-    </ClCompile>
     <ClCompile Include="frmEditarRegulador.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -66,9 +63,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="frmMantReguladores.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="frmVentilador.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="frmEditarRegulador.h">

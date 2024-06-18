@@ -129,7 +129,6 @@
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
     <ClCompile Include="frmSensorTemperatura.cpp" />
-    <ClCompile Include="frmVentilador.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -162,9 +161,6 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmSensorTemperatura.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmVentilador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
