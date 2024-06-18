@@ -5,13 +5,16 @@ namespace SistemaInvernaderoModel {
 	public ref class reguladores
 	{
 	private:
+		String^ tipo;
 		int codigo;
 		int enOperacion;
 		double potencia;
 	public:
 		reguladores();
-		reguladores(int codigo, int enOperacion, double potencia);
-
+		reguladores(String^ tipo, int codigo, int enOperacion, double potencia);
+		
+		String^ getTipo();
+		void setTipo(String^ tipo);
 		int getcodigo();
 		void setcodigo(int codigo);
 		int getenOperacion();

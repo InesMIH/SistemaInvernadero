@@ -111,6 +111,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ReguladorController.h" />
+    <ClInclude Include="SensorController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ReguladorController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
       <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
     </ProjectReference>

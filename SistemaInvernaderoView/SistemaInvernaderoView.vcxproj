@@ -121,6 +121,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="frmEditarRegulador.cpp" />
+    <ClCompile Include="frmMantReguladores.cpp" />
     <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
@@ -139,6 +141,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <ClInclude Include="frmEditarRegulador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantReguladores.h">
     <ClInclude Include="frmEditarSensor.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -165,6 +172,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+
+    <EmbeddedResource Include="frmEditarRegulador.resx">
+      <DependentUpon>frmEditarRegulador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantReguladores.resx">
+      <DependentUpon>frmMantReguladores.h</DependentUpon>
     <EmbeddedResource Include="frmEditarSensor.resx">
       <DependentUpon>frmEditarSensor.h</DependentUpon>
     </EmbeddedResource>

@@ -36,6 +36,10 @@
     <ClCompile Include="frmSensorTemperatura.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+    <ClCompile Include="frmMantReguladores.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
+    <ClCompile Include="frmEditarRegulador.cpp">
     <ClCompile Include="frmEditarSensor.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -62,6 +66,10 @@
     <ClInclude Include="frmSensorTemperatura.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="frmMantReguladores.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="frmEditarRegulador.h">
     <ClInclude Include="frmEditarSensor.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>

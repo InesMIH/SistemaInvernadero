@@ -1,22 +1,17 @@
 #include "ventilador.h"
 
+
 using namespace SistemaInvernaderoModel;
 
 ventilador::ventilador() {
 
 }
-
-ventilador::ventilador(int zona, double porcPWM, int codigo, String^ funcionamiento, double potencia) {
-	this->zona = zona;
+ventilador::ventilador(double porcPWM, String^ tipo, int codigo, int enOperacion, double potencia) {
+	
 	this->porcPWM = porcPWM;
 }
 
-int ventilador::getzona() {
-	return this->zona;
-}
-void ventilador::setzona(int zona) {
-	this->zona = zona;
-}
+
 
 double ventilador::getporcPWM() {
 	return this->porcPWM;
