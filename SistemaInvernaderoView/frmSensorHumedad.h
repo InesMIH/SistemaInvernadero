@@ -62,9 +62,9 @@ namespace SistemaInvernaderoView {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
@@ -112,12 +112,12 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Detalles de Sensor Humedad";
 			// 
-			// textBox1
+			// textBox3
 			// 
-			this->textBox1->Location = System::Drawing::Point(186, 41);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(117, 20);
-			this->textBox1->TabIndex = 3;
+			this->textBox3->Location = System::Drawing::Point(186, 149);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(117, 20);
+			this->textBox3->TabIndex = 5;
 			// 
 			// textBox2
 			// 
@@ -126,12 +126,12 @@ namespace SistemaInvernaderoView {
 			this->textBox2->Size = System::Drawing::Size(117, 20);
 			this->textBox2->TabIndex = 4;
 			// 
-			// textBox3
+			// textBox1
 			// 
-			this->textBox3->Location = System::Drawing::Point(186, 149);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(117, 20);
-			this->textBox3->TabIndex = 5;
+			this->textBox1->Location = System::Drawing::Point(186, 41);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(117, 20);
+			this->textBox1->TabIndex = 3;
 			// 
 			// button1
 			// 
@@ -141,6 +141,7 @@ namespace SistemaInvernaderoView {
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Guardar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmSensorHumedad::button1_Click);
 			// 
 			// button2
 			// 
@@ -150,6 +151,7 @@ namespace SistemaInvernaderoView {
 			this->button2->TabIndex = 5;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmSensorHumedad::button2_Click);
 			// 
 			// frmSensorHumedad
 			// 
@@ -167,5 +169,15 @@ namespace SistemaInvernaderoView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	double voltajeMinimo = Convert::ToDouble(textBox1->Text);
+	double voltajeMaximo = Convert::ToDouble(textBox2->Text);
+	double porcHumedad = Convert::ToDouble(textBox3->Text);
+	MessageBox::Show("Los detalles del sensor Humedad han sido agregados con éxito. ");
+	this->Close();
+}
+};
 }

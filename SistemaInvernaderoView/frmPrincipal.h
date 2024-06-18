@@ -44,6 +44,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorHumedadToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorLuminosidadToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ reporteDeFallaToolStripMenuItem;
 	protected:
 
 	private:
@@ -65,6 +66,7 @@ namespace SistemaInvernaderoView {
 			this->configuraciónDeSensorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->configuraciónDeSensorHumedadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->reporteDeFallaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -79,7 +81,10 @@ namespace SistemaInvernaderoView {
 			// 
 			// menúToolStripMenuItem
 			// 
-			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mantenimientoDeSensoresToolStripMenuItem });
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mantenimientoDeSensoresToolStripMenuItem,
+					this->reporteDeFallaToolStripMenuItem
+			});
 			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
 			this->menúToolStripMenuItem->Size = System::Drawing::Size(50, 20);
 			this->menúToolStripMenuItem->Text = L"Menú";
@@ -115,6 +120,12 @@ namespace SistemaInvernaderoView {
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Size = System::Drawing::Size(276, 22);
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Text = L"Configuración de Sensor Luminosidad";
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::configuraciónDeSensorLuminosidadToolStripMenuItem_Click);
+			// 
+			// reporteDeFallaToolStripMenuItem
+			// 
+			this->reporteDeFallaToolStripMenuItem->Name = L"reporteDeFallaToolStripMenuItem";
+			this->reporteDeFallaToolStripMenuItem->Size = System::Drawing::Size(221, 22);
+			this->reporteDeFallaToolStripMenuItem->Text = L"Reporte de Falla";
 			// 
 			// frmPrincipal
 			// 

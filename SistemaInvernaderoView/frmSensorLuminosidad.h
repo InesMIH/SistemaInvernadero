@@ -129,6 +129,7 @@ namespace SistemaInvernaderoView {
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmSensorLuminosidad::button2_Click);
 			// 
 			// frmSensorLuminosidad
 			// 
@@ -152,5 +153,8 @@ namespace SistemaInvernaderoView {
 		MessageBox::Show("Los detalles del sensor Luminosidad han sido agregados con éxito. ");
 		this->Close();
 	}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
 };
 }

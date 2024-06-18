@@ -39,9 +39,6 @@
     <ClCompile Include="frmEditarSensor.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
-    <ClCompile Include="frmDetalleDeFalla.cpp">
-      <Filter>Archivos de encabezado</Filter>
-    </ClCompile>
     <ClCompile Include="frmReporteDeFallas.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -66,9 +63,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="frmEditarSensor.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="frmDetalleDeFalla.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="frmReporteDeFallas.h">
