@@ -1,6 +1,10 @@
 #pragma once
-#include "frmMantReguladores.h"
 
+#include "frmMantReguladores.h"
+#include "frmMantSensores.h"
+#include "frmSensorTemperatura.h"
+#include "frmSensorHumedad.h"
+#include "frmSensorLuminosidad.h"
 
 namespace SistemaInvernaderoView {
 
@@ -21,13 +25,13 @@ namespace SistemaInvernaderoView {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar c�digo de constructor aqu�
+			//TODO: agregar código de constructor aquí
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se est�n usando.
+		/// Limpiar los recursos que se estén usando.
 		/// </summary>
 		~frmPrincipal()
 		{
@@ -37,55 +41,98 @@ namespace SistemaInvernaderoView {
 			}
 		}
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ men�ToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ menúToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeSensoresToolStripMenuItem;
+
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeReguladoresToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorHumedadToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorLuminosidadToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ reporteDeFallaToolStripMenuItem;
 	protected:
 
 	private:
 		/// <summary>
-		/// Variable del dise�ador necesaria.
+		/// Variable del diseñador necesaria.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// M�todo necesario para admitir el Dise�ador. No se puede modificar
-		/// el contenido de este m�todo con el editor de c�digo.
+		/// Método necesario para admitir el Diseñador. No se puede modificar
+		/// el contenido de este método con el editor de código.
 		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->men�ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeSensoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+
 			this->mantenimientoDeReguladoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->configuraciónDeSensorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->configuraciónDeSensorHumedadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->configuraciónDeSensorLuminosidadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->reporteDeFallaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->men�ToolStripMenuItem });
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menúToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Size = System::Drawing::Size(589, 24);
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
-			// men�ToolStripMenuItem
+			// menúToolStripMenuItem
 			// 
-			this->men�ToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->mantenimientoDeSensoresToolStripMenuItem,
 					this->mantenimientoDeReguladoresToolStripMenuItem
+					this->reporteDeFallaToolStripMenuItem
 			});
-			this->men�ToolStripMenuItem->Name = L"men�ToolStripMenuItem";
-			this->men�ToolStripMenuItem->Size = System::Drawing::Size(50, 20);
-			this->men�ToolStripMenuItem->Text = L"Men�";
+			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
+			this->menúToolStripMenuItem->Size = System::Drawing::Size(50, 20);
+			this->menúToolStripMenuItem->Text = L"Menú";
 			// 
 			// mantenimientoDeSensoresToolStripMenuItem
 			// 
+			this->mantenimientoDeSensoresToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->configuraciónDeSensorToolStripMenuItem,
+					this->configuraciónDeSensorHumedadToolStripMenuItem, this->configuraciónDeSensorLuminosidadToolStripMenuItem
+			});
 			this->mantenimientoDeSensoresToolStripMenuItem->Name = L"mantenimientoDeSensoresToolStripMenuItem";
 			this->mantenimientoDeSensoresToolStripMenuItem->Size = System::Drawing::Size(240, 22);
 			this->mantenimientoDeSensoresToolStripMenuItem->Text = L"Mantenimiento de Sensores";
+			this->mantenimientoDeSensoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeSensoresToolStripMenuItem_Click);
+			// 
+			// configuraciónDeSensorToolStripMenuItem
+			// 
+			this->configuraciónDeSensorToolStripMenuItem->Name = L"configuraciónDeSensorToolStripMenuItem";
+			this->configuraciónDeSensorToolStripMenuItem->Size = System::Drawing::Size(276, 22);
+			this->configuraciónDeSensorToolStripMenuItem->Text = L"Configuración de Sensor Temperatura ";
+			this->configuraciónDeSensorToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::configuraciónDeSensorToolStripMenuItem_Click);
+			// 
+			// configuraciónDeSensorHumedadToolStripMenuItem
+			// 
+			this->configuraciónDeSensorHumedadToolStripMenuItem->Name = L"configuraciónDeSensorHumedadToolStripMenuItem";
+			this->configuraciónDeSensorHumedadToolStripMenuItem->Size = System::Drawing::Size(276, 22);
+			this->configuraciónDeSensorHumedadToolStripMenuItem->Text = L"Configuración de Sensor Humedad";
+			this->configuraciónDeSensorHumedadToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::configuraciónDeSensorHumedadToolStripMenuItem_Click);
+			// 
+			// configuraciónDeSensorLuminosidadToolStripMenuItem
+			// 
+			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Name = L"configuraciónDeSensorLuminosidadToolStripMenuItem";
+			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Size = System::Drawing::Size(276, 22);
+			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Text = L"Configuración de Sensor Luminosidad";
+			this->configuraciónDeSensorLuminosidadToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::configuraciónDeSensorLuminosidadToolStripMenuItem_Click);
+			// 
+			// reporteDeFallaToolStripMenuItem
+			// 
+			this->reporteDeFallaToolStripMenuItem->Name = L"reporteDeFallaToolStripMenuItem";
+			this->reporteDeFallaToolStripMenuItem->Size = System::Drawing::Size(221, 22);
+			this->reporteDeFallaToolStripMenuItem->Text = L"Reporte de Falla";
 			// 
 			// mantenimientoDeReguladoresToolStripMenuItem
 			// 
@@ -125,4 +172,23 @@ namespace SistemaInvernaderoView {
 
 	}
 	};
+	private: System::Void mantenimientoDeSensoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantSensores^ ventanaMantSensores = gcnew frmMantSensores();
+		ventanaMantSensores->MdiParent = this;
+		ventanaMantSensores->Show();
+
+	}
+	private: System::Void configuraciónDeSensorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmSensorTemperatura^ ventanaSensorTemperatura = gcnew frmSensorTemperatura();
+		ventanaSensorTemperatura->Show();
+	}
+private: System::Void configuraciónDeSensorHumedadToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmSensorHumedad^ ventanaSensorHumedad = gcnew frmSensorHumedad();
+	ventanaSensorHumedad->Show();
+}
+private: System::Void configuraciónDeSensorLuminosidadToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmSensorLuminosidad^ ventanaSensorLuminosidad = gcnew frmSensorLuminosidad();
+	ventanaSensorLuminosidad->Show();
+}
+};
 }

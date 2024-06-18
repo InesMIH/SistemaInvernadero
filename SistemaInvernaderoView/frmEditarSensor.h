@@ -8,27 +8,32 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace SistemaInvernaderoModel;
 	using namespace SistemaInvernaderoController;
 
 	/// <summary>
-	/// Resumen de frmNuevoSensor
+	/// Resumen de frmEditarSensor
 	/// </summary>
-	public ref class frmNuevoSensor : public System::Windows::Forms::Form
+	public ref class frmEditarSensor : public System::Windows::Forms::Form
 	{
 	public:
-		frmNuevoSensor(void)
+		frmEditarSensor(void)
 		{
 			InitializeComponent();
 			//
 			//TODO: agregar código de constructor aquí
 			//
 		}
-
+		frmEditarSensor(sensor^ objSensor)
+		{
+			InitializeComponent();
+			this->objSensor = objSensor;
+		}
 	protected:
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
 		/// </summary>
-		~frmNuevoSensor()
+		~frmEditarSensor()
 		{
 			if (components)
 			{
@@ -39,6 +44,8 @@ namespace SistemaInvernaderoView {
 	protected:
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
+	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::TextBox^ textBox2;
@@ -49,9 +56,8 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::TextBox^ textBox5;
+	private:sensor^ objSensor;
 
 	private:
 		/// <summary>
@@ -69,6 +75,7 @@ namespace SistemaInvernaderoView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
@@ -80,28 +87,28 @@ namespace SistemaInvernaderoView {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(219, 318);
+			this->button2->Location = System::Drawing::Point(223, 328);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
-			this->button2->TabIndex = 5;
+			this->button2->TabIndex = 8;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmEditarSensor::button2_Click);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(87, 319);
+			this->button1->Location = System::Drawing::Point(91, 329);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 4;
+			this->button1->TabIndex = 7;
 			this->button1->Text = L"Grabar";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &frmNuevoSensor::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &frmEditarSensor::button1_Click);
 			// 
 			// groupBox1
 			// 
@@ -117,12 +124,19 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->label3);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Location = System::Drawing::Point(12, 12);
+			this->groupBox1->Location = System::Drawing::Point(16, 22);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(358, 282);
-			this->groupBox1->TabIndex = 3;
+			this->groupBox1->TabIndex = 6;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos de Sensor";
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(207, 109);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(121, 20);
+			this->textBox5->TabIndex = 13;
 			// 
 			// comboBox1
 			// 
@@ -132,6 +146,7 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
 			this->comboBox1->TabIndex = 12;
+			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &frmEditarSensor::comboBox1_SelectedIndexChanged);
 			// 
 			// label6
 			// 
@@ -165,7 +180,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(207, 153);
+			this->textBox1->Location = System::Drawing::Point(207, 154);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(121, 20);
 			this->textBox1->TabIndex = 7;
@@ -215,42 +230,50 @@ namespace SistemaInvernaderoView {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Código:";
 			// 
-			// textBox5
-			// 
-			this->textBox5->Location = System::Drawing::Point(207, 109);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(121, 20);
-			this->textBox5->TabIndex = 13;
-			// 
-			// frmNuevoSensor
+			// frmEditarSensor
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(379, 362);
+			this->ClientSize = System::Drawing::Size(393, 375);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox1);
-			this->Name = L"frmNuevoSensor";
-			this->Text = L"Nuevo Sensor";
+			this->Name = L"frmEditarSensor";
+			this->Text = L"Editar Sensor";
+			this->Load += gcnew System::EventHandler(this, &frmEditarSensor::frmEditarSensor_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		int codigo = Convert::ToInt32(this->textBox4->Text);
-		String^ tipo = this->comboBox1->Text;
-		int enFuncionamiento = Convert::ToInt32(this->textBox5->Text);
-		double intervaloDeMuestreo = Convert::ToDouble(this->textBox1->Text);
-		double medicion = Convert::ToDouble(this->textBox2->Text);
-		String^ unidad = this->textBox3->Text;
-		SensorController^ objSensorController = gcnew SensorController();
-	//SensorController->agregarNuevoSensor(codigo, tipo, enFuncionamiento, intervaloDeMuestreo, medicion, unidad);
-		MessageBox::Show("El sensor ha sido agregado ");
-		this->Close();
 
+private: System::Void frmEditarSensor_Load(System::Object^ sender, System::EventArgs^ e) {
+	this->textBox4->Text = Convert::ToString(this->objSensor->getcodigo());
+	this->comboBox1->Text = this->objSensor->gettipo();
+	this->textBox5->Text = Convert::ToString(this->objSensor->getenFuncionamiento());
+	this->textBox1->Text = Convert::ToString(this->objSensor->getintervaloDeMuestreo());
+	this->textBox2->Text = Convert::ToString(this->objSensor->getmedicion());
+	this->textBox3->Text = Convert::ToString(this->objSensor->getunidad());
 
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+			int codigo = Convert::ToInt32(this->textBox4->Text);
+			String^ tipo = this->comboBox1->Text;
+			int enFuncionamiento = Convert::ToInt32(this->textBox5->Text);
+			double intervaloDeMuestreo = Convert::ToDouble(this->textBox1->Text);
+			double medicion = Convert::ToDouble(this->textBox2->Text);
+			String^ unidad = this->textBox3->Text;
+			SensorController^ objSensorController = gcnew SensorController();
+			objSensorController->actualizarSensor(codigo, tipo, enFuncionamiento, intervaloDeMuestreo, medicion, unidad);
+
+			MessageBox::Show("El sensor ha sido actualizado con éxito. ");
+			this->Close();
+		}
+private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

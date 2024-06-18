@@ -3,7 +3,7 @@
 
 using namespace System;
 
-namespace SistemaInvernaderoModel{
+namespace SistemaInvernaderoModel {
 	public ref class ambienteActual : ambiente
 
 	{
