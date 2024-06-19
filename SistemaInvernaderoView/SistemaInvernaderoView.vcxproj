@@ -126,7 +126,7 @@
     <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
-    <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="frmPrincipal1.cpp" />
     <ClCompile Include="frmReporteDeFallas.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
@@ -141,13 +141,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <ClInclude Include="frmEditarRegulador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantReguladores.h">
-		<FileType>CppForm</FileType>
-	</ClInclude>
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmEditarSensor.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -157,7 +156,7 @@
     <ClInclude Include="frmNuevoSensor.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmPrincipal.h">
+    <ClInclude Include="frmPrincipal1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmReporteDeFallas.h">
@@ -174,13 +173,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-
     <EmbeddedResource Include="frmEditarRegulador.resx">
       <DependentUpon>frmEditarRegulador.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantReguladores.resx">
       <DependentUpon>frmMantReguladores.h</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditarSensor.resx">
       <DependentUpon>frmEditarSensor.h</DependentUpon>
     </EmbeddedResource>
@@ -190,8 +188,8 @@
     <EmbeddedResource Include="frmNuevoSensor.resx">
       <DependentUpon>frmNuevoSensor.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.h</DependentUpon>
+    <EmbeddedResource Include="frmPrincipal1.resx">
+      <DependentUpon>frmPrincipal1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReporteDeFallas.resx">
       <DependentUpon>frmReporteDeFallas.h</DependentUpon>

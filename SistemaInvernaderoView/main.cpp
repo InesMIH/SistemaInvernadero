@@ -1,4 +1,4 @@
-#include "frmPrincipal.h" 
+#include "frmPrincipal1.h"
 
 
 

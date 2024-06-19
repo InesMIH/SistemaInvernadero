@@ -14,12 +14,12 @@ namespace SistemaInvernaderoView {
 	using namespace SistemaInvernaderoModel;
 
 	/// <summary>
-	/// Resumen de frmMantReuladores
+	/// Resumen de frmMantReguladores
 	/// </summary>
-	public ref class frmMantReuladores : public System::Windows::Forms::Form
+	public ref class frmMantReguladores : public System::Windows::Forms::Form
 	{
 	public:
-		frmMantReuladores(void)
+		frmMantReguladores(void)
 		{
 			InitializeComponent();
 			//
@@ -31,7 +31,7 @@ namespace SistemaInvernaderoView {
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
 		/// </summary>
-		~frmMantReuladores()
+		~frmMantReguladores()
 		{
 			if (components)
 			{
@@ -110,7 +110,7 @@ namespace SistemaInvernaderoView {
 			this->button1->TabIndex = 8;
 			this->button1->Text = L"Buscar";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &frmMantReuladores::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &frmMantReguladores::button1_Click);
 			// 
 			// comboBox1
 			// 
@@ -138,7 +138,7 @@ namespace SistemaInvernaderoView {
 			this->button3->TabIndex = 10;
 			this->button3->Text = L"Editar";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &frmMantReuladores::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantReguladores::button3_Click);
 			// 
 			// dataGridView1
 			// 
@@ -151,7 +151,7 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(443, 113);
 			this->dataGridView1->TabIndex = 7;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantReuladores::dataGridView1_CellContentClick);
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantReguladores::dataGridView1_CellContentClick);
 			// 
 			// Column2
 			// 
@@ -181,7 +181,7 @@ namespace SistemaInvernaderoView {
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"frmMantReuladores";
 			this->Text = L"Estado de Reguladores";
-			this->Load += gcnew System::EventHandler(this, &frmMantReuladores::frmMantReuladores_Load);
+			this->Load += gcnew System::EventHandler(this, &frmMantReguladores::frmMantReguladores_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -222,7 +222,7 @@ namespace SistemaInvernaderoView {
 		ventanaEditarRegulador->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}
-private: System::Void frmMantReuladores_Load(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void frmMantReguladores_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
