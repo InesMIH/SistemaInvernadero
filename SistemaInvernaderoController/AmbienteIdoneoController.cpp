@@ -124,6 +124,7 @@ int AmbienteIdoneoController::existeAmbiente(double humedadNueva, double luminos
 	}
 	return existe;
 }
+<<<<<<< HEAD
 =======
 namespace SistemaInvernaderoController {
 	using namespace System::Collections::Generic;
@@ -234,3 +235,5 @@ void  AmbienteIdoneoController::actualizarAmbienteIdoneo(int codigo, double hume
 }
 
 >>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)

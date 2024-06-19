@@ -69,6 +69,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox12;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
 
 <<<<<<< HEAD
 
@@ -123,11 +124,15 @@ namespace SistemaInvernaderoView {
 <<<<<<< HEAD
 <<<<<<< HEAD
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+<<<<<<< HEAD
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 =======
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 >>>>>>> e7e2505 (troste)
+=======
+			this->button3 = (gcnew System::Windows::Forms::Button());
+>>>>>>> b5d3b4b (termo)
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -139,6 +144,7 @@ namespace SistemaInvernaderoView {
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
@@ -148,6 +154,9 @@ namespace SistemaInvernaderoView {
 =======
 			this->button3 = (gcnew System::Windows::Forms::Button());
 >>>>>>> e7e2505 (troste)
+=======
+			this->button4 = (gcnew System::Windows::Forms::Button());
+>>>>>>> b5d3b4b (termo)
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -370,10 +379,13 @@ namespace SistemaInvernaderoView {
 			// groupBox2
 			// 
 			this->groupBox2->Controls->Add(this->button4);
+<<<<<<< HEAD
 =======
 			// groupBox2
 			// 
 >>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 			this->groupBox2->Controls->Add(this->button3);
 			this->groupBox2->Controls->Add(this->label12);
 			this->groupBox2->Controls->Add(this->label11);
@@ -394,6 +406,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox2->Enter += gcnew System::EventHandler(this, &frmNuevoCultivo::groupBox2_Enter);
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// button4
 			// 
 			this->button4->Location = System::Drawing::Point(469, 111);
@@ -404,6 +417,8 @@ namespace SistemaInvernaderoView {
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
+=======
+>>>>>>> b5d3b4b (termo)
 			// button3
 			// 
 			this->button3->Location = System::Drawing::Point(469, 41);
@@ -414,8 +429,11 @@ namespace SistemaInvernaderoView {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
+<<<<<<< HEAD
 =======
 >>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 			// label12
 			// 
 			this->label12->AutoSize = true;
@@ -461,9 +479,13 @@ namespace SistemaInvernaderoView {
 			this->textBox11->Size = System::Drawing::Size(179, 240);
 			this->textBox11->TabIndex = 10;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 =======
 >>>>>>> e7e2505 (troste)
+=======
+			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+>>>>>>> b5d3b4b (termo)
 			// 
 			// textBox10
 			// 
@@ -526,15 +548,15 @@ namespace SistemaInvernaderoView {
 >>>>>>> bc4f0a0 (d)
 =======
 			// 
-			// button3
+			// button4
 			// 
-			this->button3->Location = System::Drawing::Point(469, 41);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(130, 51);
-			this->button3->TabIndex = 12;
-			this->button3->Text = L"Buscar";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
+			this->button4->Location = System::Drawing::Point(469, 111);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(130, 51);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"Guardar";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
 >>>>>>> e7e2505 (troste)
 			// frmNuevoCultivo
@@ -629,6 +651,9 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	this->textBox11->Text = objAmbienteIdoneo->getinformacion();
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b5d3b4b (termo)
 	   private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		   int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox12->Text);
 		   AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
@@ -653,6 +678,7 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 		   }
 		   
 	   }
+<<<<<<< HEAD
 =======
 >>>>>>> 9367295 (f)
 =======
@@ -661,5 +687,7 @@ private: System::Void textBox6_TextChanged(System::Object^ sender, System::Event
 >>>>>>> bc4f0a0 (d)
 =======
 >>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 };
 }
