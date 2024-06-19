@@ -8,6 +8,8 @@ namespace SistemaInvernaderoView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace SistemaInvernaderoController;
+	using namespace SistemaInvernaderoModel;
 
 	/// <summary>
 	/// Resumen de frmEditarUsuario
@@ -18,6 +20,15 @@ namespace SistemaInvernaderoView {
 		frmEditarUsuario(void)
 		{
 			InitializeComponent();
+			//
+			//TODO: agregar código de constructor aquí
+			//
+		}
+
+		frmEditarUsuario(usuario^ objUsuario)
+		{
+			InitializeComponent();
+			this->objUsuario = objUsuario;
 			//
 			//TODO: agregar código de constructor aquí
 			//
@@ -39,13 +50,15 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ textBox3;
+
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+	private: usuario^ objUsuario;
 
 	private:
 		/// <summary>
@@ -64,7 +77,7 @@ namespace SistemaInvernaderoView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -76,7 +89,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(69, 472);
+			this->button1->Location = System::Drawing::Point(111, 472);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(104, 59);
 			this->button1->TabIndex = 20;
@@ -86,7 +99,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(407, 472);
+			this->button2->Location = System::Drawing::Point(380, 472);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(112, 59);
 			this->button2->TabIndex = 21;
@@ -97,7 +110,7 @@ namespace SistemaInvernaderoView {
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->comboBox1);
-			this->groupBox1->Controls->Add(this->textBox7);
+			this->groupBox1->Controls->Add(this->textBox3);
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->textBox1);
@@ -121,12 +134,12 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->Size = System::Drawing::Size(174, 33);
 			this->comboBox1->TabIndex = 11;
 			// 
-			// textBox7
+			// textBox3
 			// 
-			this->textBox7->Location = System::Drawing::Point(294, 309);
-			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(174, 31);
-			this->textBox7->TabIndex = 10;
+			this->textBox3->Location = System::Drawing::Point(294, 309);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(174, 31);
+			this->textBox3->TabIndex = 10;
 			// 
 			// textBox2
 			// 
@@ -198,10 +211,24 @@ namespace SistemaInvernaderoView {
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
+	this->Close();
+}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
+	int id = Convert::ToInt32(this->textBox1->Text);
+	String^ Nombre = this->textBox2->Text;
+	String^ Cargo = this->comboBox1->Text;
+	String^ contrasena = this->textBox3->Text;
+	UsuarioController^ objUsuarioController = gcnew UsuarioController();
+	objUsuarioController->actualizarUsuario(id, Nombre, Cargo, contrasena);
+	MessageBox::Show("El Usuario ha sido actualizado con éxito");
+	this->Close();
+}
 private: System::Void frmEditarUsuario_Load(System::Object^ sender, System::EventArgs^ e) {
+	this->textBox1->Text = Convert::ToString(this->objUsuario->getid());
+	this->textBox2->Text = this->objUsuario->getNombre();
+	this->comboBox1->Text = this->objUsuario->getCargo();
+	this->textBox3->Text = this->objUsuario->getContrasena();
+	
 }
 };
 }

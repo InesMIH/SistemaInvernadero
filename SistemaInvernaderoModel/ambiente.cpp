@@ -6,7 +6,7 @@ ambiente::ambiente() {
 
 }
 
-ambiente::ambiente(int codigo, String^ humedad, String^ luminosidad, String^ temperatura) {
+ambiente::ambiente(int codigo, double humedad, double luminosidad, double temperatura) {
 	this->codigo = codigo;
 	this->humedad = humedad;
 	this->luminosidad = luminosidad;
@@ -19,21 +19,21 @@ int ambiente::getcodigo() {
 void ambiente::setcodigo(int codigo) {
 	this->codigo = codigo;
 }
-String^ ambiente::gethumedad() {
+double ambiente::gethumedad() {
 	return this->humedad;
 }
-void ambiente::sethumedad(String^ humedad) {
+void ambiente::sethumedad(double humedad) {
 	this->humedad = humedad;
 }
-String^ ambiente::getluminosidad() {
+double ambiente::getluminosidad() {
 	return this->luminosidad;
 }
-void ambiente::setluminosidad(String^ luminosidad) {
+void ambiente::setluminosidad(double luminosidad) {
 	this->luminosidad = luminosidad;
 }
-String^ ambiente::gettemperatura() {
+double ambiente::gettemperatura() {
 	return this->temperatura;
 }
-void ambiente::settemperatura(String^ temperatura) {
+void ambiente::settemperatura(double temperatura) {
 	this->temperatura = temperatura;
 }

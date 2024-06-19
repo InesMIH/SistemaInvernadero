@@ -15,9 +15,9 @@ List<ambienteIdoneo^>^ AmbienteIdoneoController::buscarAmbienteIdoneoALL() {
 		/*Voy a separar los datos de una linea en sub strings*/
 		array<String^>^ datos = lineaAmbienteIdoneo->Split(separadores->ToCharArray());
 		int codigo = Convert::ToInt32(datos[0]);
-		String^ humedad = datos[1];
-		String^ luminosidad = datos[2];
-		String^ temperatura = datos[3];
+		double humedad = Convert::ToDouble(datos[1]);
+		double luminosidad = Convert::ToDouble(datos[2]);
+		double temperatura = Convert::ToDouble(datos[3]);
 		String^ informacion = datos[4];
 		ambienteIdoneo^ objAmbienteIdoneo = gcnew ambienteIdoneo(codigo, humedad, luminosidad, temperatura, informacion);
 		listaAmbienteIdoneo->Add(objAmbienteIdoneo);
@@ -25,7 +25,7 @@ List<ambienteIdoneo^>^ AmbienteIdoneoController::buscarAmbienteIdoneoALL() {
 	return listaAmbienteIdoneo;
 }
 
-void AmbienteIdoneoController::agregarNuevoAmbienteIdoneo(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion) {
+void AmbienteIdoneoController::agregarNuevoAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion) {
 	List<ambienteIdoneo^>^ listaAmbienteIdoneo = buscarAmbienteIdoneoALL();
 	ambienteIdoneo^ objAmbienteIdoneo = gcnew ambienteIdoneo(codigo, humedad, luminosidad, temperatura, informacion);
 	listaAmbienteIdoneo->Add(objAmbienteIdoneo);
@@ -60,9 +60,9 @@ ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigo
 		/*Voy a separar los datos de una linea en sub strings*/
 		array<String^>^ datos = lineaAmbienteIdoneo->Split(separadores->ToCharArray());
 		int codigo = Convert::ToInt32(datos[0]);
-		String^ humedad = datos[1];
-		String^ luminosidad = datos[2];
-		String^ temperatura = datos[3];
+		double humedad = Convert::ToDouble(datos[1]);
+		double luminosidad = Convert::ToDouble(datos[2]);
+		double temperatura = Convert::ToDouble(datos[3]);
 		String^ informacion = datos[4];
 		if (codigo == codigoBuscado) {
 			objAmbienteIdoneo = gcnew ambienteIdoneo(codigo, humedad, luminosidad, temperatura, informacion);
@@ -71,3 +71,18 @@ ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigo
 	}
 	return objAmbienteIdoneo;
 }
+
+void  AmbienteIdoneoController::actualizarAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion) {
+	List<ambienteIdoneo^>^ listaAmbienteIdoneo = buscarAmbienteIdoneoALL();
+	for (int i = 0; i < listaAmbienteIdoneo->Count; i++) {
+		if (listaAmbienteIdoneo[i]->getcodigo() == codigo) {
+			listaAmbienteIdoneo[i]->sethumedad(humedad);
+			listaAmbienteIdoneo[i]->setluminosidad(luminosidad);
+			listaAmbienteIdoneo[i]->settemperatura(temperatura);
+			listaAmbienteIdoneo[i]->setinformacion(informacion);
+			break;
+		}
+	}
+	escribirArchivo(listaAmbienteIdoneo);
+}
+
