@@ -146,6 +146,8 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantReguladores.h">
+		<FileType>CppForm</FileType>
+	</ClInclude>
     <ClInclude Include="frmEditarSensor.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -178,6 +180,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantReguladores.resx">
       <DependentUpon>frmMantReguladores.h</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="frmEditarSensor.resx">
       <DependentUpon>frmEditarSensor.h</DependentUpon>
     </EmbeddedResource>

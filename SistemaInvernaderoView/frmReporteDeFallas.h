@@ -43,12 +43,15 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
+
+
+
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
 	protected:
 
 	private:
@@ -67,15 +70,15 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
@@ -120,23 +123,28 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Detalle";
 			// 
-			// label2
+			// textBox2
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(35, 32);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(43, 13);
-			this->label2->TabIndex = 0;
-			this->label2->Text = L"Código:";
+			this->textBox2->Location = System::Drawing::Point(123, 66);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(146, 20);
+			this->textBox2->TabIndex = 5;
 			// 
-			// label3
+			// dateTimePicker1
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(35, 69);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(116, 13);
-			this->label3->TabIndex = 1;
-			this->label3->Text = L"Nombre de Dispositivo:";
+			this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Short;
+			this->dateTimePicker1->Location = System::Drawing::Point(294, 32);
+			this->dateTimePicker1->Name = L"dateTimePicker1";
+			this->dateTimePicker1->Size = System::Drawing::Size(151, 20);
+			this->dateTimePicker1->TabIndex = 4;
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(81, 32);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(127, 20);
+			this->textBox1->TabIndex = 3;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &frmReporteDeFallas::textBox1_TextChanged);
 			// 
 			// label4
 			// 
@@ -147,6 +155,24 @@ namespace SistemaInvernaderoView {
 			this->label4->TabIndex = 2;
 			this->label4->Text = L"Fecha:";
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(20, 69);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(97, 13);
+			this->label3->TabIndex = 1;
+			this->label3->Text = L"Cantidad de Fallas:";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(20, 32);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(43, 13);
+			this->label2->TabIndex = 0;
+			this->label2->Text = L"Código:";
+			// 
 			// Column1
 			// 
 			this->Column1->HeaderText = L"Código";
@@ -154,35 +180,13 @@ namespace SistemaInvernaderoView {
 			// 
 			// Column3
 			// 
-			this->Column3->HeaderText = L"Cantidad de Fallas";
+			this->Column3->HeaderText = L"Nombre del Dispositivo";
 			this->Column3->Name = L"Column3";
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"Descripción de Falla";
 			this->Column2->Name = L"Column2";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(98, 32);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(127, 20);
-			this->textBox1->TabIndex = 3;
-			// 
-			// dateTimePicker1
-			// 
-			this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Short;
-			this->dateTimePicker1->Location = System::Drawing::Point(294, 32);
-			this->dateTimePicker1->Name = L"dateTimePicker1";
-			this->dateTimePicker1->Size = System::Drawing::Size(151, 20);
-			this->dateTimePicker1->TabIndex = 4;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(158, 69);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(146, 20);
-			this->textBox2->TabIndex = 5;
 			// 
 			// frmReporteDeFallas
 			// 
@@ -205,6 +209,8 @@ namespace SistemaInvernaderoView {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

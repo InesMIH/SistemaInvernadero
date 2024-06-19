@@ -89,7 +89,7 @@ namespace SistemaInvernaderoView {
 			// 
 			this->menúToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->mantenimientoDeSensoresToolStripMenuItem,
-					this->mantenimientoDeReguladoresToolStripMenuItem
+					this->mantenimientoDeReguladoresToolStripMenuItem,
 					this->reporteDeFallaToolStripMenuItem
 			});
 			this->menúToolStripMenuItem->Name = L"menúToolStripMenuItem";
