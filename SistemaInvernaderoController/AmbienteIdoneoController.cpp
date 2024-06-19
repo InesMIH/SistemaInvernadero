@@ -86,3 +86,39 @@ void  AmbienteIdoneoController::actualizarAmbienteIdoneo(int codigo, double hume
 	escribirArchivo(listaAmbienteIdoneo);
 }
 
+int AmbienteIdoneoController::codigoExisteAmbienteIdoneo(int codigobuscado) {
+	int existe = 0;
+	List<ambienteIdoneo^>^ listaAmbienteIdoneo = buscarAmbienteIdoneoALL();
+	array<String^>^ lineas = File::ReadAllLines("AmbienteIdoneo.txt");
+	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
+	for each (String ^ lineaAmbienteIdoneo in lineas) {
+		/*Voy a separar los datos de una linea en sub strings*/
+		array<String^>^ datos = lineaAmbienteIdoneo->Split(separadores->ToCharArray());
+		int codigo = Convert::ToInt32(datos[0]);
+		if (codigo == codigobuscado) {
+			existe = listaAmbienteIdoneo->Count;
+			break;
+		}
+	}
+	return existe;
+}
+
+int AmbienteIdoneoController::existeAmbiente(double humedadNueva, double luminosidadNueva, double temperaturaNueva) {
+	int existe = 0;
+	List<ambienteIdoneo^>^ listaAmbienteIdoneo = buscarAmbienteIdoneoALL();
+	array<String^>^ lineas = File::ReadAllLines("AmbienteIdoneo.txt");
+	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
+	for each (String ^ lineaAmbienteIdoneo in lineas) {
+		/*Voy a separar los datos de una linea en sub strings*/
+		array<String^>^ datos = lineaAmbienteIdoneo->Split(separadores->ToCharArray());
+		int codigo = Convert::ToInt32(datos[0]);
+		double humedad = Convert::ToDouble(datos[1]);
+		double luminosidad = Convert::ToDouble(datos[2]);
+		double temperatura = Convert::ToDouble(datos[3]);
+		if ((humedadNueva == humedad) && (luminosidadNueva == luminosidad) && (temperaturaNueva == temperatura)) {
+			existe = codigo;
+			break;
+		}
+	}
+	return existe;
+}
