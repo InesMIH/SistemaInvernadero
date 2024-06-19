@@ -9,6 +9,7 @@ namespace SistemaInvernaderoController {
 		AmbienteIdoneoController();
 		List<ambienteIdoneo^>^ buscarAmbienteIdoneoALL();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		void agregarNuevoAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
 		void escribirArchivo(List<ambienteIdoneo^>^ listaAmbienteIdoneo);
 		void eliminarAmbienteIdoneo(int codigo);
@@ -19,9 +20,13 @@ namespace SistemaInvernaderoController {
 	};
 =======
 		void agregarNuevoAmbienteIdoneo(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion);
+=======
+		void agregarNuevoAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
+>>>>>>> e7e2505 (troste)
 		void escribirArchivo(List<ambienteIdoneo^>^ listaAmbienteIdoneo);
 		void eliminarAmbienteIdoneo(int codigo);
 		ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigoBuscado);
+		void actualizarAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
 	};
 
 >>>>>>> 9367295 (f)

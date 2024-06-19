@@ -83,6 +83,7 @@ namespace SistemaInvernaderoView {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 <<<<<<< HEAD
@@ -96,10 +97,15 @@ namespace SistemaInvernaderoView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+=======
+>>>>>>> e7e2505 (troste)
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -159,6 +165,7 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->RowTemplate->Height = 33;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->dataGridView1->Size = System::Drawing::Size(1268, 420);
 =======
 			this->dataGridView1->Size = System::Drawing::Size(1268, 448);
@@ -167,6 +174,12 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
 			// 
 <<<<<<< HEAD
+=======
+			this->dataGridView1->Size = System::Drawing::Size(1268, 420);
+			this->dataGridView1->TabIndex = 1;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
+			// 
+>>>>>>> e7e2505 (troste)
 			// Column1
 			// 
 			this->Column1->HeaderText = L"codigo";
@@ -195,8 +208,11 @@ namespace SistemaInvernaderoView {
 			this->Usuario->Name = L"Usuario";
 			this->Usuario->Width = 200;
 			// 
+<<<<<<< HEAD
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> e7e2505 (troste)
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(691, 716);
@@ -226,34 +242,6 @@ namespace SistemaInvernaderoView {
 			this->button4->Text = L"Nuevo";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &frmMantCultivos::button4_Click);
-			// 
-			// Column1
-			// 
-			this->Column1->HeaderText = L"codigo";
-			this->Column1->MinimumWidth = 10;
-			this->Column1->Name = L"Column1";
-			this->Column1->Width = 200;
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"nombre";
-			this->Column2->MinimumWidth = 10;
-			this->Column2->Name = L"Column2";
-			this->Column2->Width = 200;
-			// 
-			// Column4
-			// 
-			this->Column4->HeaderText = L"tiempoCultivo";
-			this->Column4->MinimumWidth = 10;
-			this->Column4->Name = L"Column4";
-			this->Column4->Width = 200;
-			// 
-			// Usuario
-			// 
-			this->Usuario->HeaderText = L"Usuario";
-			this->Usuario->MinimumWidth = 10;
-			this->Usuario->Name = L"Usuario";
-			this->Usuario->Width = 200;
 			// 
 			// frmMantCultivos
 			// 
@@ -331,10 +319,14 @@ namespace SistemaInvernaderoView {
 		CultivoController^ objCultivoController = gcnew CultivoController();
 		cultivo^ objCultivo = objCultivoController->buscarCultivoxCodigo(codigoEditar);
 <<<<<<< HEAD
+<<<<<<< HEAD
 		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo(objCultivo);
 =======
 		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo();
 >>>>>>> bc4f0a0 (d)
+=======
+		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo(objCultivo);
+>>>>>>> e7e2505 (troste)
 		ventanaEditarCultivo->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}

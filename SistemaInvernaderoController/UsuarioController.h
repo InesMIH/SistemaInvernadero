@@ -19,6 +19,7 @@ namespace SistemaInvernaderoController {
 		List<usuario^>^ buscarUsuarioxCargo(String^ cargo);
 		void eliminarUsuario(int idEliminar);
 		void actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena);
+<<<<<<< HEAD
 =======
 =======
 		List<usuario^>^ buscarUsuarioxCargo(String^ cargo);
@@ -26,5 +27,7 @@ namespace SistemaInvernaderoController {
 >>>>>>> bc4f0a0 (d)
 
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> e7e2505 (troste)
 	};
 }

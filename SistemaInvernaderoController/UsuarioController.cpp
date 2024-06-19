@@ -163,6 +163,9 @@ void UsuarioController::eliminarUsuario(int idEliminar) {
 	escribirArchivo(listaUsuario);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7e2505 (troste)
 
 void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena) {
 	List<usuario^>^ listaUsuario = buscarUsuarioAll();
@@ -179,8 +182,11 @@ void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo,
 	escribirArchivo(listaUsuario);
 
 }
+<<<<<<< HEAD
 =======
 }
 >>>>>>> b5a1190 (b)
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> e7e2505 (troste)

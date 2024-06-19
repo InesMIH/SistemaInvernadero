@@ -8,6 +8,7 @@ namespace SistemaInvernaderoModel{
 	private:
 		int codigo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		double humedad;
 		double luminosidad;
 		double temperatura;
@@ -27,12 +28,18 @@ namespace SistemaInvernaderoModel{
 		String^ humedad;
 		String^ luminosidad;
 		String^ temperatura;
+=======
+		double humedad;
+		double luminosidad;
+		double temperatura;
+>>>>>>> e7e2505 (troste)
 	public:
 		ambiente();
-		ambiente(int codigo, String^ humedad, String^ luminosidad, String^ temperatura);
+		ambiente(int codigo, double humedad, double luminosidad, double temperatura);
 
 		int getcodigo();
 		void setcodigo(int codigo);
+<<<<<<< HEAD
 		String^ gethumedad();
 		void sethumedad(String^ humedad);
 		String^ getluminosidad();
@@ -40,5 +47,13 @@ namespace SistemaInvernaderoModel{
 		String^ gettemperatura();
 		void settemperatura(String^ temperatura);
 >>>>>>> 9367295 (f)
+=======
+		double gethumedad();
+		void sethumedad(double humedad);
+		double getluminosidad();
+		void setluminosidad(double luminosidad);
+		double gettemperatura();
+		void settemperatura(double temperatura);
+>>>>>>> e7e2505 (troste)
 	};
 }
