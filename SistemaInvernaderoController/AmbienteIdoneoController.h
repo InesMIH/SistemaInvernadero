@@ -8,10 +8,11 @@ namespace SistemaInvernaderoController {
 	public:
 		AmbienteIdoneoController();
 		List<ambienteIdoneo^>^ buscarAmbienteIdoneoALL();
-		void agregarNuevoAmbienteIdoneo(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ informacion);
+		void agregarNuevoAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
 		void escribirArchivo(List<ambienteIdoneo^>^ listaAmbienteIdoneo);
 		void eliminarAmbienteIdoneo(int codigo);
 		ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigoBuscado);
+		void actualizarAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
 	};
 
 }

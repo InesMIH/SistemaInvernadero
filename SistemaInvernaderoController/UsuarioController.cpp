@@ -132,3 +132,19 @@ void UsuarioController::eliminarUsuario(int idEliminar) {
 	}
 	escribirArchivo(listaUsuario);
 }
+
+void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena) {
+	List<usuario^>^ listaUsuario = buscarUsuarioAll();
+	UsuarioController^ objusuariocontroller = gcnew UsuarioController();
+	usuario^ objusuario = objusuariocontroller->buscarUsuarioxCodigo(id);
+	for (int i = 0; i < listaUsuario->Count; i++) {
+		if (listaUsuario[i]->getid() == id) {
+			listaUsuario[i]->setNombre(Nombre);
+			listaUsuario[i]->setCargo(Cargo);
+			listaUsuario[i]->setContrasena(contrasena);
+			break;
+		}
+	}
+	escribirArchivo(listaUsuario);
+
+}

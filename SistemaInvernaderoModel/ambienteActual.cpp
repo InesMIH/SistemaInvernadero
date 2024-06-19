@@ -6,7 +6,7 @@ ambienteActual::ambienteActual() {
 
 }
 
-ambienteActual::ambienteActual(int codigo, String^ humedad, String^ luminosidad, String^ temperatura, String^ hora, String^ fecha) : ambiente(codigo, humedad, luminosidad, temperatura) {
+ambienteActual::ambienteActual(int codigo, double humedad, double luminosidad, double temperatura, String^ hora, String^ fecha) : ambiente(codigo, humedad, luminosidad, temperatura) {
 	this->hora = hora;
 	this->fecha = fecha;
 }
