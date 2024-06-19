@@ -69,6 +69,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox12;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
 
 	private:
 		/// <summary>
@@ -101,6 +102,7 @@ namespace SistemaInvernaderoView {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -111,7 +113,7 @@ namespace SistemaInvernaderoView {
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -279,6 +281,7 @@ namespace SistemaInvernaderoView {
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->button4);
 			this->groupBox2->Controls->Add(this->button3);
 			this->groupBox2->Controls->Add(this->label12);
 			this->groupBox2->Controls->Add(this->label11);
@@ -297,6 +300,16 @@ namespace SistemaInvernaderoView {
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Datos del ambiente";
 			this->groupBox2->Enter += gcnew System::EventHandler(this, &frmNuevoCultivo::groupBox2_Enter);
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(469, 41);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(130, 51);
+			this->button3->TabIndex = 12;
+			this->button3->Text = L"Buscar";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
 			// label12
 			// 
@@ -342,6 +355,7 @@ namespace SistemaInvernaderoView {
 			this->textBox11->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->textBox11->Size = System::Drawing::Size(179, 240);
 			this->textBox11->TabIndex = 10;
+			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			// 
 			// textBox10
 			// 
@@ -380,15 +394,15 @@ namespace SistemaInvernaderoView {
 			this->label13->TabIndex = 6;
 			this->label13->Text = L"Codigo Ambiente:";
 			// 
-			// button3
+			// button4
 			// 
-			this->button3->Location = System::Drawing::Point(469, 41);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(130, 51);
-			this->button3->TabIndex = 12;
-			this->button3->Text = L"Buscar";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
+			this->button4->Location = System::Drawing::Point(469, 111);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(130, 51);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"Guardar";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
 			// frmNuevoCultivo
 			// 
@@ -457,5 +471,29 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	this->textBox10->Text = Convert::ToString(objAmbienteIdoneo->gettemperatura());
 	this->textBox11->Text = objAmbienteIdoneo->getinformacion();
 }
+	   private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		   int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox12->Text);
+		   AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		   int codigoEnUso = objAmbienteIdoneoController->codigoExisteAmbienteIdoneo(codigoAmbienteIdoneo);
+		   if (codigoEnUso) {
+			   MessageBox::Show("El codigo ya está en uso" + "Codigo Recomendado: " + Convert::ToString(codigoEnUso + 1));
+		   }
+		   else {
+			   double humedad = Convert::ToDouble(this->textBox8->Text);
+			   double luminosidad = Convert::ToDouble(this->textBox9->Text);
+			   double temperatura = Convert::ToDouble(this->textBox10->Text);
+			   String^ informacion = this->textBox11->Text;
+			   int existeAmbiente = objAmbienteIdoneoController->existeAmbiente(humedad, luminosidad, temperatura);
+			   if (existeAmbiente) {
+				   MessageBox::Show("Ya existe un ambiente con esos parametros" + "Codigo: " + Convert::ToString(existeAmbiente));
+			   }
+			   else
+			   {
+				   objAmbienteIdoneoController->agregarNuevoAmbienteIdoneo(codigoAmbienteIdoneo, humedad, luminosidad, temperatura, informacion);
+				   MessageBox::Show("Se guardó correctamente.");
+			   }
+		   }
+		   
+	   }
 };
 }

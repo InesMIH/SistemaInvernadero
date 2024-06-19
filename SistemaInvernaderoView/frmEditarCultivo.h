@@ -383,6 +383,7 @@ namespace SistemaInvernaderoView {
 			this->textBox11->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->textBox11->Size = System::Drawing::Size(179, 227);
 			this->textBox11->TabIndex = 10;
+			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			this->textBox11->TextChanged += gcnew System::EventHandler(this, &frmEditarCultivo::textBox10_TextChanged);
 			// 
 			// textBox10

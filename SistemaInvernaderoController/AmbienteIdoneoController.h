@@ -11,8 +11,9 @@ namespace SistemaInvernaderoController {
 		void agregarNuevoAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
 		void escribirArchivo(List<ambienteIdoneo^>^ listaAmbienteIdoneo);
 		void eliminarAmbienteIdoneo(int codigo);
-		ambienteIdoneo^ AmbienteIdoneoController::buscarAmbienteIdoneoxCodigo(int codigoBuscado);
+		ambienteIdoneo^ buscarAmbienteIdoneoxCodigo(int codigoBuscado);
 		void actualizarAmbienteIdoneo(int codigo, double humedad, double luminosidad, double temperatura, String^ informacion);
+		int codigoExisteAmbienteIdoneo(int codigobuscado);
+		int existeAmbiente(double humedad, double luminosidad, double temperatura);
 	};
-
 }
