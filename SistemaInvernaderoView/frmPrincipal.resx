@@ -125,10 +125,50 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 44</value>
 =======
 =======
+=======
+  <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 44</value>
+  </data>
+  <data name="menúToolStripMenuItem.Text" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1474, 40</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 44</value>
+  </data>
+  <data name="mantenimientoDeSensoresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mantenimiento de Sensores</value>
+  </data>
+>>>>>>> ee0c396 (agregado)
   <data name="configuraciónDeSensorTemperaturaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>553, 44</value>
   </data>
@@ -147,6 +187,7 @@
   <data name="configuraciónDeSensorLuminosidadToolStripMenuItem.Text" xml:space="preserve">
     <value>Configuración de Sensor Luminosidad</value>
   </data>
+<<<<<<< HEAD
 >>>>>>> 7c42f2d (queso)
   <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 44</value>
@@ -154,6 +195,8 @@
   <data name="mantenimientoDeSensoresToolStripMenuItem.Text" xml:space="preserve">
     <value>Mantenimiento de Sensores</value>
   </data>
+=======
+>>>>>>> ee0c396 (agregado)
   <data name="mantenimientoDeReguladoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 44</value>
   </data>
@@ -306,6 +349,7 @@
   </data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b5a1190 (b)
 =======
@@ -343,6 +387,8 @@
     <value>0</value>
   </data>
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> ee0c396 (agregado)
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -356,6 +402,7 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1474, 897</value>
+<<<<<<< HEAD
 =======
 =======
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
@@ -365,6 +412,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>932, 658</value>
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> ee0c396 (agregado)
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
