@@ -1,0 +1,2 @@
+#include "frmVentilador.h"
+

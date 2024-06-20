@@ -36,13 +36,15 @@ namespace SistemaInvernaderoView {
 		}
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label3;
+
 	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::TextBox^ textBox3;
+
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::Label^ label3;
 	protected:
 
 	private:
@@ -60,13 +62,13 @@ namespace SistemaInvernaderoView {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -88,15 +90,6 @@ namespace SistemaInvernaderoView {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Voltaje Máximo:";
 			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(36, 157);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(125, 13);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Porcentaje de Humedad:";
-			// 
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->textBox3);
@@ -111,13 +104,6 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Detalles de Sensor Humedad";
-			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(186, 149);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(117, 20);
-			this->textBox3->TabIndex = 5;
 			// 
 			// textBox2
 			// 
@@ -152,6 +138,22 @@ namespace SistemaInvernaderoView {
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &frmSensorHumedad::button2_Click);
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(186, 149);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(117, 20);
+			this->textBox3->TabIndex = 5;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(36, 157);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(125, 13);
+			this->label3->TabIndex = 2;
+			this->label3->Text = L"Porcentaje de Humedad:";
 			// 
 			// frmSensorHumedad
 			// 

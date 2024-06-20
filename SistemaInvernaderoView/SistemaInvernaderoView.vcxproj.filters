@@ -12,6 +12,9 @@
     <ClCompile Include="frmSensorTemperatura.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="frmPrincipal1.cpp" />
+    <ClCompile Include="frmVentilador.cpp" />
+    <ClCompile Include="frmFoco.cpp" />
+    <ClCompile Include="frmRociador.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmEditarRegulador.h" />
@@ -24,5 +27,8 @@
     <ClInclude Include="frmSensorLuminosidad.h" />
     <ClInclude Include="frmSensorTemperatura.h" />
     <ClInclude Include="frmPrincipal1.h" />
+    <ClInclude Include="frmVentilador.h" />
+    <ClInclude Include="frmFoco.h" />
+    <ClInclude Include="frmRociador.h" />
   </ItemGroup>
 </Project>

@@ -4,6 +4,9 @@
 #include "frmSensorTemperatura.h"
 #include "frmSensorHumedad.h"
 #include "frmSensorLuminosidad.h"
+#include "frmRociador.h"
+#include "frmFoco.h"
+#include "frmVentilador.h"
 
 namespace SistemaInvernaderoView {
 
@@ -48,6 +51,9 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::ToolStripMenuItem^ configuraciónDeSensorLuminosidadToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoDeReguladoresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ reporteDeFallasToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ rociadorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ focoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ventiladorToolStripMenuItem;
 
 	private:
 		/// <summary>
@@ -69,6 +75,9 @@ namespace SistemaInvernaderoView {
 			this->configuraciónDeSensorHumedadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->configuraciónDeSensorLuminosidadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoDeReguladoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->rociadorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->focoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ventiladorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->reporteDeFallasToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -126,10 +135,35 @@ namespace SistemaInvernaderoView {
 			// 
 			// mantenimientoDeReguladoresToolStripMenuItem
 			// 
+			this->mantenimientoDeReguladoresToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->rociadorToolStripMenuItem,
+					this->focoToolStripMenuItem, this->ventiladorToolStripMenuItem
+			});
 			this->mantenimientoDeReguladoresToolStripMenuItem->Name = L"mantenimientoDeReguladoresToolStripMenuItem";
 			this->mantenimientoDeReguladoresToolStripMenuItem->Size = System::Drawing::Size(240, 22);
 			this->mantenimientoDeReguladoresToolStripMenuItem->Text = L"Mantenimiento de Reguladores";
 			this->mantenimientoDeReguladoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoDeReguladoresToolStripMenuItem_Click);
+			// 
+			// rociadorToolStripMenuItem
+			// 
+			this->rociadorToolStripMenuItem->Name = L"rociadorToolStripMenuItem";
+			this->rociadorToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->rociadorToolStripMenuItem->Text = L"Roceador";
+			this->rociadorToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::rociadorToolStripMenuItem_Click);
+			// 
+			// focoToolStripMenuItem
+			// 
+			this->focoToolStripMenuItem->Name = L"focoToolStripMenuItem";
+			this->focoToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->focoToolStripMenuItem->Text = L"Foco";
+			this->focoToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::focoToolStripMenuItem_Click);
+			// 
+			// ventiladorToolStripMenuItem
+			// 
+			this->ventiladorToolStripMenuItem->Name = L"ventiladorToolStripMenuItem";
+			this->ventiladorToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->ventiladorToolStripMenuItem->Text = L"Ventilador";
+			this->ventiladorToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::ventiladorToolStripMenuItem_Click);
 			// 
 			// reporteDeFallasToolStripMenuItem
 			// 
@@ -178,6 +212,18 @@ private: System::Void configuraciónDeSensorHumedadToolStripMenuItem_Click(System
 private: System::Void configuraciónDeSensorLuminosidadToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	frmSensorLuminosidad^ ventanaSensorLuminosidad = gcnew frmSensorLuminosidad();
 	ventanaSensorLuminosidad->Show();
+}
+private: System::Void rociadorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmRociador^ ventanaRoceador = gcnew frmRociador();
+	ventanaRoceador->Show(); 
+}
+private: System::Void focoToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmFoco^ ventanaFoco = gcnew frmFoco();
+	ventanaFoco->Show(); 
+}
+private: System::Void ventiladorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmVentilador^ ventanaVentilador = gcnew frmVentilador();
+	ventanaVentilador->Show(); 
 }
 };
 }
