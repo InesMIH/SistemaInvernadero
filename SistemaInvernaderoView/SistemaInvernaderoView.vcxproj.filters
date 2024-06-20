@@ -62,6 +62,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
     <ClCompile Include="frmMantReguladores.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
@@ -74,10 +77,13 @@
     <ClCompile Include="frmEditarRegulador.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+<<<<<<< HEAD
 =======
 >>>>>>> b5a1190 (b)
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 7c42f2d (queso)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -124,6 +130,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
     <ClInclude Include="frmMantReguladores.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -136,9 +145,12 @@
     <ClInclude Include="frmEditarRegulador.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
 =======
 >>>>>>> b5a1190 (b)
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 7c42f2d (queso)
   </ItemGroup>
 </Project>

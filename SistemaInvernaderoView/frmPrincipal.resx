@@ -124,27 +124,55 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 44</value>
 =======
+=======
+  <data name="configuraciónDeSensorTemperaturaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 44</value>
+  </data>
+  <data name="configuraciónDeSensorTemperaturaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuración de Sensor Temperatura</value>
+  </data>
+  <data name="configuraciónDeSensorHumedadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 44</value>
+  </data>
+  <data name="configuraciónDeSensorHumedadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuración de Sensor Humedad</value>
+  </data>
+  <data name="configuraciónDeSensorLuminosidadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 44</value>
+  </data>
+  <data name="configuraciónDeSensorLuminosidadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuración de Sensor Luminosidad</value>
+  </data>
+>>>>>>> 7c42f2d (queso)
   <data name="mantenimientoDeSensoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
+    <value>484, 44</value>
   </data>
   <data name="mantenimientoDeSensoresToolStripMenuItem.Text" xml:space="preserve">
     <value>Mantenimiento de Sensores</value>
   </data>
+  <data name="mantenimientoDeReguladoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 44</value>
+  </data>
+  <data name="mantenimientoDeReguladoresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mantenimiento de Reguladores</value>
+  </data>
   <data name="mantenimientoDeCultivosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
+    <value>484, 44</value>
   </data>
   <data name="mantenimientoDeCultivosToolStripMenuItem.Text" xml:space="preserve">
     <value>Mantenimiento de Cultivos</value>
   </data>
   <data name="mantenimientoDeUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 44</value>
+    <value>484, 44</value>
   </data>
   <data name="mantenimientoDeUsuariosToolStripMenuItem.Text" xml:space="preserve">
     <value>Mantenimiento de Usuarios</value>
   </data>
+<<<<<<< HEAD
   <data name="menúToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
 >>>>>>> b5a1190 (b)
@@ -253,18 +281,25 @@
     <value>Mantenimiento de Usuarios</value>
   </data>
 <<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
   <data name="reporteDeFallaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 44</value>
   </data>
   <data name="reporteDeFallaToolStripMenuItem.Text" xml:space="preserve">
     <value>Reporte de Falla</value>
   </data>
+<<<<<<< HEAD
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 44</value>
 =======
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>448, 44</value>
 >>>>>>> 6cb23e4 (c)
+=======
+  <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 44</value>
+>>>>>>> 7c42f2d (queso)
   </data>
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>Salir</value>
@@ -351,6 +386,9 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
   <data name="&gt;&gt;configuraciónDeSensorTemperaturaToolStripMenuItem.Name" xml:space="preserve">
     <value>configuraciónDeSensorTemperaturaToolStripMenuItem</value>
   </data>
@@ -375,8 +413,11 @@
   <data name="&gt;&gt;mantenimientoDeReguladoresToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+<<<<<<< HEAD
 =======
 >>>>>>> b5a1190 (b)
+=======
+>>>>>>> 7c42f2d (queso)
   <data name="&gt;&gt;mantenimientoDeCultivosToolStripMenuItem.Name" xml:space="preserve">
     <value>mantenimientoDeCultivosToolStripMenuItem</value>
   </data>
@@ -391,14 +432,20 @@
   </data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
   <data name="&gt;&gt;reporteDeFallaToolStripMenuItem.Name" xml:space="preserve">
     <value>reporteDeFallaToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;reporteDeFallaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+<<<<<<< HEAD
 =======
 >>>>>>> 6cb23e4 (c)
+=======
+>>>>>>> 7c42f2d (queso)
   <data name="&gt;&gt;salirToolStripMenuItem.Name" xml:space="preserve">
     <value>salirToolStripMenuItem</value>
   </data>

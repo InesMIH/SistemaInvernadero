@@ -123,6 +123,8 @@
 >>>>>>> b5a1190 (b)
 =======
     <ClCompile Include="frmEditarCultivo.cpp" />
+    <ClCompile Include="frmEditarRegulador.cpp" />
+    <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmEditarUsuario.cpp" />
 >>>>>>> bc4f0a0 (d)
     <ClCompile Include="frmMantCultivos.cpp" />
@@ -152,14 +154,20 @@
       <FileType>CppForm</FileType>
     </ClInclude>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
     <ClInclude Include="frmEditarRegulador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmEditarSensor.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+<<<<<<< HEAD
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 7c42f2d (queso)
     <ClInclude Include="frmEditarUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -208,14 +216,20 @@
       <DependentUpon>frmEditarCultivo.h</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
     <EmbeddedResource Include="frmEditarRegulador.resx">
       <DependentUpon>frmEditarRegulador.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditarSensor.resx">
       <DependentUpon>frmEditarSensor.h</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 7c42f2d (queso)
     <EmbeddedResource Include="frmEditarUsuario.resx">
       <DependentUpon>frmEditarUsuario.h</DependentUpon>
     </EmbeddedResource>
