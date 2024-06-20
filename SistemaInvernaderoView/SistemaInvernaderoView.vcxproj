@@ -1,381 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|x64">
-      <Configuration>Debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|x64">
-      <Configuration>Release</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-  </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{2A6F14EF-C84F-45C4-9561-CB268B98F834}</ProjectGuid>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>SistemaInvernaderoView</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>main</EntryPointSymbol>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies />
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies />
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies />
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ProjectReference Include="..\SistemaInvernaderoController\SistemaInvernaderoController.vcxproj">
-      <Project>{1c26ef9c-6880-49fd-a4aa-247cb682f2a6}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
-      <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-    <ClCompile Include="frmEditarRegulador.cpp" />
-    <ClCompile Include="frmFoco.cpp" />
-    <ClCompile Include="frmMantReguladores.cpp" />
-    <ClCompile Include="frmEditarSensor.cpp" />
-    <ClCompile Include="frmMantSensores.cpp" />
-    <ClCompile Include="frmNuevoSensor.cpp" />
-    <ClCompile Include="frmPrincipal1.cpp" />
-    <ClCompile Include="frmReporteDeFallas.cpp" />
-    <ClCompile Include="frmRociador.cpp" />
-    <ClCompile Include="frmSensorHumedad.cpp" />
-    <ClCompile Include="frmSensorLuminosidad.cpp" />
-    <ClCompile Include="frmSensorTemperatura.cpp" />
-    <ClCompile Include="frmVentilador.cpp" />
-=======
-=======
->>>>>>> b5a1190 (b)
-=======
-    <ClCompile Include="frmEditarCultivo.cpp" />
-    <ClCompile Include="frmEditarRegulador.cpp" />
-    <ClCompile Include="frmEditarSensor.cpp" />
-    <ClCompile Include="frmEditarUsuario.cpp" />
->>>>>>> bc4f0a0 (d)
-    <ClCompile Include="frmMantCultivos.cpp" />
-    <ClCompile Include="frmMantReguladores.cpp" />
-    <ClCompile Include="frmMantSensores.cpp" />
-    <ClCompile Include="frmMantUsuarios.cpp" />
-    <ClCompile Include="frmNuevoCultivo.cpp" />
-    <ClCompile Include="frmNuevoSensor.cpp" />
-    <ClCompile Include="frmNuevoUsuario.cpp" />
-    <ClCompile Include="frmPrincipal.cpp" />
-    <ClCompile Include="frmReporteDeFallas.cpp" />
-    <ClCompile Include="frmSensorHumedad.cpp" />
-    <ClCompile Include="frmSensorLuminosidad.cpp" />
-    <ClCompile Include="frmSensorTemperatura.cpp" />
-<<<<<<< HEAD
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-=======
-    <ClCompile Include="login.cpp" />
->>>>>>> b5a1190 (b)
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ClInclude Include="frmEditarRegulador.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmFoco.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantReguladores.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarSensor.h">
-=======
-=======
-    <ClInclude Include="frmEditarCultivo.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarRegulador.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarSensor.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarUsuario.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
->>>>>>> bc4f0a0 (d)
-    <ClInclude Include="frmMantCultivos.h">
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantReguladores.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantSensores.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ClInclude Include="frmNuevoSensor.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmPrincipal1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmReporteDeFallas.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmRociador.h">
-=======
-=======
-    <ClInclude Include="frmMantUsuarios.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
->>>>>>> bc4f0a0 (d)
-    <ClInclude Include="frmNuevoCultivo.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoSensor.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoUsuario.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmPrincipal.h">
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmReporteDeFallas.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmSensorHumedad.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmSensorLuminosidad.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmSensorTemperatura.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ClInclude Include="frmVentilador.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-    <EmbeddedResource Include="frmEditarRegulador.resx">
-      <DependentUpon>frmEditarRegulador.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFoco.resx">
-      <DependentUpon>frmFoco.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantReguladores.resx">
-      <DependentUpon>frmMantReguladores.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarSensor.resx">
-      <DependentUpon>frmEditarSensor.h</DependentUpon>
-=======
-=======
-    <ClInclude Include="login.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
->>>>>>> b5a1190 (b)
-  </ItemGroup>
-  <ItemGroup>
-=======
-    <EmbeddedResource Include="frmEditarCultivo.resx">
-      <DependentUpon>frmEditarCultivo.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarRegulador.resx">
-      <DependentUpon>frmEditarRegulador.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarSensor.resx">
-      <DependentUpon>frmEditarSensor.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarUsuario.resx">
-      <DependentUpon>frmEditarUsuario.h</DependentUpon>
-    </EmbeddedResource>
->>>>>>> bc4f0a0 (d)
-    <EmbeddedResource Include="frmMantCultivos.resx">
-      <DependentUpon>frmMantCultivos.h</DependentUpon>
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantReguladores.resx">
-      <DependentUpon>frmMantReguladores.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantSensores.resx">
-      <DependentUpon>frmMantSensores.h</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <EmbeddedResource Include="frmNuevoSensor.resx">
-      <DependentUpon>frmNuevoSensor.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal1.resx">
-      <DependentUpon>frmPrincipal1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReporteDeFallas.resx">
-      <DependentUpon>frmReporteDeFallas.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRociador.resx">
-      <DependentUpon>frmRociador.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSensorHumedad.resx">
-      <DependentUpon>frmSensorHumedad.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSensorLuminosidad.resx">
-      <DependentUpon>frmSensorLuminosidad.h</DependentUpon>
-=======
-=======
-    <EmbeddedResource Include="frmMantUsuarios.resx">
-      <DependentUpon>frmMantUsuarios.h</DependentUpon>
-    </EmbeddedResource>
->>>>>>> bc4f0a0 (d)
-    <EmbeddedResource Include="frmNuevoCultivo.resx">
-      <DependentUpon>frmNuevoCultivo.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoSensor.resx">
-      <DependentUpon>frmNuevoSensor.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoUsuario.resx">
-      <DependentUpon>frmNuevoUsuario.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.h</DependentUpon>
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReporteDeFallas.resx">
-      <DependentUpon>frmReporteDeFallas.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSensorHumedad.resx">
-      <DependentUpon>frmSensorHumedad.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSensorLuminosidad.resx">
-      <DependentUpon>frmSensorLuminosidad.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSensorTemperatura.resx">
-      <DependentUpon>frmSensorTemperatura.h</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <EmbeddedResource Include="frmVentilador.resx">
-      <DependentUpon>frmVentilador.h</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-=======
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.h</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SistemaInvernaderoController\SistemaInvernaderoController.vcxproj">
-      <Project>{1c26ef9c-6880-49fd-a4aa-247cb682f2a6}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\SistemaInvernaderoModel\SistemaInvernaderoModel.vcxproj">
-      <Project>{ee70f4af-7958-448e-98e4-4e816f631eb3}</Project>
-    </ProjectReference>
->>>>>>> b5a1190 (b)
-  </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<VCProjectVersion>17.0</VCProjectVersion>
+		<ProjectGuid>{2A6F14EF-C84F-45C4-9561-CB268B98F834}</ProjectGuid>
+		<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+		<Keyword>ManagedCProj</Keyword>
+		<RootNamespace>SistemaInvernaderoView</RootNamespace>
+		<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CLRSupport>true</CLRSupport>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CLRSupport>true</CLRSupport>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CLRSupport>true</CLRSupport>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CLRSupport>true</CLRSupport>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="Shared">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup />
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<AdditionalDependencies />
+			<SubSystem>Windows</SubSystem>
+			<EntryPointSymbol>main</EntryPointSymbol>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<AdditionalDependencies />
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<AdditionalDependencies />
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<AdditionalDependencies />
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="frmEditarCultivo.cpp" />
+		<ClCompile Include="frmEditarRegulador.cpp" />
+		<ClCompile Include="frmEditarSensor.cpp" />
+		<ClCompile Include="frmEditarUsuario.cpp" />
+		<ClCompile Include="frmMantCultivos.cpp" />
+		<ClCompile Include="frmMantReguladores.cpp" />
+		<ClCompile Include="frmMantSensores.cpp" />
+		<ClCompile Include="frmMantUsuarios.cpp" />
+		<ClCompile Include="frmNuevoCultivo.cpp" />
+		<ClCompile Include="frmNuevoSensor.cpp" />
+		<ClCompile Include="frmNuevoUsuario.cpp" />
+		<ClCompile Include="frmPrincipal.cpp" />
+		<ClCompile Include="frmReporteDeFallas.cpp" />
+		<ClCompile Include="frmSensorHumedad.cpp" />
+		<ClCompile Include="frmSensorLuminosidad.cpp" />
+		<ClCompile Include="frmSensorTemperatura.cpp" />
+		<ClCompile Include="login.cpp" />
+		<ClCompile Include="main.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="frmEditarCultivo.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmEditarRegulador.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmEditarSensor.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmEditarUsuario.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmMantCultivos.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmMantReguladores.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmMantSensores.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmMantUsuarios.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmNuevoCultivo.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmNuevoSensor.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmNuevoUsuario.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmPrincipal.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmReporteDeFallas.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmSensorHumedad.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmSensorLuminosidad.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="frmSensorTemperatura.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="login.h">
+			<FileType>CppForm</FileType>
+		</ClInclude>
+		<ClInclude Include="resource.h" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
 </Project>

@@ -65,11 +65,7 @@ namespace SistemaInvernaderoView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-<<<<<<< HEAD
-		System::ComponentModel::Container ^components;
-=======
-		System::ComponentModel::Container^ components;
->>>>>>> 7c42f2d (queso)
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -214,17 +210,17 @@ namespace SistemaInvernaderoView {
 
 		}
 
-<<<<<<< HEAD
+
 		
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 		
-=======
+
 
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 
->>>>>>> 7c42f2d (queso)
+
 		int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index;
 		String^ tipoEditar = this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString();
 		ReguladorController^ objReguladorController = gcnew ReguladorController();
@@ -233,13 +229,11 @@ namespace SistemaInvernaderoView {
 		ventanaEditarRegulador->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}
-<<<<<<< HEAD
+
 private: System::Void frmMantReguladores_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
-=======
+
 	private: System::Void frmMantReguladores_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
->>>>>>> 7c42f2d (queso)
-}

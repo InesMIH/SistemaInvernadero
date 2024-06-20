@@ -34,33 +34,32 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 
-=======
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::TextBox^ textBox3;
->>>>>>> 7c42f2d (queso)
+
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
-<<<<<<< HEAD
+
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Label^ label3;
 	protected:
-=======
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-=======
+
+
 	protected:
->>>>>>> 7c42f2d (queso)
+
 
 	private:
 		/// <summary>
@@ -75,27 +74,25 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-=======
+
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
->>>>>>> 7c42f2d (queso)
+
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-<<<<<<< HEAD
+
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-=======
->>>>>>> 7c42f2d (queso)
+
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -117,8 +114,7 @@ namespace SistemaInvernaderoView {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Voltaje Máximo:";
 			// 
-<<<<<<< HEAD
-=======
+
 			// label3
 			// 
 			this->label3->AutoSize = true;
@@ -128,7 +124,7 @@ namespace SistemaInvernaderoView {
 			this->label3->TabIndex = 2;
 			this->label3->Text = L"Porcentaje de Humedad:";
 			// 
->>>>>>> 7c42f2d (queso)
+
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->textBox3);
@@ -144,8 +140,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Detalles de Sensor Humedad";
 			// 
-<<<<<<< HEAD
-=======
+
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(186, 149);
@@ -153,7 +148,7 @@ namespace SistemaInvernaderoView {
 			this->textBox3->Size = System::Drawing::Size(117, 20);
 			this->textBox3->TabIndex = 5;
 			// 
->>>>>>> 7c42f2d (queso)
+
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(186, 88);
@@ -188,7 +183,6 @@ namespace SistemaInvernaderoView {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &frmSensorHumedad::button2_Click);
 			// 
-<<<<<<< HEAD
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(186, 149);
@@ -232,16 +226,15 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	this->Close();
 }
 };
-=======
+
 			this->components = gcnew System::ComponentModel::Container();
 			this->Size = System::Drawing::Size(300,300);
 			this->Text = L"frmSensorHumedad";
 			this->Padding = System::Windows::Forms::Padding(0);
-=======
+
 			// frmSensorHumedad
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
->>>>>>> 7c42f2d (queso)
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(352, 289);
 			this->Controls->Add(this->button2);
@@ -265,10 +258,3 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		MessageBox::Show("Los detalles del sensor Humedad han sido agregados con éxito. ");
 		this->Close();
 	}
-	};
-<<<<<<< HEAD
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
-}
-=======
-}
->>>>>>> 7c42f2d (queso)
