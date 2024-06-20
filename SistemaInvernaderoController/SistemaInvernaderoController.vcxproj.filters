@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="SensorController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
 <<<<<<< HEAD
     <ClInclude Include="ReguladorController.h">
 =======
+=======
+>>>>>>> 7c42f2d (queso)
     <ClInclude Include="UsuarioController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -29,6 +32,12 @@
     </ClInclude>
     <ClInclude Include="AmbienteIdoneoController.h">
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorController.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReguladorController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -49,10 +58,13 @@
     <ClCompile Include="UsuarioController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="AmbienteIdoneoController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
     <ClCompile Include="SensorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="AmbienteIdoneoController.cpp">
+    <ClCompile Include="ReguladorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)

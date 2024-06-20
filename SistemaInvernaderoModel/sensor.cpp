@@ -7,10 +7,14 @@ sensor::sensor() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 sensor::sensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
 =======
 sensor::sensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+sensor::sensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
+>>>>>>> 7c42f2d (queso)
 	this->codigo = codigo;
 	this->tipo = tipo;
 	this->enFuncionamiento = enFuncionamiento;
@@ -33,6 +37,7 @@ void sensor::settipo(String^ tipo) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int sensor::getenFuncionamiento() {
 	return this->enFuncionamiento;
 }
@@ -43,6 +48,12 @@ String^ sensor::getenFuncionamiento() {
 }
 void sensor::setenFuncionamiento(String^ enFuncionamiento) {
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+int sensor::getenFuncionamiento() {
+	return this->enFuncionamiento;
+}
+void sensor::setenFuncionamiento(int enFuncionamiento) {
+>>>>>>> 7c42f2d (queso)
 	this->enFuncionamiento = enFuncionamiento;
 }
 

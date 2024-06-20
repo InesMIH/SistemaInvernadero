@@ -88,6 +88,18 @@
     <ClCompile Include="frmNuevoUsuario.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+    <ClCompile Include="frmMantReguladores.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
+    <ClCompile Include="frmReporteDeFallas.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
+    <ClCompile Include="frmEditarSensor.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
+    <ClCompile Include="frmEditarRegulador.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -135,6 +147,21 @@
     <ClInclude Include="frmNuevoUsuario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
 >>>>>>> bc4f0a0 (d)
+=======
+    <ClInclude Include="frmMantReguladores.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="frmReporteDeFallas.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="frmEditarSensor.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="frmEditarRegulador.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+>>>>>>> 7c42f2d (queso)
   </ItemGroup>
 </Project>

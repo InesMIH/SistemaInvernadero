@@ -58,7 +58,11 @@ namespace SistemaInvernaderoView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
+<<<<<<< HEAD
 		System::ComponentModel::Container ^components;
+=======
+		System::ComponentModel::Container^ components;
+>>>>>>> 7c42f2d (queso)
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -208,9 +212,17 @@ namespace SistemaInvernaderoView {
 #pragma endregion
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+<<<<<<< HEAD
 private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
+=======
+	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	};
+>>>>>>> 7c42f2d (queso)
 }

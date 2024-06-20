@@ -142,15 +142,19 @@
 >>>>>>> b5a1190 (b)
 =======
     <ClCompile Include="frmEditarCultivo.cpp" />
+    <ClCompile Include="frmEditarRegulador.cpp" />
+    <ClCompile Include="frmEditarSensor.cpp" />
     <ClCompile Include="frmEditarUsuario.cpp" />
 >>>>>>> bc4f0a0 (d)
     <ClCompile Include="frmMantCultivos.cpp" />
+    <ClCompile Include="frmMantReguladores.cpp" />
     <ClCompile Include="frmMantSensores.cpp" />
     <ClCompile Include="frmMantUsuarios.cpp" />
     <ClCompile Include="frmNuevoCultivo.cpp" />
     <ClCompile Include="frmNuevoSensor.cpp" />
     <ClCompile Include="frmNuevoUsuario.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="frmReporteDeFallas.cpp" />
     <ClCompile Include="frmSensorHumedad.cpp" />
     <ClCompile Include="frmSensorLuminosidad.cpp" />
     <ClCompile Include="frmSensorTemperatura.cpp" />
@@ -186,12 +190,21 @@
     <ClInclude Include="frmEditarCultivo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmEditarRegulador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarSensor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmEditarUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
 >>>>>>> bc4f0a0 (d)
     <ClInclude Include="frmMantCultivos.h">
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantReguladores.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantSensores.h">
@@ -226,6 +239,9 @@
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteDeFallas.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmSensorHumedad.h">
@@ -268,6 +284,12 @@
     <EmbeddedResource Include="frmEditarCultivo.resx">
       <DependentUpon>frmEditarCultivo.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarRegulador.resx">
+      <DependentUpon>frmEditarRegulador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarSensor.resx">
+      <DependentUpon>frmEditarSensor.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditarUsuario.resx">
       <DependentUpon>frmEditarUsuario.h</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +297,9 @@
     <EmbeddedResource Include="frmMantCultivos.resx">
       <DependentUpon>frmMantCultivos.h</DependentUpon>
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantReguladores.resx">
+      <DependentUpon>frmMantReguladores.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantSensores.resx">
       <DependentUpon>frmMantSensores.h</DependentUpon>
@@ -316,6 +341,15 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteDeFallas.resx">
+      <DependentUpon>frmReporteDeFallas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSensorHumedad.resx">
+      <DependentUpon>frmSensorHumedad.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSensorLuminosidad.resx">
+      <DependentUpon>frmSensorLuminosidad.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSensorTemperatura.resx">
       <DependentUpon>frmSensorTemperatura.h</DependentUpon>

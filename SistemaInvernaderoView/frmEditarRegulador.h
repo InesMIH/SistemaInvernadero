@@ -25,7 +25,11 @@ namespace SistemaInvernaderoView {
 			//
 		}
 
+<<<<<<< HEAD
 		frmEditarRegulador(reguladores ^ objRegulador) {
+=======
+		frmEditarRegulador(reguladores^ objRegulador) {
+>>>>>>> 7c42f2d (queso)
 			InitializeComponent();
 			this->objRegulador = objRegulador;
 		}
@@ -64,7 +68,11 @@ namespace SistemaInvernaderoView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
+<<<<<<< HEAD
 		System::ComponentModel::Container ^components;
+=======
+		System::ComponentModel::Container^ components;
+>>>>>>> 7c42f2d (queso)
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -216,15 +224,24 @@ namespace SistemaInvernaderoView {
 	}
 	private: System::Void comboBox2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
+<<<<<<< HEAD
 private: System::Void frmEditarRegulador_Load(System::Object^ sender, System::EventArgs^ e) {
 	this->comboBox2->Text = this->objRegulador->getTipo();
 	this->textBox1->Text = Convert::ToString(this->objRegulador->getcodigo());
 	this->comboBox1->Text = Convert::ToString(this->objRegulador->getenOperacion());
 	this->textBox2->Text = Convert::ToString(this->objRegulador->getpotencia());
+=======
+	private: System::Void frmEditarRegulador_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->comboBox2->Text = this->objRegulador->getTipo();
+		this->textBox1->Text = Convert::ToString(this->objRegulador->getcodigo());
+		this->comboBox1->Text = Convert::ToString(this->objRegulador->getenOperacion());
+		this->textBox2->Text = Convert::ToString(this->objRegulador->getpotencia());
+>>>>>>> 7c42f2d (queso)
 
 
 
 
+<<<<<<< HEAD
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
@@ -240,4 +257,21 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	this->Close();
 }
 };
+=======
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ tipo = this->comboBox2->Text;
+		int codigo = Convert::ToInt32(this->textBox1->Text);
+		int enOperacion = Convert::ToInt32(this->comboBox1->Text);
+		double potencia = Convert::ToDouble(this->textBox2->Text);
+		ReguladorController^ objReguladorController = gcnew ReguladorController();
+		objReguladorController->actualizarRegulador(tipo, codigo, enOperacion, potencia);
+		MessageBox::Show("El regulador ha sido actualizado con éxito");
+		this->Close();
+	}
+	};
+>>>>>>> 7c42f2d (queso)
 }

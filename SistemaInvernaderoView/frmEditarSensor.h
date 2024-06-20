@@ -63,7 +63,11 @@ namespace SistemaInvernaderoView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
+<<<<<<< HEAD
 		System::ComponentModel::Container ^components;
+=======
+		System::ComponentModel::Container^ components;
+>>>>>>> 7c42f2d (queso)
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -248,6 +252,7 @@ namespace SistemaInvernaderoView {
 		}
 #pragma endregion
 
+<<<<<<< HEAD
 private: System::Void frmEditarSensor_Load(System::Object^ sender, System::EventArgs^ e) {
 	this->textBox4->Text = Convert::ToString(this->objSensor->getcodigo());
 	this->comboBox1->Text = this->objSensor->gettipo();
@@ -276,4 +281,34 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
+=======
+	private: System::Void frmEditarSensor_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox4->Text = Convert::ToString(this->objSensor->getcodigo());
+		this->comboBox1->Text = this->objSensor->gettipo();
+		this->textBox5->Text = Convert::ToString(this->objSensor->getenFuncionamiento());
+		this->textBox1->Text = Convert::ToString(this->objSensor->getintervaloDeMuestreo());
+		this->textBox2->Text = Convert::ToString(this->objSensor->getmedicion());
+		this->textBox3->Text = Convert::ToString(this->objSensor->getunidad());
+
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		int codigo = Convert::ToInt32(this->textBox4->Text);
+		String^ tipo = this->comboBox1->Text;
+		int enFuncionamiento = Convert::ToInt32(this->textBox5->Text);
+		double intervaloDeMuestreo = Convert::ToDouble(this->textBox1->Text);
+		double medicion = Convert::ToDouble(this->textBox2->Text);
+		String^ unidad = this->textBox3->Text;
+		SensorController^ objSensorController = gcnew SensorController();
+		objSensorController->actualizarSensor(codigo, tipo, enFuncionamiento, intervaloDeMuestreo, medicion, unidad);
+
+		MessageBox::Show("El sensor ha sido actualizado con éxito. ");
+		this->Close();
+	}
+	private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	};
+>>>>>>> 7c42f2d (queso)
 }

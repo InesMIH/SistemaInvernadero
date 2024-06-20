@@ -1,3 +1,7 @@
 Ventilador;123;1;50
 Focos;456;1;37.5
+<<<<<<< HEAD
 Rociador;890;1;60
+=======
+Rociador;890;0;20
+>>>>>>> 7c42f2d (queso)

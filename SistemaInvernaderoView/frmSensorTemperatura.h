@@ -9,10 +9,15 @@ namespace SistemaInvernaderoView {
 	using namespace System::Data;
 	using namespace System::Drawing;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	using namespace SistemaInvernaderoModel;
 	using namespace SistemaInvernaderoController;
 =======
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+	using namespace SistemaInvernaderoModel;
+	using namespace SistemaInvernaderoController;
+>>>>>>> 7c42f2d (queso)
 
 	/// <summary>
 	/// Resumen de frmSensorTemperatura
@@ -40,20 +45,26 @@ namespace SistemaInvernaderoView {
 			}
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+<<<<<<< HEAD
 =======
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+>>>>>>> 7c42f2d (queso)
 
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -63,6 +74,9 @@ namespace SistemaInvernaderoView {
 		void InitializeComponent(void)
 		{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -118,19 +132,26 @@ namespace SistemaInvernaderoView {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &frmSensorTemperatura::button2_Click);
 			// 
+<<<<<<< HEAD
 =======
 			this->SuspendLayout();
 			// 
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+>>>>>>> 7c42f2d (queso)
 			// frmSensorTemperatura
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
 			this->ClientSize = System::Drawing::Size(333, 179);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox1);
+<<<<<<< HEAD
 			this->Name = L"frmSensorTemperatura";
 			this->Text = L"Sensor Temperatura";
 			this->groupBox1->ResumeLayout(false);
@@ -140,16 +161,26 @@ namespace SistemaInvernaderoView {
 			this->Name = L"frmSensorTemperatura";
 			this->Text = L"frmSensorTemperatura";
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+			this->Name = L"frmSensorTemperatura";
+			this->Text = L"Sensor Temperatura";
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+>>>>>>> 7c42f2d (queso)
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c42f2d (queso)
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		double resolucionC = Convert::ToDouble(this->textBox1->Text);
 		MessageBox::Show("Los detalles del sensor Temperatura han sido agregados con éxito. ");
 		this->Close();
 	}
+<<<<<<< HEAD
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
 }
@@ -157,4 +188,10 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 =======
 	};
 >>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+=======
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+	};
+>>>>>>> 7c42f2d (queso)
 }
