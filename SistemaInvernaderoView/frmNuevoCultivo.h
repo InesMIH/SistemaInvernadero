@@ -45,7 +45,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::TextBox^ textBox4;
-	private: System::Windows::Forms::TextBox^ textBox3;
+
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 
@@ -70,6 +70,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
 
 	private:
 		/// <summary>
@@ -85,11 +86,11 @@ namespace SistemaInvernaderoView {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
@@ -102,6 +103,7 @@ namespace SistemaInvernaderoView {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
@@ -113,18 +115,17 @@ namespace SistemaInvernaderoView {
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->dateTimePicker1);
 			this->groupBox1->Controls->Add(this->textBox5);
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Controls->Add(this->textBox6);
 			this->groupBox1->Controls->Add(this->textBox4);
-			this->groupBox1->Controls->Add(this->textBox3);
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label8);
@@ -141,6 +142,14 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos del Cultivo";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmNuevoCultivo::groupBox1_Enter);
+			// 
+			// dateTimePicker1
+			// 
+			this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Short;
+			this->dateTimePicker1->Location = System::Drawing::Point(294, 434);
+			this->dateTimePicker1->Name = L"dateTimePicker1";
+			this->dateTimePicker1->Size = System::Drawing::Size(173, 31);
+			this->dateTimePicker1->TabIndex = 21;
 			// 
 			// textBox5
 			// 
@@ -168,17 +177,10 @@ namespace SistemaInvernaderoView {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(294, 433);
+			this->textBox4->Location = System::Drawing::Point(294, 363);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(174, 31);
 			this->textBox4->TabIndex = 10;
-			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(294, 369);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(174, 31);
-			this->textBox3->TabIndex = 9;
 			// 
 			// textBox2
 			// 
@@ -301,6 +303,16 @@ namespace SistemaInvernaderoView {
 			this->groupBox2->Text = L"Datos del ambiente";
 			this->groupBox2->Enter += gcnew System::EventHandler(this, &frmNuevoCultivo::groupBox2_Enter);
 			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(469, 111);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(130, 51);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"Guardar";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
+			// 
 			// button3
 			// 
 			this->button3->Location = System::Drawing::Point(469, 41);
@@ -394,16 +406,6 @@ namespace SistemaInvernaderoView {
 			this->label13->TabIndex = 6;
 			this->label13->Text = L"Codigo Ambiente:";
 			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(469, 111);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(130, 51);
-			this->button4->TabIndex = 12;
-			this->button4->Text = L"Guardar";
-			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
-			// 
 			// frmNuevoCultivo
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
@@ -432,8 +434,8 @@ namespace SistemaInvernaderoView {
 		String^ nombre = this->textBox2->Text;
 		String^ origen = this->textBox5->Text;
 		String^ tipo = this->comboBox1->Text;
-		String^ tiempo = this->textBox3->Text;
-		String^ fecha = this->textBox4->Text;
+		String^ tiempo = this->textBox4->Text;
+		String^ fecha = this->dateTimePicker1->Text;
 		String^ NombreUsuario = this->textBox6->Text;
 		int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox12->Text);
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();

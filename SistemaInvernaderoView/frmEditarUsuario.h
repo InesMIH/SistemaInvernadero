@@ -45,7 +45,7 @@ namespace SistemaInvernaderoView {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
 	protected:
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
@@ -59,6 +59,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
 	private: usuario^ objUsuario;
+	private: System::Windows::Forms::Button^ button1;
 
 	private:
 		/// <summary>
@@ -73,7 +74,6 @@ namespace SistemaInvernaderoView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
@@ -84,18 +84,9 @@ namespace SistemaInvernaderoView {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(111, 472);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(104, 59);
-			this->button1->TabIndex = 20;
-			this->button1->Text = L"Grabar";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &frmEditarUsuario::button1_Click);
 			// 
 			// button2
 			// 
@@ -122,7 +113,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Size = System::Drawing::Size(592, 404);
 			this->groupBox1->TabIndex = 19;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Datos del Cultivo";
+			this->groupBox1->Text = L"Datos del Usuario";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmEditarUsuario::groupBox1_Enter);
 			// 
 			// comboBox1
@@ -190,6 +181,16 @@ namespace SistemaInvernaderoView {
 			this->label1->Size = System::Drawing::Size(86, 25);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Codigo:";
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(141, 472);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(112, 59);
+			this->button1->TabIndex = 21;
+			this->button1->Text = L"Grabar";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmEditarUsuario::button1_Click);
 			// 
 			// frmEditarUsuario
 			// 

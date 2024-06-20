@@ -113,7 +113,6 @@ List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
-		listaUsuario->Add(objUsuario);
 		if (Cargo->CompareTo(cargobuscar) == 0) {
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			listaUsuario->Add(objUsuario);
