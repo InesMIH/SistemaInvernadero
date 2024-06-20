@@ -6,7 +6,7 @@ sensor::sensor() {
 
 }
 
-sensor::sensor(int codigo, String^ tipo, String^ enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
+sensor::sensor(int codigo, String^ tipo, int enFuncionamiento, double intervaloDeMuestreo, double medicion, String^ unidad) {
 	this->codigo = codigo;
 	this->tipo = tipo;
 	this->enFuncionamiento = enFuncionamiento;
@@ -28,10 +28,10 @@ void sensor::settipo(String^ tipo) {
 	this->tipo = tipo;
 }
 
-String^ sensor::getenFuncionamiento() {
+int sensor::getenFuncionamiento() {
 	return this->enFuncionamiento;
 }
-void sensor::setenFuncionamiento(String^ enFuncionamiento) {
+void sensor::setenFuncionamiento(int enFuncionamiento) {
 	this->enFuncionamiento = enFuncionamiento;
 }
 

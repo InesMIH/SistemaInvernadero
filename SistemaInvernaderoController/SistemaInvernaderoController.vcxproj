@@ -113,12 +113,14 @@
   <ItemGroup>
     <ClInclude Include="AmbienteIdoneoController.h" />
     <ClInclude Include="CultivoController.h" />
+    <ClInclude Include="ReguladorController.h" />
     <ClInclude Include="SensorController.h" />
     <ClInclude Include="UsuarioController.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AmbienteIdoneoController.cpp" />
     <ClCompile Include="CultivoController.cpp" />
+    <ClCompile Include="ReguladorController.cpp" />
     <ClCompile Include="SensorController.cpp" />
     <ClCompile Include="UsuarioController.cpp" />
   </ItemGroup>

@@ -1,0 +1,3 @@
+Ventilador;123;1;50
+Focos;456;1;37.5
+Rociador;890;0;20

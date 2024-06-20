@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SensorController.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="UsuarioController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -25,6 +22,12 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="AmbienteIdoneoController.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorController.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReguladorController.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,10 +38,13 @@
     <ClCompile Include="UsuarioController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="AmbienteIdoneoController.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
     <ClCompile Include="SensorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="AmbienteIdoneoController.cpp">
+    <ClCompile Include="ReguladorController.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
