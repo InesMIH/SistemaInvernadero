@@ -310,5 +310,3 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 	private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
->>>>>>> 7c42f2d (queso)
-}

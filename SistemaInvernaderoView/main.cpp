@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "frmPrincipal1.h"
 
 
@@ -25,7 +24,6 @@ void main(array <String^>^ args)
 
 	Application::Run(% ventana); /*Aqui estoy ejecutando la ventana inicial*/
 
-=======
 #include "login.h" 
 
 using namespace System;

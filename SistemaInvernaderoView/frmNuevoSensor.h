@@ -434,9 +434,7 @@ namespace SistemaInvernaderoView {
 		MessageBox::Show("El sensor ha sido agregado ");
 		this->Close();
 
-
-<<<<<<< HEAD
 }
-=======
+
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
