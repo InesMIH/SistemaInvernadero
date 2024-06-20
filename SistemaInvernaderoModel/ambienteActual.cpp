@@ -13,7 +13,7 @@ ambienteActual::ambienteActual(int codigo, double humedad, double luminosidad, d
 
 String^ ambienteActual::gethora() {
 	return this->hora;
-}
+} 
 void ambienteActual::sethora(String^ hora) {
 	this->hora = hora;
 }
