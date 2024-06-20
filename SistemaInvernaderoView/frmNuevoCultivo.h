@@ -72,6 +72,25 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
 
+<<<<<<< HEAD
+
+	private: System::Windows::Forms::GroupBox^ groupBox2;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::TextBox^ textBox11;
+	private: System::Windows::Forms::TextBox^ textBox10;
+	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::TextBox^ textBox12;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+
+=======
+>>>>>>> b5a1190 (b)
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -102,9 +121,22 @@ namespace SistemaInvernaderoView {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+=======
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+>>>>>>> e7e2505 (troste)
+=======
+			this->button3 = (gcnew System::Windows::Forms::Button());
+>>>>>>> b5d3b4b (termo)
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -115,6 +147,23 @@ namespace SistemaInvernaderoView {
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+>>>>>>> 9367295 (f)
+=======
+>>>>>>> bc4f0a0 (d)
+=======
+			this->button3 = (gcnew System::Windows::Forms::Button());
+>>>>>>> e7e2505 (troste)
+=======
+			this->button4 = (gcnew System::Windows::Forms::Button());
+>>>>>>> b5d3b4b (termo)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -137,7 +186,19 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(67, 66);
 			this->groupBox1->Name = L"groupBox1";
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->groupBox1->Size = System::Drawing::Size(543, 601);
+=======
+			this->groupBox1->Size = System::Drawing::Size(638, 707);
+>>>>>>> 9367295 (f)
+=======
+			this->groupBox1->Size = System::Drawing::Size(638, 644);
+>>>>>>> bc4f0a0 (d)
+=======
+			this->groupBox1->Size = System::Drawing::Size(543, 601);
+>>>>>>> e7e2505 (troste)
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos del Cultivo";
@@ -177,11 +238,32 @@ namespace SistemaInvernaderoView {
 			// 
 			// textBox4
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->textBox4->Location = System::Drawing::Point(294, 363);
+=======
+			this->textBox4->Location = System::Drawing::Point(294, 433);
+>>>>>>> bc4f0a0 (d)
+=======
+			this->textBox4->Location = System::Drawing::Point(294, 363);
+>>>>>>> 5f43a7f (listo (?))
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(174, 31);
 			this->textBox4->TabIndex = 10;
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(294, 369);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(174, 31);
+			this->textBox3->TabIndex = 9;
+			// 
+>>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(294, 154);
@@ -263,7 +345,19 @@ namespace SistemaInvernaderoView {
 			// 
 			// button1
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->button1->Location = System::Drawing::Point(453, 704);
+=======
+			this->button1->Location = System::Drawing::Point(176, 797);
+>>>>>>> 9367295 (f)
+=======
+			this->button1->Location = System::Drawing::Point(176, 743);
+>>>>>>> bc4f0a0 (d)
+=======
+			this->button1->Location = System::Drawing::Point(453, 704);
+>>>>>>> e7e2505 (troste)
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(114, 41);
 			this->button1->TabIndex = 14;
@@ -273,7 +367,19 @@ namespace SistemaInvernaderoView {
 			// 
 			// button2
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->button2->Location = System::Drawing::Point(750, 704);
+=======
+			this->button2->Location = System::Drawing::Point(537, 797);
+>>>>>>> 9367295 (f)
+=======
+			this->button2->Location = System::Drawing::Point(498, 743);
+>>>>>>> bc4f0a0 (d)
+=======
+			this->button2->Location = System::Drawing::Point(750, 704);
+>>>>>>> e7e2505 (troste)
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(138, 41);
 			this->button2->TabIndex = 15;
@@ -281,9 +387,19 @@ namespace SistemaInvernaderoView {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button2_Click);
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			// groupBox2
 			// 
 			this->groupBox2->Controls->Add(this->button4);
+<<<<<<< HEAD
+=======
+			// groupBox2
+			// 
+>>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 			this->groupBox2->Controls->Add(this->button3);
 			this->groupBox2->Controls->Add(this->label12);
 			this->groupBox2->Controls->Add(this->label11);
@@ -303,6 +419,11 @@ namespace SistemaInvernaderoView {
 			this->groupBox2->Text = L"Datos del ambiente";
 			this->groupBox2->Enter += gcnew System::EventHandler(this, &frmNuevoCultivo::groupBox2_Enter);
 			// 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// button4
 			// 
 			this->button4->Location = System::Drawing::Point(469, 111);
@@ -313,6 +434,11 @@ namespace SistemaInvernaderoView {
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
+<<<<<<< HEAD
+=======
+>>>>>>> b5d3b4b (termo)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// button3
 			// 
 			this->button3->Location = System::Drawing::Point(469, 41);
@@ -323,6 +449,11 @@ namespace SistemaInvernaderoView {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
 			// 
+<<<<<<< HEAD
+=======
+>>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 			// label12
 			// 
 			this->label12->AutoSize = true;
@@ -367,7 +498,14 @@ namespace SistemaInvernaderoView {
 			this->textBox11->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->textBox11->Size = System::Drawing::Size(179, 240);
 			this->textBox11->TabIndex = 10;
+<<<<<<< HEAD
+<<<<<<< HEAD
 			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+=======
+>>>>>>> e7e2505 (troste)
+=======
+			this->textBox11->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+>>>>>>> b5d3b4b (termo)
 			// 
 			// textBox10
 			// 
@@ -405,7 +543,45 @@ namespace SistemaInvernaderoView {
 			this->label13->Size = System::Drawing::Size(182, 25);
 			this->label13->TabIndex = 6;
 			this->label13->Text = L"Codigo Ambiente:";
+<<<<<<< HEAD
+=======
+			// label9
 			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(68, 664);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(182, 25);
+			this->label9->TabIndex = 6;
+			this->label9->Text = L"Codigo Ambiente:";
+			this->label9->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::label8_Click);
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(294, 658);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(174, 31);
+			this->textBox7->TabIndex = 10;
+			this->textBox7->TextChanged += gcnew System::EventHandler(this, &frmNuevoCultivo::textBox7_TextChanged);
+>>>>>>> 9367295 (f)
+			// 
+=======
+>>>>>>> bc4f0a0 (d)
+=======
+			// 
+<<<<<<< HEAD
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(469, 111);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(130, 51);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"Guardar";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &frmNuevoCultivo::button3_Click);
+			// 
+>>>>>>> e7e2505 (troste)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// frmNuevoCultivo
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
@@ -434,6 +610,10 @@ namespace SistemaInvernaderoView {
 		String^ nombre = this->textBox2->Text;
 		String^ origen = this->textBox5->Text;
 		String^ tipo = this->comboBox1->Text;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 		String^ tiempo = this->textBox4->Text;
 		String^ fecha = this->dateTimePicker1->Text;
 		String^ NombreUsuario = this->textBox6->Text;
@@ -445,6 +625,27 @@ namespace SistemaInvernaderoView {
 		CultivoController^ objcultivoController = gcnew CultivoController();
 		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, tipo, objUsuario, objAmbienteIdoneo);
 		this->Close();
+=======
+		String^ tiempo = this->textBox3->Text;
+		String^ fecha = this->textBox4->Text;
+		String^ NombreUsuario = this->textBox6->Text;
+		int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox12->Text);
+		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		UsuarioController^ objusuarioController = gcnew UsuarioController();
+		usuario^ objUsuario = objusuarioController->buscarUsuarioxNombre(NombreUsuario);
+		CultivoController^ objcultivoController = gcnew CultivoController();
+<<<<<<< HEAD
+<<<<<<< HEAD
+		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objusuario, objAmbienteIdoneo);
+>>>>>>> 9367295 (f)
+=======
+		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> b5a1190 (b)
+=======
+		objcultivoController->agregarNuevoCultivo(codigo, nombre, origen, tiempo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+		this->Close();
+>>>>>>> bc4f0a0 (d)
 
 	}
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
@@ -460,6 +661,8 @@ namespace SistemaInvernaderoView {
 	}
 	private: System::Void textBox7_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
+<<<<<<< HEAD
+<<<<<<< HEAD
 private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
@@ -473,6 +676,10 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	this->textBox10->Text = Convert::ToString(objAmbienteIdoneo->gettemperatura());
 	this->textBox11->Text = objAmbienteIdoneo->getinformacion();
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b5d3b4b (termo)
 	   private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		   int codigoAmbienteIdoneo = Convert::ToInt32(this->textBox12->Text);
 		   AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
@@ -497,5 +704,16 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 		   }
 		   
 	   }
+<<<<<<< HEAD
+=======
+>>>>>>> 9367295 (f)
+=======
+private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+>>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> e7e2505 (troste)
+=======
+>>>>>>> b5d3b4b (termo)
 };
 }

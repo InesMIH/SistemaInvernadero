@@ -21,6 +21,8 @@ List<cultivo^>^ CultivoController::buscarCultivoxTipo(String^ tipocultivo) {
 		String^ origen = datos[2];
 		String^ tiempoCultivo = datos[3];
 		String^ fecha = datos[4];
+<<<<<<< HEAD
+<<<<<<< HEAD
  		String^ tipo = datos[5];
 		String^ NombreUsuario = datos[6];
 		UsuarioController^ objUsuarioController = gcnew UsuarioController();
@@ -30,6 +32,26 @@ List<cultivo^>^ CultivoController::buscarCultivoxTipo(String^ tipocultivo) {
 		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
 		if (tipo->CompareTo(tipocultivo) == 0) {
 			cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+=======
+		int zona = Convert::ToInt32(datos[5]);
+		String^ tipo = datos[6];
+		String^ NombreUsuario = datos[7];
+=======
+ 		String^ tipo = datos[5];
+		String^ NombreUsuario = datos[6];
+>>>>>>> bc4f0a0 (d)
+		UsuarioController^ objUsuarioController = gcnew UsuarioController();
+		usuario^ objUsuario = objUsuarioController->buscarUsuarioxNombre(NombreUsuario);
+		int codigoAmbienteIdoneo = Convert::ToInt32(datos[7]);
+		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		if (tipo->CompareTo(tipocultivo) == 0) {
+<<<<<<< HEAD
+			cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> 9367295 (f)
+=======
+			cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> bc4f0a0 (d)
 			listaCultivo->Add(objcultivo);
 		}
 	}
@@ -47,6 +69,8 @@ List<cultivo^>^ CultivoController::buscarCultivoALL() {
 		String^ origen = datos[2];
 		String^ tiempoCultivo = datos[3];
 		String^ fecha = datos[4];
+<<<<<<< HEAD
+<<<<<<< HEAD
 		String^ tipo = datos[5];
 		String^ NombreUsuario = datos[6];
 		UsuarioController^ objUsuarioController = gcnew UsuarioController();
@@ -55,14 +79,45 @@ List<cultivo^>^ CultivoController::buscarCultivoALL() {
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
 		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
 		cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+=======
+		int zona = Convert::ToInt32(datos[5]);
+		String^ tipo = datos[6];
+		int codigoUsuario = Convert::ToInt32(datos[7]);
+=======
+		String^ tipo = datos[5];
+		String^ NombreUsuario = datos[6];
+>>>>>>> bc4f0a0 (d)
+		UsuarioController^ objUsuarioController = gcnew UsuarioController();
+		usuario^ objUsuario = objUsuarioController->buscarUsuarioxNombre(NombreUsuario);
+		int codigoAmbienteIdoneo = Convert::ToInt32(datos[7]);
+		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+<<<<<<< HEAD
+		cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> 9367295 (f)
+=======
+		cultivo^ objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> bc4f0a0 (d)
 		listaCultivo->Add(objcultivo);
 	}
 	return listaCultivo;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 void CultivoController::agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo) {
 	List<cultivo^>^ listaCultivo = buscarCultivoALL();
 	cultivo^ objCultivo = gcnew cultivo(codigo, nombre,origen, tiempoCultivo, fechaSembrado, tipo, objusuario, objAmbienteIdoneo);
+=======
+void CultivoController::agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, int zonaDeSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo) {
+	List<cultivo^>^ listaCultivo = buscarCultivoALL();
+	cultivo^ objCultivo = gcnew cultivo(codigo, nombre,origen, tiempoCultivo, fechaSembrado, zonaDeSembrado, tipo, objusuario, objAmbienteIdoneo);
+>>>>>>> 9367295 (f)
+=======
+void CultivoController::agregarNuevoCultivo(int codigo, String^ nombre, String^ origen, String^ tiempoCultivo, String^ fechaSembrado, String^ tipo, usuario^ objusuario, ambienteIdoneo^ objAmbienteIdoneo) {
+	List<cultivo^>^ listaCultivo = buscarCultivoALL();
+	cultivo^ objCultivo = gcnew cultivo(codigo, nombre,origen, tiempoCultivo, fechaSembrado, tipo, objusuario, objAmbienteIdoneo);
+>>>>>>> bc4f0a0 (d)
 	listaCultivo->Add(objCultivo);
 	escribirArchivo(listaCultivo);
 }
@@ -102,12 +157,30 @@ cultivo^ CultivoController::buscarCultivoxCodigo(int codigoBuscado) {
 		String^ tipo = datos[5];
 		String^ NombreUsuario = datos[6];
 		UsuarioController^ objUsuarioController = gcnew UsuarioController();
+<<<<<<< HEAD
+<<<<<<< HEAD
 		usuario^ objUsuario = objUsuarioController->buscarUsuarioxNombre(NombreUsuario);
 		int codigoAmbienteIdoneo = Convert::ToInt32(datos[7]);
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
 		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
 		if (codigo == codigoBuscado) {
 			objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+=======
+		usuario^ objUsuario = objUsuarioController->buscarUsuarioxCodigo(codigoUsuario);
+		int codigoAmbienteIdoneo = Convert::ToInt32(datos[8]);
+		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		if (codigo == codigoBuscado) {
+			objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, zona, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> 9367295 (f)
+=======
+		usuario^ objUsuario = objUsuarioController->buscarUsuarioxNombre(NombreUsuario);
+		int codigoAmbienteIdoneo = Convert::ToInt32(datos[7]);
+		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+		ambienteIdoneo^ objAmbienteIdoneo = objAmbienteIdoneoController->buscarAmbienteIdoneoxCodigo(codigoAmbienteIdoneo);
+		if (codigo == codigoBuscado) {
+			objcultivo = gcnew cultivo(codigo, nombre, origen, tiempoCultivo, fecha, tipo, objUsuario, objAmbienteIdoneo);
+>>>>>>> bc4f0a0 (d)
 			break;
 		}
 	}

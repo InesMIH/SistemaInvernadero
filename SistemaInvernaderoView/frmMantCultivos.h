@@ -82,6 +82,23 @@ namespace SistemaInvernaderoView {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+<<<<<<< HEAD
+<<<<<<< HEAD
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+<<<<<<< HEAD
+=======
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+>>>>>>> 6cb23e4 (c)
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+=======
+>>>>>>> bc4f0a0 (d)
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+=======
+>>>>>>> e7e2505 (troste)
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -147,10 +164,22 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->RowTemplate->Height = 33;
+<<<<<<< HEAD
+<<<<<<< HEAD
+			this->dataGridView1->Size = System::Drawing::Size(1268, 420);
+=======
+			this->dataGridView1->Size = System::Drawing::Size(1268, 448);
+>>>>>>> 6cb23e4 (c)
+			this->dataGridView1->TabIndex = 1;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
+			// 
+<<<<<<< HEAD
+=======
 			this->dataGridView1->Size = System::Drawing::Size(1268, 420);
 			this->dataGridView1->TabIndex = 1;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantCultivos::dataGridView1_CellContentClick);
 			// 
+>>>>>>> e7e2505 (troste)
 			// Column1
 			// 
 			this->Column1->HeaderText = L"codigo";
@@ -179,6 +208,11 @@ namespace SistemaInvernaderoView {
 			this->Usuario->Name = L"Usuario";
 			this->Usuario->Width = 200;
 			// 
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> e7e2505 (troste)
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(691, 716);
@@ -256,8 +290,19 @@ namespace SistemaInvernaderoView {
 			array<String^>^ filaGrilla = gcnew array<String^>(5);
 			filaGrilla[0] = Convert::ToString(objcultivo->getcodigo());
 			filaGrilla[1] = objcultivo->getnombre();
+<<<<<<< HEAD
+<<<<<<< HEAD
 			filaGrilla[2] = objcultivo->gettiempoCultivo();
 			filaGrilla[3] = objcultivo->getusuario()->getNombre();
+=======
+			filaGrilla[2] = Convert::ToString(objcultivo->getzonaDeSembrado());
+			filaGrilla[3] = objcultivo->gettiempoCultivo();
+			filaGrilla[4] = objcultivo->getusuario()->getNombre();
+>>>>>>> 9367295 (f)
+=======
+			filaGrilla[2] = objcultivo->gettiempoCultivo();
+			filaGrilla[3] = objcultivo->getusuario()->getNombre();
+>>>>>>> bc4f0a0 (d)
 			this->dataGridView1->Rows->Add(filaGrilla);
 		}
 	}
@@ -273,7 +318,15 @@ namespace SistemaInvernaderoView {
 		int codigoEditar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
 		CultivoController^ objCultivoController = gcnew CultivoController();
 		cultivo^ objCultivo = objCultivoController->buscarCultivoxCodigo(codigoEditar);
+<<<<<<< HEAD
+<<<<<<< HEAD
 		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo(objCultivo);
+=======
+		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo();
+>>>>>>> bc4f0a0 (d)
+=======
+		frmEditarCultivo^ ventanaEditarCultivo = gcnew frmEditarCultivo(objCultivo);
+>>>>>>> e7e2505 (troste)
 		ventanaEditarCultivo->ShowDialog();
 		this->dataGridView1->Rows->Clear();
 	}

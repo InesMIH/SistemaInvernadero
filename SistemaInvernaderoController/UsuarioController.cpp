@@ -54,7 +54,15 @@ usuario^ UsuarioController::buscarUsuarioxCodigo(int codigoBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (id == codigoBuscar) {
+<<<<<<< HEAD
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+=======
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> b5a1190 (b)
+=======
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> 6cb23e4 (c)
 			break;
 		}
 	}
@@ -73,7 +81,15 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		if (nombre->CompareTo(NombreBuscar)==0) {
+<<<<<<< HEAD
+<<<<<<< HEAD
 			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+=======
+			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> b5a1190 (b)
+=======
+			objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+>>>>>>> 6cb23e4 (c)
 			break;
 		}
 	}
@@ -82,6 +98,13 @@ usuario^ UsuarioController::buscarUsuarioxNombre(String^ NombreBuscar) {
 
 int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar) {
 	int confirmado = 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	usuario^ objUsuario;
+>>>>>>> b5a1190 (b)
+=======
+>>>>>>> 6cb23e4 (c)
 	array<String^>^ lineas = File::ReadAllLines("Usuario.txt");
 	String^ separadores = ";"; /*Aqui defino el caracter por el cual voy a separar los elementos de una linea*/
 	for each (String ^ lineaUsuario in lineas) {
@@ -99,6 +122,10 @@ int UsuarioController::BuscarExistenciaDeUsuarioxNombreYContrasena(String^ Nombr
 		}
 	}
 	return confirmado;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc4f0a0 (d)
 }
 
 List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
@@ -113,6 +140,13 @@ List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
 		String^ Cargo = datos[2];
 		String^ Contrasena = datos[3];
 		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		listaUsuario->Add(objUsuario);
+>>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 		if (Cargo->CompareTo(cargobuscar) == 0) {
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			listaUsuario->Add(objUsuario);
@@ -131,6 +165,10 @@ void UsuarioController::eliminarUsuario(int idEliminar) {
 	}
 	escribirArchivo(listaUsuario);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7e2505 (troste)
 
 void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena) {
 	List<usuario^>^ listaUsuario = buscarUsuarioAll();
@@ -147,3 +185,11 @@ void UsuarioController::actualizarUsuario(int id, String^ Nombre, String^ Cargo,
 	escribirArchivo(listaUsuario);
 
 }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> b5a1190 (b)
+=======
+>>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> e7e2505 (troste)

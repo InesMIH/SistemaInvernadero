@@ -14,8 +14,20 @@ namespace SistemaInvernaderoController {
 		usuario^ buscarUsuarioxCodigo(int codigoBuscar);
 		usuario^ buscarUsuarioxNombre(String^ NombreBuscar);
 		int BuscarExistenciaDeUsuarioxNombreYContrasena(String^ NombreBuscar, String^ ContrasenaBuscar);
+<<<<<<< HEAD
+<<<<<<< HEAD
 		List<usuario^>^ buscarUsuarioxCargo(String^ cargo);
 		void eliminarUsuario(int idEliminar);
 		void actualizarUsuario(int id, String^ Nombre, String^ Cargo, String^ contrasena);
+<<<<<<< HEAD
+=======
+=======
+		List<usuario^>^ buscarUsuarioxCargo(String^ cargo);
+		void eliminarUsuario(int idEliminar);
+>>>>>>> bc4f0a0 (d)
+
+>>>>>>> b5a1190 (b)
+=======
+>>>>>>> e7e2505 (troste)
 	};
 }
