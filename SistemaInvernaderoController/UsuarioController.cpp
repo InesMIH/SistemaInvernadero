@@ -141,9 +141,12 @@ List<usuario^>^ UsuarioController::buscarUsuarioxCargo(String^ cargobuscar) {
 		String^ Contrasena = datos[3];
 		usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		listaUsuario->Add(objUsuario);
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 		if (Cargo->CompareTo(cargobuscar) == 0) {
 			usuario^ objUsuario = gcnew usuario(id, nombre, Cargo, Contrasena);
 			listaUsuario->Add(objUsuario);

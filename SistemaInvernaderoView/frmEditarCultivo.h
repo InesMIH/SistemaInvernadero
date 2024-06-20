@@ -61,6 +61,7 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox5;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	private: System::Windows::Forms::TextBox^ textBox7;
 	private: System::Windows::Forms::TextBox^ textBox6;
@@ -73,6 +74,13 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::TextBox^ textBox3;
 >>>>>>> bc4f0a0 (d)
+=======
+
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::TextBox^ textBox4;
+
+>>>>>>> 5f43a7f (listo (?))
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ textBox1;
@@ -99,10 +107,15 @@ namespace SistemaInvernaderoView {
 	private: System::Windows::Forms::Label^ label12;
 	private: System::Windows::Forms::TextBox^ textBox11;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 =======
 >>>>>>> e7e2505 (troste)
+=======
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
+>>>>>>> 5f43a7f (listo (?))
 
 
 
@@ -141,6 +154,7 @@ namespace SistemaInvernaderoView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
@@ -148,11 +162,13 @@ namespace SistemaInvernaderoView {
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 =======
+=======
+			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
+>>>>>>> 5f43a7f (listo (?))
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 <<<<<<< HEAD
 			this->label9 = (gcnew System::Windows::Forms::Label());
@@ -231,6 +247,7 @@ namespace SistemaInvernaderoView {
 			// groupBox1
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->groupBox1->Controls->Add(this->dateTimePicker1);
 			this->groupBox1->Controls->Add(this->textBox5);
 			this->groupBox1->Controls->Add(this->comboBox1);
@@ -238,11 +255,13 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Controls->Add(this->textBox4);
 			this->groupBox1->Controls->Add(this->textBox2);
 =======
+=======
+			this->groupBox1->Controls->Add(this->dateTimePicker1);
+>>>>>>> 5f43a7f (listo (?))
 			this->groupBox1->Controls->Add(this->textBox5);
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Controls->Add(this->textBox6);
 			this->groupBox1->Controls->Add(this->textBox4);
-			this->groupBox1->Controls->Add(this->textBox3);
 			this->groupBox1->Controls->Add(this->textBox2);
 <<<<<<< HEAD
 			this->groupBox1->Controls->Add(this->label9);
@@ -274,6 +293,9 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmEditarCultivo::groupBox1_Enter);
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// dateTimePicker1
 			// 
 			this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Short;
@@ -283,8 +305,11 @@ namespace SistemaInvernaderoView {
 			this->dateTimePicker1->TabIndex = 20;
 			this->dateTimePicker1->ValueChanged += gcnew System::EventHandler(this, &frmEditarCultivo::dateTimePicker1_ValueChanged);
 			// 
+<<<<<<< HEAD
 =======
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// textBox5
 			// 
 			this->textBox5->Location = System::Drawing::Point(294, 224);
@@ -325,14 +350,19 @@ namespace SistemaInvernaderoView {
 			// textBox4
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->textBox4->Location = System::Drawing::Point(293, 361);
 =======
 			this->textBox4->Location = System::Drawing::Point(294, 431);
 >>>>>>> bc4f0a0 (d)
+=======
+			this->textBox4->Location = System::Drawing::Point(293, 361);
+>>>>>>> 5f43a7f (listo (?))
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(174, 31);
 			this->textBox4->TabIndex = 10;
 			// 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			// textBox3
@@ -343,6 +373,8 @@ namespace SistemaInvernaderoView {
 			this->textBox3->TabIndex = 9;
 			// 
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(294, 154);
@@ -447,9 +479,13 @@ namespace SistemaInvernaderoView {
 			this->textBox7->Size = System::Drawing::Size(174, 31);
 			this->textBox7->TabIndex = 10;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->textBox7->TextChanged += gcnew System::EventHandler(this, &frmEditarCultivo::textBox7_TextChanged);
 =======
 >>>>>>> e7e2505 (troste)
+=======
+			this->textBox7->TextChanged += gcnew System::EventHandler(this, &frmEditarCultivo::textBox7_TextChanged);
+>>>>>>> 5f43a7f (listo (?))
 			// 
 			// label9
 			// 
@@ -615,6 +651,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		String^ origen = this->textBox5->Text;
 		String^ tipo = this->comboBox1->Text;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		String^ tiempocultivo = this->textBox4->Text;
 		String^ fechasembrado = this->dateTimePicker1->Text;
 		String^ nombreUsuario = this->textBox6->Text;
@@ -650,20 +687,47 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 =======
 		String^ tiempocultivo = this->textBox3->Text;
 		String^ fechasembrado = this->textBox4->Text;
+=======
+		String^ tiempocultivo = this->textBox4->Text;
+		String^ fechasembrado = this->dateTimePicker1->Text;
+>>>>>>> 5f43a7f (listo (?))
 		String^ nombreUsuario = this->textBox6->Text;
+		 
 		int codigoAbienteIdoneo = Convert::ToInt32(this->textBox7->Text);
-		CultivoController^ objCultivoController = gcnew CultivoController();
-		objCultivoController->actualizarCultivo(codigo, nombre, origen, tipo, tiempocultivo, fechasembrado, nombreUsuario, codigoAbienteIdoneo);
-		int codigoAmb = Convert::ToInt32(this->textBox7->Text);
 		double humedad = Convert::ToDouble(this->textBox8->Text);
 		double luminosidad = Convert::ToDouble(this->textBox9->Text);
 		double temperatura = Convert::ToDouble(this->textBox10->Text);
 		String^ informacion = this->textBox11->Text;
+
+		int codigoEnUso = 0;
+		CultivoController^ objCultivoController = gcnew CultivoController();
 		AmbienteIdoneoController^ objAmbienteIdoneoController = gcnew AmbienteIdoneoController();
+<<<<<<< HEAD
 		objAmbienteIdoneoController->actualizarAmbienteIdoneo(codigoAmb, humedad, luminosidad, temperatura, informacion);
 		MessageBox::Show("El cultivo ha sido actualizado con éxito");
 		this->Close();
 >>>>>>> bc4f0a0 (d)
+=======
+		if (this->ObjCultivo->getobjAmbienteIdoneo()->getcodigo() != codigoAbienteIdoneo) {
+			codigoEnUso = objAmbienteIdoneoController->codigoExisteAmbienteIdoneo(codigoAbienteIdoneo);
+		}
+		if (codigoEnUso) {
+			MessageBox::Show("El codigo ya está en uso");
+		}
+		else {
+			int existeAmbiente = objAmbienteIdoneoController->existeAmbiente(humedad, luminosidad, temperatura);
+			if (existeAmbiente != this->ObjCultivo->getobjAmbienteIdoneo()->getcodigo()) {
+				MessageBox::Show("Ya existe un ambiente con esos parametros" + "Codigo: " + Convert::ToString(existeAmbiente));
+			}
+			else
+			{
+				objCultivoController->actualizarCultivo(codigo, nombre, origen, tipo, tiempocultivo, fechasembrado, nombreUsuario, codigoAbienteIdoneo);
+				objAmbienteIdoneoController->actualizarAmbienteIdoneo(codigoAbienteIdoneo, humedad, luminosidad, temperatura, informacion);
+				MessageBox::Show("El cultivo ha sido actualizado con éxito");
+				this->Close();
+			}
+		}
+>>>>>>> 5f43a7f (listo (?))
 	}
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -679,12 +743,17 @@ private: System::Void frmEditarCultivo_Load(System::Object^ sender, System::Even
 	this->textBox5->Text = this->ObjCultivo->getorigen();
 	this->comboBox1->Text = this->ObjCultivo->gettipo();
 <<<<<<< HEAD
+<<<<<<< HEAD
 	this->textBox4->Text = this->ObjCultivo->gettiempoCultivo();
 	this->dateTimePicker1->Text = this->ObjCultivo->getfechaSembrado();
 =======
 	this->textBox3->Text = this->ObjCultivo->gettiempoCultivo();
 	this->textBox4->Text = this->ObjCultivo->getfechaSembrado();
 >>>>>>> e7e2505 (troste)
+=======
+	this->textBox4->Text = this->ObjCultivo->gettiempoCultivo();
+	this->dateTimePicker1->Text = this->ObjCultivo->getfechaSembrado();
+>>>>>>> 5f43a7f (listo (?))
 	this->textBox6->Text = this->ObjCultivo->getusuario()->getNombre();
 	this->textBox7->Text = Convert::ToString(this->ObjCultivo->getobjAmbienteIdoneo()->getcodigo());
 	this->textBox8->Text = Convert::ToString(this->ObjCultivo->getobjAmbienteIdoneo()->gethumedad());
@@ -708,6 +777,10 @@ private: System::Void dateTimePicker1_ValueChanged(System::Object^ sender, Syste
 >>>>>>> bc4f0a0 (d)
 =======
 >>>>>>> e7e2505 (troste)
+}
+private: System::Void textBox7_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void dateTimePicker1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

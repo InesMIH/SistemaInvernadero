@@ -123,8 +123,12 @@ namespace SistemaInvernaderoView {
 			// 
 			// button4
 			// 
+<<<<<<< HEAD
 			this->button4->Location = System::Drawing::Point(89, 754);
 >>>>>>> e7e2505 (troste)
+=======
+			this->button4->Location = System::Drawing::Point(185, 754);
+>>>>>>> 5f43a7f (listo (?))
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(112, 49);
 			this->button4->TabIndex = 9;
@@ -139,17 +143,22 @@ namespace SistemaInvernaderoView {
 			// button3
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->button3->Location = System::Drawing::Point(654, 754);
 =======
 =======
 >>>>>>> e7e2505 (troste)
 			this->button3->Location = System::Drawing::Point(592, 754);
 >>>>>>> bc4f0a0 (d)
+=======
+			this->button3->Location = System::Drawing::Point(654, 754);
+>>>>>>> 5f43a7f (listo (?))
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(110, 49);
 			this->button3->TabIndex = 8;
 			this->button3->Text = L"Eliminar";
 			this->button3->UseVisualStyleBackColor = true;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			this->button3->Click += gcnew System::EventHandler(this, &frmMantUsuarios::button3_Click_1);
@@ -166,6 +175,13 @@ namespace SistemaInvernaderoView {
 			// 
 			this->button2->Location = System::Drawing::Point(345, 754);
 >>>>>>> e7e2505 (troste)
+=======
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantUsuarios::button3_Click_1);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(422, 754);
+>>>>>>> 5f43a7f (listo (?))
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(118, 49);
 			this->button2->TabIndex = 7;
@@ -201,6 +217,9 @@ namespace SistemaInvernaderoView {
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->RowTemplate->Height = 33;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 			this->dataGridView1->Size = System::Drawing::Size(851, 448);
 			this->dataGridView1->TabIndex = 6;
 			// 
@@ -250,6 +269,7 @@ namespace SistemaInvernaderoView {
 			this->groupBox1->Location = System::Drawing::Point(29, 82);
 			this->groupBox1->Name = L"groupBox1";
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this->groupBox1->Size = System::Drawing::Size(861, 146);
 			this->groupBox1->TabIndex = 5;
 			this->groupBox1->TabStop = false;
@@ -260,14 +280,21 @@ namespace SistemaInvernaderoView {
 			this->button1->Location = System::Drawing::Point(625, 58);
 =======
 			this->groupBox1->Size = System::Drawing::Size(745, 146);
+=======
+			this->groupBox1->Size = System::Drawing::Size(861, 146);
+>>>>>>> 5f43a7f (listo (?))
 			this->groupBox1->TabIndex = 5;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterio de Búsqueda";
 			// 
 			// button1
 			// 
+<<<<<<< HEAD
 			this->button1->Location = System::Drawing::Point(530, 61);
 >>>>>>> bc4f0a0 (d)
+=======
+			this->button1->Location = System::Drawing::Point(625, 58);
+>>>>>>> 5f43a7f (listo (?))
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(89, 39);
 			this->button1->TabIndex = 2;
@@ -282,6 +309,7 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"cultivador", L"mantenimiento" });
 			this->comboBox1->Location = System::Drawing::Point(288, 64);
+<<<<<<< HEAD
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(223, 33);
 			this->comboBox1->TabIndex = 1;
@@ -299,6 +327,8 @@ namespace SistemaInvernaderoView {
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Comestible", L"No Comestible" });
 			this->comboBox1->Location = System::Drawing::Point(193, 67);
+=======
+>>>>>>> 5f43a7f (listo (?))
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(223, 33);
 			this->comboBox1->TabIndex = 1;
@@ -306,8 +336,12 @@ namespace SistemaInvernaderoView {
 			// label1
 			// 
 			this->label1->AutoSize = true;
+<<<<<<< HEAD
 			this->label1->Location = System::Drawing::Point(66, 75);
 >>>>>>> bc4f0a0 (d)
+=======
+			this->label1->Location = System::Drawing::Point(161, 72);
+>>>>>>> 5f43a7f (listo (?))
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(76, 25);
 			this->label1->TabIndex = 0;
@@ -321,6 +355,7 @@ namespace SistemaInvernaderoView {
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(922, 887);
+<<<<<<< HEAD
 =======
 			this->Column1->HeaderText = L"codigo";
 			this->Column1->MinimumWidth = 10;
@@ -339,6 +374,8 @@ namespace SistemaInvernaderoView {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(805, 887);
 >>>>>>> bc4f0a0 (d)
+=======
+>>>>>>> 5f43a7f (listo (?))
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -423,6 +460,9 @@ private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^
 	this->dataGridView1->Rows->Clear();
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f43a7f (listo (?))
 private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	int filaSeleccionada = this->dataGridView1->SelectedRows[0]->Index;
 	int codigoEliminar = Convert::ToInt32(this->dataGridView1->Rows[filaSeleccionada]->Cells[0]->Value->ToString());
@@ -431,9 +471,12 @@ private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^
 	MessageBox::Show("El usuario seleccionado ha sido eliminado correctamente.");
 	this->dataGridView1->Rows->Clear();
 }
+<<<<<<< HEAD
 =======
 >>>>>>> bc4f0a0 (d)
 =======
 >>>>>>> e7e2505 (troste)
+=======
+>>>>>>> 5f43a7f (listo (?))
 };
 }
