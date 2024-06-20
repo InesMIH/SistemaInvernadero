@@ -37,5 +37,4 @@ void main(array <String^>^ args)
 
 	login ventana; /*Estoy creando el objeto ventana que va a ser del tipo frmPrincipal*/
 	Application::Run(% ventana); /*Aqui estoy ejecutando la ventana inicial*/
->>>>>>> b5a1190 (b)
 }

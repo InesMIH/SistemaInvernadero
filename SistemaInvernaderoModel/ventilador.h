@@ -8,14 +8,14 @@ namespace SistemaInvernaderoModel {
 
 	{
 	private:
-<<<<<<< HEAD
+
 		double porcPWM;
 	public:
 		ventilador();
 		ventilador(double porcPWM, String^ tipo, int codigo, int enOperacion, double potencia);
 
 	
-=======
+
 		int zona;
 		double porcPWM;
 	public:
@@ -24,7 +24,7 @@ namespace SistemaInvernaderoModel {
 
 		int getzona();
 		void setzona(int zona);
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+
 		double getporcPWM();
 		void setporcPWM(double porcPWM);
 	};
