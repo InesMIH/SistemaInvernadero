@@ -17,12 +17,5 @@ namespace SistemaInvernaderoModel {
 		void setporcPWM(int porcPWM);
 		int getCaudal();
 		void setCaudal(int caudal);
-
-	public:
-		roceador();
-		roceador(int porcPWM, int codigo, String^ funcionamiento, double potencia);
-
-		int getporcPWM();
-		void setporcPWM(int porcPWM);
 	};
 }

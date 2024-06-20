@@ -16,14 +16,6 @@ namespace SistemaInvernaderoModel {
 		reguladores();
 
 		reguladores(String^ tipo, int codigo, int enOperacion, double potencia);
-		
-		String^ getTipo();
-		void setTipo(String^ tipo);
-
-		reguladores(int codigo, int enOperacion, double potencia);
-
-
-		reguladores(String^ tipo, int codigo, int enOperacion, double potencia);
 
 		String^ getTipo();
 		void setTipo(String^ tipo);

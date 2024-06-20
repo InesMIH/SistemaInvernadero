@@ -9,11 +9,6 @@ namespace SistemaInvernaderoModel {
 		String^ tipo;
 
 		int enFuncionamiento;
-
-		String^ enFuncionamiento;
-
-		int enFuncionamiento;
-
 		double intervaloDeMuestreo;
 		double medicion;
 		String^ unidad;
@@ -30,13 +25,6 @@ namespace SistemaInvernaderoModel {
 
 		int getenFuncionamiento();
 		void setenFuncionamiento(int enFuncionamiento);
-
-		String^ getenFuncionamiento();
-		void setenFuncionamiento(String^ enFuncionamiento);
-
-		int getenFuncionamiento();
-		void setenFuncionamiento(int enFuncionamiento);
-
 		double getintervaloDeMuestreo();
 		void setintervaloDeMuestreo(double intervaloDeMuestreo);
 		double getmedicion();

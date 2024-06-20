@@ -16,13 +16,6 @@ namespace SistemaInvernaderoModel{
 		int getIluminacion();
 		void setIluminacion(int iluminacion);
 
-		int zona;
-	public:
-		foco();
-		foco(int zona, int codigo, int enOperacion, double potencia);
-
-		int getzona();
-		void setzona(int zona);
 
 	};
 }
