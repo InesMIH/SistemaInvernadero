@@ -7,7 +7,6 @@ namespace SistemaInvernaderoModel {
 	private:
 
 
-
 		String^ tipo;
 
 		int codigo;

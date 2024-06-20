@@ -3,11 +3,8 @@
 
 using namespace System;
 
-<<<<<<< HEAD
-namespace SistemaInvernaderoModel {
-=======
 namespace SistemaInvernaderoModel{
->>>>>>> 5fa86e0 (Agregar archivos de proyecto.)
+
 	public ref class ambienteActual : ambiente
 
 	{
